@@ -6,7 +6,6 @@ export default {
   videos: [
     {
       src: 'tOtJ1fZUHgM',
-      title: 'УСМ',
     },
   ],
 };

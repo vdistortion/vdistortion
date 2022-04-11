@@ -1,102 +1,84 @@
-import arb1 from '../images/arb-pro/Вход-min.png';
-import arb2 from '../images/arb-pro/Главная-1-min.png';
-import arb3 from '../images/arb-pro/Главная-2-min.png';
-import arb4 from '../images/arb-pro/Главная-3-min.png';
-import arb5 from '../images/arb-pro/Главная-4-min.png';
-import arb6 from '../images/arb-pro/Диагностика-1-min.png';
-import arb7 from '../images/arb-pro/Диагностика-2-min.png';
-import arb8 from '../images/arb-pro/Интернет-1-min.png';
-import arb9 from '../images/arb-pro/Интернет-2-min.png';
-import arb10 from '../images/arb-pro/Интернет-3-min.png';
-import arb11 from '../images/arb-pro/Интернет-4-min.png';
-import arb12 from '../images/arb-pro/Интернет-5-min.png';
-import arb17 from '../images/arb-pro/Исследования-2-min.png';
-import arb18 from '../images/arb-pro/Исследования-3-min.png';
-import arb13 from '../images/arb-pro/Исследование-1-min.png';
-import arb14 from '../images/arb-pro/Исследование-2-min.png';
-import arb15 from '../images/arb-pro/Исследование-3-min.png';
-import arb16 from '../images/arb-pro/Исследование-4-min.png';
-
 export default {
   code: 'arb-pro',
   name: 'АРБ Про',
   description: 'Фронтенд для сайта',
   link: 'https://arb-pro.ru/',
   tags: [
-    'legacy', 'markup', 'ajax', 'svg', 'gulp', 'jquery', 'responsive', '1c-bitrix', 'pug', 'stylus',
+    'legacy', 'markup', 'ajax', 'svg', 'gulp', 'jquery', 'responsive', 'pug', 'stylus', 'smartgrid',
+    'old',
   ],
   images: [
     {
       title: 'Вход',
-      src: arb1,
+      src: require('../images/arb-pro/Вход-min.png'),
     },
     {
       title: 'Главная',
-      src: arb2,
+      src: require('../images/arb-pro/Главная-1-min.png'),
     },
     {
       title: 'Главная',
-      src: arb3,
+      src: require('../images/arb-pro/Главная-2-min.png'),
     },
     {
       title: 'Главная',
-      src: arb4,
+      src: require('../images/arb-pro/Главная-3-min.png'),
     },
     {
       title: 'Главная',
-      src: arb5,
+      src: require('../images/arb-pro/Главная-4-min.png'),
     },
     {
       title: 'Диагностика',
-      src: arb6,
+      src: require('../images/arb-pro/Диагностика-1-min.png'),
     },
     {
       title: 'Диагностика',
-      src: arb7,
+      src: require('../images/arb-pro/Диагностика-2-min.png'),
     },
     {
       title: 'Интернет',
-      src: arb8,
+      src: require('../images/arb-pro/Интернет-1-min.png'),
     },
     {
       title: 'Интернет',
-      src: arb9,
+      src: require('../images/arb-pro/Интернет-2-min.png'),
     },
     {
       title: 'Интернет',
-      src: arb10,
+      src: require('../images/arb-pro/Интернет-3-min.png'),
     },
     {
       title: 'Интернет',
-      src: arb11,
+      src: require('../images/arb-pro/Интернет-4-min.png'),
     },
     {
       title: 'Интернет',
-      src: arb12,
+      src: require('../images/arb-pro/Интернет-5-min.png'),
     },
     {
       title: 'Исследования',
-      src: arb17,
+      src: require('../images/arb-pro/Исследования-2-min.png'),
     },
     {
       title: 'Исследования',
-      src: arb18,
+      src: require('../images/arb-pro/Исследования-3-min.png'),
     },
     {
       title: 'Исследование',
-      src: arb13,
+      src: require('../images/arb-pro/Исследование-1-min.png'),
     },
     {
       title: 'Исследование',
-      src: arb14,
+      src: require('../images/arb-pro/Исследование-2-min.png'),
     },
     {
       title: 'Исследование',
-      src: arb15,
+      src: require('../images/arb-pro/Исследование-3-min.png'),
     },
     {
       title: 'Исследование',
-      src: arb16,
+      src: require('../images/arb-pro/Исследование-4-min.png'),
     },
   ],
 };
