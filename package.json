@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --host 0.0.0.0",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "grid": "node smartgrid.js",
+    "pages": "node gh-pages.js",
+    "public": "npm run build && npm run pages",
+    "reset": "git fetch --all && git reset --hard origin/master",
+    "caniuse": "npx browserslist@latest --update-db updates"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13",
+    "vue-easy-lightbox": "^1.4.1",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vuejs-accessibility": "^1.1.0",
+    "gh-pages": "^3.2.3",
+    "smart-grid": "^2.1.2",
+    "stylus": "^0.55.0",
+    "stylus-loader": "^6.1.0"
+  }
+}
