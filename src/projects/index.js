@@ -1,12 +1,13 @@
 import arb from './modules/arb-pro';
 import infomats from './modules/infomats';
+import med from './modules/is-med';
 import ios from './modules/ios';
 import usm from './modules/usm';
 import birthdays from './modules/birthdays';
 import birthdaysCRM from './modules/birthdays-clients';
+import constructor from './modules/constructor';
 import scenapro from './modules/scenapro';
 import nordw from './modules/nordw';
-import constructor from './modules/constructor';
 import vueb24 from './modules/vue-bitrix24';
 import create from './modules/bitrix24-create-app';
 import bot from './modules/bitrix24-stickerpack-bot';
@@ -44,13 +45,14 @@ function parseProject(project) {
 export default {
   ...parseProject(arb),
   ...parseProject(infomats),
+  ...parseProject(med),
   ...parseProject(ios),
   ...parseProject(usm),
   ...parseProject(birthdays),
   ...parseProject(birthdaysCRM),
+  ...parseProject(constructor),
   ...parseProject(scenapro),
   ...parseProject(nordw),
-  ...parseProject(constructor),
   ...parseProject(vueb24),
   ...parseProject(create),
   ...parseProject(bot),

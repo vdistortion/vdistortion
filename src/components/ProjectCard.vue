@@ -22,7 +22,13 @@ import AppCard from './ui/Card.vue';
 export default {
   computed: {
     tags() {
-      return this.project.tags.map((tag) => `#${tag}`);
+      return this.project.tags
+        .map((tag) => `#${tag}`)
+        .sort((a, b) => {
+          if (a < b) return -1;
+          if (a > b) return 1;
+          return 0;
+        });
     },
   },
   props: {

@@ -1,9 +1,3 @@
-import image1 from '../images/birthdays-clients/ДРклиентов-01.png';
-import image2 from '../images/birthdays-clients/ДРклиентов-02.png';
-import image3 from '../images/birthdays-clients/ДРклиентов-03.png';
-import image4 from '../images/birthdays-clients/ДРклиентов-04.png';
-import image5 from '../images/birthdays-clients/ДРклиентов-05.png';
-
 export default {
   code: 'birthdays-crm',
   name: 'Дни рождения клиентов',
@@ -12,23 +6,23 @@ export default {
   tags: ['vue', 'ajax', 'bitrix24', 'stylus'],
   images: [
     {
-      src: image1,
+      src: require('../images/birthdays-clients/ДРклиентов-01.png'),
       title: 'Дни рождения клиентов',
     },
     {
-      src: image2,
+      src: require('../images/birthdays-clients/ДРклиентов-02.png'),
       title: 'Дни рождения клиентов на смартфоне',
     },
     {
-      src: image3,
+      src: require('../images/birthdays-clients/ДРклиентов-03.png'),
       title: 'Напоминания в календаре',
     },
     {
-      src: image4,
+      src: require('../images/birthdays-clients/ДРклиентов-04.png'),
       title: 'Клиенты без дней рождения',
     },
     {
-      src: image5,
+      src: require('../images/birthdays-clients/ДРклиентов-05.png'),
       title: 'Напоминание за 1 или 3 дня',
     },
   ],

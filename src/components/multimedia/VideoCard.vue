@@ -6,8 +6,7 @@
       @onReady="setTitle"
     ></youtube-video>
     <h2 class="video-card__title">
-      {{ name }}
-      <span v-if="title">({{ title }})</span>
+      {{ title || name }}
     </h2>
   </div>
 </template>

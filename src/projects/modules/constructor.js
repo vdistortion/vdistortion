@@ -1,62 +1,48 @@
-import image01 from '../images/constructor/МастерCRM-01.png';
-import image02 from '../images/constructor/МастерCRM-02.png';
-import image03 from '../images/constructor/МастерCRM-03.png';
-import image04 from '../images/constructor/МастерCRM-04.png';
-import image05 from '../images/constructor/МастерCRM-05.png';
-import image06 from '../images/constructor/МастерCRM-06.png';
-import image07 from '../images/constructor/МастерCRM-07.png';
-import image08 from '../images/constructor/МастерCRM-08.png';
-import image09 from '../images/constructor/МастерCRM-09.png';
-import image10 from '../images/constructor/МастерCRM-10.png';
-import image11 from '../images/constructor/МастерCRM-11.png';
-import image12 from '../images/constructor/МастерCRM-12.png';
-import image13 from '../images/constructor/МастерCRM-13.png';
-
 export default {
-  code: 'constructor',
-  name: 'Конструктор отчётов CRM',
+  code: 'master-crm',
+  name: 'Мастер отчётов CRM',
   description: 'Коммерческое приложение для Битрикс24',
   link: 'https://www.bitrix24.ru/apps/?app=sozdavatel.konstruktor_otchetov_bitriks24',
-  tags: ['vue', 'ajax', 'bitrix24', 'vuetify', 'stylus'],
+  tags: ['vue', 'ajax', 'bitrix24', 'vuetify', 'stylus', 'markup'],
   images: [
     {
-      src: image01,
+      src: require('../images/constructor/МастерCRM-01.png'),
     },
     {
-      src: image02,
+      src: require('../images/constructor/МастерCRM-02.png'),
     },
     {
-      src: image03,
+      src: require('../images/constructor/МастерCRM-03.png'),
     },
     {
-      src: image04,
+      src: require('../images/constructor/МастерCRM-04.png'),
     },
     {
-      src: image05,
+      src: require('../images/constructor/МастерCRM-05.png'),
     },
     {
-      src: image06,
+      src: require('../images/constructor/МастерCRM-06.png'),
     },
     {
-      src: image07,
+      src: require('../images/constructor/МастерCRM-07.png'),
     },
     {
-      src: image08,
+      src: require('../images/constructor/МастерCRM-08.png'),
     },
     {
-      src: image09,
+      src: require('../images/constructor/МастерCRM-09.png'),
     },
     {
-      src: image10,
+      src: require('../images/constructor/МастерCRM-10.png'),
     },
     {
-      src: image11,
+      src: require('../images/constructor/МастерCRM-11.png'),
     },
     {
-      src: image12,
+      src: require('../images/constructor/МастерCRM-12.png'),
     },
     {
-      src: image13,
+      src: require('../images/constructor/МастерCRM-13.png'),
     },
   ],
 };
