@@ -5,10 +5,10 @@
         <a href="https://github.com/astrotrain55" target="_blank">GitHub</a>
       </li>
       <li>
-        <a href="https://t.me/valentin_fatherland" target="_blank">Telegram</a>
+        <a href="https://www.npmjs.com/~astrotrain" target="_blank">npmjs</a>
       </li>
       <li>
-        <a href="mailto:astrotrain55@gmail.com" target="_blank">E-mail</a>
+        <a href="https://t.me/valentin_fatherland" target="_blank">Telegram</a>
       </li>
     </ul>
     <img src="@/assets/qr-code.gif" alt="Контакты">

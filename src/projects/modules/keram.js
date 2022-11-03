@@ -5,7 +5,7 @@ export default {
   tags: ['markup', 'lending', 'old'],
   images: [
     {
-      src: require('../images/artsnab/keram.png'),
+      src: './images/artsnab/keram.png',
       title: 'КЕРАМОГРАНИТ ДЛЯ ПОЛОВ И ВЕНТИЛИРУЕМЫХ ФАСАДОВ',
     },
   ],

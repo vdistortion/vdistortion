@@ -27,40 +27,40 @@ export default {
   ],
   images: [
     {
-      src: require('../images/ios/pasted image 0 (1)-min.png'),
+      src: './images/ios/pasted image 0 (1)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (2)-min.png'),
+      src: './images/ios/pasted image 0 (2)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (3)-min.png'),
+      src: './images/ios/pasted image 0 (3)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (4)-min.png'),
+      src: './images/ios/pasted image 0 (4)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (5)-min.png'),
+      src: './images/ios/pasted image 0 (5)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (6)-min.png'),
+      src: './images/ios/pasted image 0 (6)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (7)-min.png'),
+      src: './images/ios/pasted image 0 (7)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (8)-min.png'),
+      src: './images/ios/pasted image 0 (8)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0-min.png'),
+      src: './images/ios/pasted image 0-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (10)-min.png'),
+      src: './images/ios/pasted image 0 (10)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (11)-min.png'),
+      src: './images/ios/pasted image 0 (11)-min.png',
     },
     {
-      src: require('../images/ios/pasted image 0 (12)-min.png'),
+      src: './images/ios/pasted image 0 (12)-min.png',
     },
   ],
 };

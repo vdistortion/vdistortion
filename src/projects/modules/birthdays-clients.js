@@ -6,23 +6,23 @@ export default {
   tags: ['vue', 'ajax', 'bitrix24', 'stylus'],
   images: [
     {
-      src: require('../images/birthdays-clients/ДРклиентов-01.png'),
+      src: './images/birthdays-clients/ДРклиентов-01.png',
       title: 'Дни рождения клиентов',
     },
     {
-      src: require('../images/birthdays-clients/ДРклиентов-02.png'),
+      src: './images/birthdays-clients/ДРклиентов-02.png',
       title: 'Дни рождения клиентов на смартфоне',
     },
     {
-      src: require('../images/birthdays-clients/ДРклиентов-03.png'),
+      src: './images/birthdays-clients/ДРклиентов-03.png',
       title: 'Напоминания в календаре',
     },
     {
-      src: require('../images/birthdays-clients/ДРклиентов-04.png'),
+      src: './images/birthdays-clients/ДРклиентов-04.png',
       title: 'Клиенты без дней рождения',
     },
     {
-      src: require('../images/birthdays-clients/ДРклиентов-05.png'),
+      src: './images/birthdays-clients/ДРклиентов-05.png',
       title: 'Напоминание за 1 или 3 дня',
     },
   ],

@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '~@/assets/smartgrid.styl'
+@require '../assets/smartgrid.styl'
 
 .project-list
   row-flex()

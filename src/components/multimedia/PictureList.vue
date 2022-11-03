@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '~@/assets/smartgrid.styl'
+@require '../../assets/smartgrid.styl'
 
 .picture-list
   &__wrapper
