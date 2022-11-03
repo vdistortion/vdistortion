@@ -9,19 +9,19 @@ export default {
   ],
   images: [
     {
-      src: require('../images/infomats/Screenshot_1-min.jpg'),
+      src: './images/infomats/Screenshot_1-min.jpg',
       title: 'Расписание',
     },
     {
-      src: require('../images/infomats/Screenshot_2-min.jpg'),
+      src: './images/infomats/Screenshot_2-min.jpg',
       title: 'Транспорт на карте',
     },
     {
-      src: require('../images/infomats/Screenshot_3-min.jpg'),
+      src: './images/infomats/Screenshot_3-min.jpg',
       title: 'Схема проезда',
     },
     {
-      src: require('../images/infomats/Screenshot_4-min.jpg'),
+      src: './images/infomats/Screenshot_4-min.jpg',
       title: 'Маршрут',
     },
   ],

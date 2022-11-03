@@ -1,3 +1,3 @@
 const pages = require('gh-pages');
 
-pages.publish('dist', {}, console.warn).then(console.log);
+pages.publish('dist', {}, console.warn).then(console.info);

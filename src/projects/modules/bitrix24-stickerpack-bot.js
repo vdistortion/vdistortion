@@ -1,25 +1,29 @@
 export default {
-  code: 'bitrix24-stickerpack-bot',
+  code: 'bitrix24-stickerpack-bitrix24-stickerpack-bot',
   name: 'bitrix24-stickerpack-bot',
   description: 'Стикеры для порталов Битрикс24',
   link: 'https://github.com/astrotrain55/bitrix24-stickerpack-bot',
   tags: ['pet-project', 'vue', 'stylus', 'bitrix24'],
   images: [
     {
-      src: require('../images/bot/1.png'),
+      src: './images/bitrix24-stickerpack-bot/1.png',
       title: 'menu',
     },
     {
-      src: require('../images/bot/2.png'),
+      src: './images/bitrix24-stickerpack-bot/2.png',
       title: 'iframe',
     },
     {
-      src: require('../images/bot/3.png'),
+      src: './images/bitrix24-stickerpack-bot/3.png',
       title: 'ПКМ',
     },
     {
-      src: require('../images/bot/4.png'),
+      src: './images/bitrix24-stickerpack-bot/4.png',
       title: 'ЛКМ',
+    },
+    {
+      src: './images/bitrix24-stickerpack-bot/Screenshot 2022-04-11 at 23-08-15 bitrix24-stickers.png',
+      title: 'Интерфейс для добавления стикеров в Битрикс24',
     },
   ],
 };

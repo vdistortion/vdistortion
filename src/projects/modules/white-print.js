@@ -6,7 +6,7 @@ export default {
   tags: ['markup', 'lending', 'old'],
   images: [
     {
-      src: require('../images/white-print/Screenshot 2022-04-11 at 23-01-59 Заправка картриджей White Print.png'),
+      src: './images/white-print/Screenshot 2022-04-11 at 23-01-59 Заправка картриджей White Print.png',
     },
   ],
 };

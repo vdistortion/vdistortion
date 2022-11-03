@@ -12,7 +12,7 @@ export default createRouter({
     {
       path: '/:id',
       name: 'project-view',
-      component: () => import(/* webpackChunkName: 'project-view' */ '../views/ProjectView.vue'),
+      component: () => import('../views/ProjectView.vue'),
     },
   ],
 });
