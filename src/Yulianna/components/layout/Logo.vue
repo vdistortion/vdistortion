@@ -14,4 +14,6 @@ export default {
 .logo
   font-family Openhouse, sans-serif
   color $titleColor
+  text-align center
+  font-size 70px
 </style>

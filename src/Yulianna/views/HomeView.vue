@@ -8,6 +8,7 @@
 import ThePage from '../components/layout/Page.vue';
 import ProjectList from '../components/ProjectList.vue';
 import projects from '../projects/index';
+import '../assets/styles.styl';
 
 export default {
   methods: {
