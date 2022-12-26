@@ -13,8 +13,17 @@ import create from './modules/bitrix24-create-app';
 import bot from './modules/bitrix24-stickerpack-bot';
 import keram from './modules/keram';
 import wp from './modules/white-print';
+import directories from './structure.json';
 
-function parseProject(project) {
+function getImages(folderName) {
+  const folder = directories.find((dir) => dir.name === folderName);
+  return folder.children.map((file) => ({
+    file: file.name,
+    path: `./images/${folderName}/${file.name}`,
+  }));
+}
+
+function parseProject(project, imagesList = []) {
   const {
     code,
     name,
@@ -22,11 +31,16 @@ function parseProject(project) {
     detail = '',
     link = null,
     tags = [],
-    images = [],
+    imageNames = {},
     videos = [],
   } = project;
 
   if (!code || !name) return {};
+
+  const images = imagesList.map((image) => ({
+    title: imageNames[image.file] ?? '',
+    src: image.path,
+  }));
 
   return {
     [code]: {
@@ -42,19 +56,19 @@ function parseProject(project) {
 }
 
 export default {
-  ...parseProject(vueb24),
-  ...parseProject(create),
-  ...parseProject(bot),
-  ...parseProject(arb),
-  ...parseProject(infomats),
-  ...parseProject(med),
-  ...parseProject(ios),
+  ...parseProject(vueb24, getImages('vue-bitrix24')),
+  ...parseProject(create, getImages('bitrix24-create-app')),
+  ...parseProject(bot, getImages('bitrix24-stickerpack-bot')),
+  ...parseProject(arb, getImages('arb-pro')),
+  ...parseProject(infomats, getImages('infomats')),
+  ...parseProject(med, getImages('is-med')),
+  ...parseProject(ios, getImages('ios')),
   ...parseProject(usm),
-  ...parseProject(birthdays),
-  ...parseProject(birthdaysCRM),
-  ...parseProject(constructor),
-  ...parseProject(scenapro),
-  ...parseProject(nordw),
-  ...parseProject(keram),
-  ...parseProject(wp),
+  ...parseProject(birthdays, getImages('birthdays')),
+  ...parseProject(birthdaysCRM, getImages('birthdays-clients')),
+  ...parseProject(constructor, getImages('constructor')),
+  ...parseProject(scenapro, getImages('scenapro')),
+  ...parseProject(nordw, getImages('nordw')),
+  ...parseProject(keram, getImages('artsnab')),
+  ...parseProject(wp, getImages('white-print')),
 };
