@@ -18,7 +18,7 @@ function getImages(folderName) {
   const folder = directories.find((dir) => dir.name === folderName);
   return folder.children.map((file) => ({
     file: file.name,
-    path: `./images/${folderName}/${file.name}`,
+    path: `./images/projects/${folderName}/${file.name}`,
   }));
 }
 

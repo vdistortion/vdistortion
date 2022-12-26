@@ -1,6 +1,6 @@
 [
   {
-    "code": "project-female",
+    "code": "female",
     "name": "Студийная женская съёмка",
     "description": "Студийная женская съёмка",
     "tags": ["female", "studio", "sepia", "black and white"],
@@ -137,7 +137,7 @@
     ]
   },
   {
-    "code": "project-male",
+    "code": "male",
     "name": "Уличная мужская съёмка",
     "description": "Уличная мужская съёмка",
     "tags": ["male", "street", "black and white"],
