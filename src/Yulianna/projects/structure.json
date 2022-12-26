@@ -1,0 +1,272 @@
+[
+  {
+    "code": "project-female",
+    "name": "Студийная женская съёмка",
+    "description": "Студийная женская съёмка",
+    "tags": ["female", "studio", "sepia", "black and white"],
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "_DSC1513.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1516.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1519.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1522.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1532.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1545.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1546.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1552.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1555.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1577.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1580.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1592.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1597.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1600-2.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1600.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1602.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1611.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1607.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1618.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1641.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1643.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1648.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1649.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1650.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1668.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1669.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1670.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1676.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1682.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1686.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1687.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1716.jpg"
+      }
+    ]
+  },
+  {
+    "code": "project-male",
+    "name": "Уличная мужская съёмка",
+    "description": "Уличная мужская съёмка",
+    "tags": ["male", "street", "black and white"],
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "_DSC0859.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0861.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0864.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0866.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0869.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0871.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0872.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0878.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0881.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0882.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0920.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0923.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0935.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0937.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0985.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0988.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0992.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC0996.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1002.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1010.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1017.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1024.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1031.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1059.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1081.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1112.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1113.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1129.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1149.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1210.jpg"
+      },
+      {
+        "type": "file",
+        "name": "_DSC1224.jpg"
+      }
+    ]
+  }
+]
