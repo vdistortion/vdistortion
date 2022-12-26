@@ -5,10 +5,10 @@ export default {
   link: 'https://github.com/astrotrain55/bitrix24-stickerpack-bot',
   tags: ['pet-project', 'vue', 'stylus', 'bitrix24'],
   imageNames: {
-    'bitrix24-stickerpack-bot.png': 'Интерфейс для добавления стикеров в Битрикс24',
-    '1.png': 'menu',
-    '2.png': 'iframe',
-    '4.png': 'ЛКМ',
-    '3.png': 'ПКМ',
+    'bitrix24-stickerpack-bot.webp': 'Интерфейс для добавления стикеров в Битрикс24',
+    '1.webp': 'menu',
+    '2.webp': 'iframe',
+    '4.webp': 'ЛКМ',
+    '3.webp': 'ПКМ',
   },
 };
