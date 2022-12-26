@@ -3,7 +3,7 @@ import directories from './structure.json';
 function getImages(children, folderName) {
   return children.map((file) => ({
     file: file.name,
-    path: `./iguana/${folderName}/${file.name}`,
+    path: `./images/iguana/${folderName}/${file.name}`,
   }));
 }
 
@@ -43,7 +43,7 @@ let projects = {};
 directories.forEach((dir) => {
   projects = {
     ...projects,
-    ...parseProject(dir, getImages(dir.children, dir.name)),
+    ...parseProject(dir, getImages(dir.children, dir.code)),
   };
 })
 
