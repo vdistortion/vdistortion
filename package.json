@@ -15,6 +15,7 @@
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.1.96",
+    "@yeger/vue-masonry-wall": "^3.4.2",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-easy-lightbox": "^1.11.0",
