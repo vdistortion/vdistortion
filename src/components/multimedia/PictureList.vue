@@ -1,15 +1,15 @@
 <template>
-  <div v-if="images.length" class="picture-list">
-    <div class="picture-list__wrapper">
-      <div
-        v-for="(image, index) in images"
-        :key="image.src"
-        class="picture-list__item"
-        @click="showImg(index)"
-      >
-        <picture-card :image="image.src" :description="image.title"></picture-card>
-      </div>
-    </div>
+  <div v-if="images.length">
+    <masonry-wall :items="images" :column-width="520" :gap="10">
+      <template #default="{ item, index }">
+        <div
+          class="picture-list__item1"
+          @click="showImg(index)"
+        >
+          <picture-card :image="item.src" :description="item.title"></picture-card>
+        </div>
+      </template>
+    </masonry-wall>
     <vue-easy-lightbox
       :visible="visible"
       :imgs="images"
@@ -53,18 +53,3 @@ export default {
   name: 'picture-list',
 };
 </script>
-
-<style lang="stylus">
-@require '../../assets/smartgrid.styl'
-
-.picture-list
-  &__wrapper
-    row-flex()
-  &__item
-    col()
-    col-size(24)
-    col-size-w500(24)
-    col-size-w1000(12)
-    col-size-w1200(8)
-    margin-bottom $offset
-</style>
