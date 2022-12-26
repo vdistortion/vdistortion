@@ -8,10 +8,10 @@ export default {
     'jquery', 'markup',
   ],
   imageNames: {
-    'Screenshot_1-min.jpg': 'Расписание',
-    'Screenshot_2-min.jpg': 'Транспорт на карте',
-    'Screenshot_3-min.jpg': 'Схема проезда',
-    'Screenshot_4-min.jpg': 'Маршрут',
+    'Screenshot_1-min.webp': 'Расписание',
+    'Screenshot_2-min.webp': 'Транспорт на карте',
+    'Screenshot_3-min.webp': 'Схема проезда',
+    'Screenshot_4-min.webp': 'Маршрут',
   },
   videos: [
     {
