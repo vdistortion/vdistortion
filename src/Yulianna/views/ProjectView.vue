@@ -12,6 +12,7 @@
 import ThePage from '../components/layout/Page.vue';
 import ProjectDetail from '../components/ProjectDetail.vue';
 import projects from '../projects/index';
+import '../assets/styles.styl';
 
 export default {
   computed: {
