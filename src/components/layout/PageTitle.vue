@@ -3,14 +3,14 @@
     <app-icon
       v-if="$route.name !== 'home'"
       class="page-title__back"
-      name="arrow-left"
+      icon="mdiArrowLeft"
       title="На главную"
       @click="$router.push('/')"
     ></app-icon>
     <a v-if="link" class="page-title__link" :href="link" target="_blank">
       <h1 class="page-title__name">
         {{ title }}
-        <app-icon name="link-variant"></app-icon>
+        <app-icon icon="mdiLinkVariant"></app-icon>
       </h1>
     </a>
     <h1 v-else class="page-title__name">{{ title }}</h1>
