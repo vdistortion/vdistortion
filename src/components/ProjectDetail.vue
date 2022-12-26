@@ -1,7 +1,7 @@
 <template>
   <div class="project-detail">
     <div v-if="description" class="project-detail__item">
-      <div class="project-detail__description">{{ description }}</div>
+      <div class="project-detail__description" v-html="description"></div>
     </div>
     <video-list class="project-detail__item" :videos="videos"></video-list>
     <picture-list class="project-detail__item" :images="images"></picture-list>

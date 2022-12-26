@@ -3,7 +3,7 @@
     <app-card project>
       <div class="project-card__wrapper">
         <div class="project-card__name">{{ project.name }}</div>
-        <div class="project-card__description">{{ project.description }}</div>
+        <div class="project-card__description" v-html="project.description"></div>
         <div class="project-card__tags">
           <div
             v-for="tag in tags"
