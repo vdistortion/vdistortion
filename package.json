@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "vite --host",
@@ -13,19 +13,21 @@
     "reset": "git fetch --all && git reset --hard origin/master"
   },
   "dependencies": {
-    "pinia": "^2.0.23",
-    "vue": "^3.2.41",
-    "vue-easy-lightbox": "^1.9.0",
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/js": "^7.1.96",
+    "pinia": "^2.0.28",
+    "vue": "^3.2.45",
+    "vue-easy-lightbox": "^1.11.0",
     "vue-particles": "^1.0.9",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitejs/plugin-vue": "^4.0.0",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "gh-pages": "^4.0.0",
     "smart-grid": "^2.1.2",
     "stylus": "^0.59.0",
-    "vite": "^3.1.8"
+    "vite": "^4.0.0"
   }
 }

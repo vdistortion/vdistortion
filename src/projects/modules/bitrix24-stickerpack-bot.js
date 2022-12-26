@@ -1,5 +1,5 @@
 export default {
-  code: 'bitrix24-stickerpack-bitrix24-stickerpack-bot',
+  code: 'bitrix24-stickerpack-bot',
   name: 'bitrix24-stickerpack-bot',
   description: 'Стикеры для порталов Битрикс24',
   link: 'https://github.com/astrotrain55/bitrix24-stickerpack-bot',
@@ -22,7 +22,7 @@ export default {
       title: 'ЛКМ',
     },
     {
-      src: './images/bitrix24-stickerpack-bot/Screenshot 2022-04-11 at 23-08-15 bitrix24-stickers.png',
+      src: './images/bitrix24-stickerpack-bot/bitrix24-stickerpack-bot.png',
       title: 'Интерфейс для добавления стикеров в Битрикс24',
     },
   ],
