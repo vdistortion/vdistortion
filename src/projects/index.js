@@ -11,8 +11,7 @@ import nordw from './modules/nordw';
 import vueb24 from './modules/vue-bitrix24';
 import create from './modules/bitrix24-create-app';
 import bot from './modules/bitrix24-stickerpack-bot';
-import keram from './modules/keram';
-import wp from './modules/white-print';
+import oldPages from './modules/old-pages';
 import directories from './structure.json';
 
 function getImages(folderName) {
@@ -69,6 +68,5 @@ export default {
   ...parseProject(constructor, getImages('constructor')),
   ...parseProject(scenapro, getImages('scenapro')),
   ...parseProject(nordw, getImages('nordw')),
-  ...parseProject(keram, getImages('artsnab')),
-  ...parseProject(wp, getImages('white-print')),
+  ...parseProject(oldPages, getImages('old-pages')),
 };

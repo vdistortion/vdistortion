@@ -1,83 +1,5 @@
 [
   {
-    "name": "artsnab",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "keram.png"
-      }
-    ]
-  },
-  {
-    "name": "birthdays",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "ДРсотрудников-01.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-02.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-03.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-05.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-04.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-06.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-07.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-08.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРсотрудников-10.png"
-      }
-    ]
-  },
-  {
-    "name": "birthdays-clients",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "ДРклиентов-01.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРклиентов-02.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРклиентов-03.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРклиентов-04.png"
-      },
-      {
-        "type": "file",
-        "name": "ДРклиентов-05.png"
-      }
-    ]
-  },
-  {
     "name": "arb-pro",
     "type": "folder",
     "children": [
@@ -156,6 +78,74 @@
     ]
   },
   {
+    "name": "birthdays-clients",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "ДРклиентов-01.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРклиентов-02.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРклиентов-03.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРклиентов-04.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРклиентов-05.png"
+      }
+    ]
+  },
+  {
+    "name": "birthdays",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "ДРсотрудников-01.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-02.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-03.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-04.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-05.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-06.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-07.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-08.png"
+      },
+      {
+        "type": "file",
+        "name": "ДРсотрудников-10.png"
+      }
+    ]
+  },
+  {
     "name": "bitrix24-create-app",
     "type": "folder",
     "children": [
@@ -210,6 +200,60 @@
       {
         "type": "file",
         "name": "Screenshot_4-min.jpg"
+      }
+    ]
+  },
+  {
+    "name": "ios",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "pasted image 0 (1)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (10)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (11)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (12)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (2)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (3)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (4)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (5)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (6)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (7)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0 (8)-min.png"
+      },
+      {
+        "type": "file",
+        "name": "pasted image 0-min.png"
       }
     ]
   },
@@ -272,6 +316,20 @@
     ]
   },
   {
+    "name": "old-pages",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "keram.png"
+      },
+      {
+        "type": "file",
+        "name": "white-print.png"
+      }
+    ]
+  },
+  {
     "name": "nordw",
     "type": "folder",
     "children": [
@@ -286,140 +344,6 @@
       {
         "type": "file",
         "name": "Screenshot at Oct 30 16-27-05-min.png"
-      }
-    ]
-  },
-  {
-    "name": "ios",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "pasted image 0 (1)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (10)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (11)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (12)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (2)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (3)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (4)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (5)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (6)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (7)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0 (8)-min.png"
-      },
-      {
-        "type": "file",
-        "name": "pasted image 0-min.png"
-      }
-    ]
-  },
-  {
-    "name": "scenapro",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-47-08.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-47-56.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-48-18.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-49-11.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-49-40.png"
-      }
-    ]
-  },
-  {
-    "name": "vue-bitrix24",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-09 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-24 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-33 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-41 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-55 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-07 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-16 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-34 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-47 vue-bitrix24.png"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-24-35 vue-bitrix24.png"
       }
     ]
   },
@@ -514,12 +438,82 @@
     ]
   },
   {
-    "name": "white-print",
+    "name": "scenapro",
     "type": "folder",
     "children": [
       {
         "type": "file",
-        "name": "Screenshot 2022-04-11 at 23-01-59 Заправка картриджей White Print.png"
+        "name": "Screenshot at Aug 23 12-47-08.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot at Aug 23 12-47-56.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot at Aug 23 12-48-18.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot at Aug 23 12-49-11.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot at Aug 23 12-49-40.png"
+      }
+    ]
+  },
+  {
+    "name": "vue-bitrix24",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-22-09 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-22-24 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-22-33 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-22-41 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-22-55 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-23-07 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-23-16 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-23-34 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-23-47 vue-bitrix24.png"
+      },
+      {
+        "type": "file",
+        "name": "Screenshot 2022-04-12 at 00-24-35 vue-bitrix24.png"
       }
     ]
   }
