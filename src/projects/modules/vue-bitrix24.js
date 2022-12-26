@@ -7,54 +7,18 @@ export default {
   `,
   link: 'https://www.npmjs.com/package/vue-bitrix24',
   tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin'],
-  images: [
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.png',
-      title: 'bx-button',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.png',
-      title: 'bx-input',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-22-24 vue-bitrix24.png',
-      title: 'bx-input-file',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-22-09 vue-bitrix24.png',
-      title: 'bx-input-date',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-22-41 vue-bitrix24.png',
-      title: 'bx-select',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-22-33 vue-bitrix24.png',
-      title: 'bx-entity-selector',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-22-55 vue-bitrix24.png',
-      title: 'bx-radio',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-23-07 vue-bitrix24.png',
-      title: 'bx-checkbox',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-23-16 vue-bitrix24.png',
-      title: 'bx-textarea',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-23-34 vue-bitrix24.png',
-      title: 'bx-progressbar',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-23-47 vue-bitrix24.png',
-      title: 'bx-alert',
-    },
-    {
-      src: './images/vue-bitrix24/Screenshot 2022-04-12 at 00-24-35 vue-bitrix24.png',
-      title: 'bx-icon',
-    },
-  ],
+  imageNames: {
+    'Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.png': 'bx-button',
+    'Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.png': 'bx-input',
+    'Screenshot 2022-04-12 at 00-22-24 vue-bitrix24.png': 'bx-input-file',
+    'Screenshot 2022-04-12 at 00-22-09 vue-bitrix24.png': 'bx-input-date',
+    'Screenshot 2022-04-12 at 00-22-41 vue-bitrix24.png': 'bx-select',
+    'Screenshot 2022-04-12 at 00-22-33 vue-bitrix24.png': 'bx-entity-selector',
+    'Screenshot 2022-04-12 at 00-22-55 vue-bitrix24.png': 'bx-radio',
+    'Screenshot 2022-04-12 at 00-23-07 vue-bitrix24.png': 'bx-checkbox',
+    'Screenshot 2022-04-12 at 00-23-16 vue-bitrix24.png': 'bx-textarea',
+    'Screenshot 2022-04-12 at 00-23-34 vue-bitrix24.png': 'bx-progressbar',
+    'Screenshot 2022-04-12 at 00-23-47 vue-bitrix24.png': 'bx-alert',
+    'Screenshot 2022-04-12 at 00-24-35 vue-bitrix24.png': 'bx-icon',
+  },
 };

@@ -7,78 +7,24 @@ export default {
     'legacy', 'markup', 'ajax', 'svg', 'gulp', 'jquery', 'responsive', 'pug', 'stylus', 'smartgrid',
     'old',
   ],
-  images: [
-    {
-      title: 'Вход',
-      src: './images/arb-pro/Вход-min.png',
-    },
-    {
-      title: 'Главная',
-      src: './images/arb-pro/Главная-1-min.png',
-    },
-    {
-      title: 'Главная',
-      src: './images/arb-pro/Главная-2-min.png',
-    },
-    {
-      title: 'Главная',
-      src: './images/arb-pro/Главная-3-min.png',
-    },
-    {
-      title: 'Главная',
-      src: './images/arb-pro/Главная-4-min.png',
-    },
-    {
-      title: 'Диагностика',
-      src: './images/arb-pro/Диагностика-1-min.png',
-    },
-    {
-      title: 'Диагностика',
-      src: './images/arb-pro/Диагностика-2-min.png',
-    },
-    {
-      title: 'Интернет',
-      src: './images/arb-pro/Интернет-1-min.png',
-    },
-    {
-      title: 'Интернет',
-      src: './images/arb-pro/Интернет-2-min.png',
-    },
-    {
-      title: 'Интернет',
-      src: './images/arb-pro/Интернет-3-min.png',
-    },
-    {
-      title: 'Интернет',
-      src: './images/arb-pro/Интернет-4-min.png',
-    },
-    {
-      title: 'Интернет',
-      src: './images/arb-pro/Интернет-5-min.png',
-    },
-    {
-      title: 'Исследования',
-      src: './images/arb-pro/Исследования-2-min.png',
-    },
-    {
-      title: 'Исследования',
-      src: './images/arb-pro/Исследования-3-min.png',
-    },
-    {
-      title: 'Исследование',
-      src: './images/arb-pro/Исследование-1-min.png',
-    },
-    {
-      title: 'Исследование',
-      src: './images/arb-pro/Исследование-2-min.png',
-    },
-    {
-      title: 'Исследование',
-      src: './images/arb-pro/Исследование-3-min.png',
-    },
-    {
-      title: 'Исследование',
-      src: './images/arb-pro/Исследование-4-min.png',
-    },
-  ],
+  imageNames: {
+    'Вход-min.png': 'Вход',
+    'Главная-1-min.png': 'Главная',
+    'Главная-2-min.png': 'Главная',
+    'Главная-3-min.png': 'Главная',
+    'Главная-4-min.png': 'Главная',
+    'Диагностика-1-min.png': 'Диагностика',
+    'Диагностика-2-min.png': 'Диагностика',
+    'Интернет-1-min.png': 'Интернет',
+    'Интернет-2-min.png': 'Интернет',
+    'Интернет-3-min.png': 'Интернет',
+    'Интернет-4-min.png': 'Интернет',
+    'Интернет-5-min.png': 'Интернет',
+    'Исследования-2-min.png': 'Исследования',
+    'Исследования-3-min.png': 'Исследования',
+    'Исследование-1-min.png': 'Исследование',
+    'Исследование-2-min.png': 'Исследование',
+    'Исследование-3-min.png': 'Исследование',
+    'Исследование-4-min.png': 'Исследование',
+  },
 };

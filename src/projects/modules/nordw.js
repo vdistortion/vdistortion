@@ -3,18 +3,9 @@ export default {
   name: 'Список накладных',
   description: 'Доработка личного кабинета для логистической компании Nord Wheel',
   tags: ['ajax', 'vue', 'stylus'],
-  images: [
-    {
-      src: './images/nordw/Screenshot at Oct 22 11-37-58-min.png',
-      title: 'Список накладных',
-    },
-    {
-      src: './images/nordw/Screenshot at Oct 30 16-26-36-min.png',
-      title: 'Список накладных',
-    },
-    {
-      src: './images/nordw/Screenshot at Oct 30 16-27-05-min.png',
-      title: 'Список накладных',
-    },
-  ],
+  imageNames: {
+    'Screenshot at Oct 22 11-37-58-min.png': 'Список накладных',
+    'Screenshot at Oct 30 16-26-36-min.png': 'Список накладных',
+    'Screenshot at Oct 30 16-27-05-min.png': 'Список накладных',
+  },
 };

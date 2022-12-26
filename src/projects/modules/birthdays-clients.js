@@ -4,26 +4,11 @@ export default {
   description: 'Коммерческое приложение для Битрикс24',
   link: 'https://www.bitrix24.ru/apps/?app=sozdavatel.birthdaycrm',
   tags: ['vue', 'ajax', 'bitrix24', 'stylus'],
-  images: [
-    {
-      src: './images/birthdays-clients/ДРклиентов-01.png',
-      title: 'Дни рождения клиентов',
-    },
-    {
-      src: './images/birthdays-clients/ДРклиентов-02.png',
-      title: 'Дни рождения клиентов на смартфоне',
-    },
-    {
-      src: './images/birthdays-clients/ДРклиентов-03.png',
-      title: 'Напоминания в календаре',
-    },
-    {
-      src: './images/birthdays-clients/ДРклиентов-04.png',
-      title: 'Клиенты без дней рождения',
-    },
-    {
-      src: './images/birthdays-clients/ДРклиентов-05.png',
-      title: 'Напоминание за 1 или 3 дня',
-    },
-  ],
+  imageNames: {
+    'ДРклиентов-01.png': 'Дни рождения клиентов',
+    'ДРклиентов-02.png': 'Дни рождения клиентов на смартфоне',
+    'ДРклиентов-03.png': 'Напоминания в календаре',
+    'ДРклиентов-04.png': 'Клиенты без дней рождения',
+    'ДРклиентов-05.png': 'Напоминание за 1 или 3 дня',
+  },
 };
