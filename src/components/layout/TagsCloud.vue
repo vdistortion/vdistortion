@@ -70,9 +70,11 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../../assets/colors.styl'
+
 .tags-cloud
   &__title
-    color #92eaff
+    color $tagColor
     font-size 18px
     margin 0
   &__list
@@ -83,5 +85,5 @@ export default {
     color currentColor
     margin-right 10px
     &.active
-      color #c44ee4
+      color $activeTagColor
 </style>

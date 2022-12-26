@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../../assets/colors.styl'
+
 .page-title
   display flex
   column-gap 20px
@@ -47,9 +49,9 @@ export default {
     cursor pointer
   &__link
     text-decoration none
-    border-bottom 2px solid #a11ec6
+    border-bottom 2px solid $titleColor
   &__name
-    color #a11ec6
+    color $titleColor
     font-size 40px
     margin 0
 </style>
