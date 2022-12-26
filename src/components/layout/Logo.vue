@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../../assets/colors.styl'
+
 svg.logo
   .logo_0
   .logo_1
@@ -30,12 +32,12 @@ svg.logo
   .logo_5
   .logo_6
   .logo_8
-    stroke #a11ec6
+    stroke $titleColor
     stroke-width 1
     stroke-linecap round
     fill none
   .logo_7
-    fill #a11ec6
+    fill $titleColor
 
   .logo_0
     stroke-dasharray 102 104

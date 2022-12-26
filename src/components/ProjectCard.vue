@@ -45,6 +45,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@require '../assets/colors.styl'
+
 .project-card
   height 100%
   &__wrapper
@@ -54,7 +56,7 @@ export default {
     height 100%
   &__name
     padding 10px 0
-    color #a11ec6
+    color $titleColor
     font-weight 500
     font-size 20px
   &__tags
@@ -64,7 +66,7 @@ export default {
     margin-top auto
     padding 10px 0
   &__tag
-    color #92eaff
+    color $tagColor
     font-weight 500
     font-size 14px
 </style>
