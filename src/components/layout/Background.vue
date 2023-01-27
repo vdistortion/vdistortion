@@ -1,12 +1,26 @@
 <template>
-  <vue-particles class="background" :color="color" :linesColor="color"></vue-particles>
+  <vue-particles v-if="color" class="background" :color="color" :linesColor="color"></vue-particles>
 </template>
 
 <script>
 export default {
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    }
+  },
+  watch: {
+    currentRouteName(name) {
+      if (name && ['yulianna-home', 'yulianna-view'].includes(this.$route.name)) {
+        this.color = '#ff0000';
+      } else {
+        this.color = '#99a1b3';
+      }
+    },
+  },
   data() {
     return {
-      color: '#99a1b3',
+      color: null,
     };
   },
   name: 'the-background',
