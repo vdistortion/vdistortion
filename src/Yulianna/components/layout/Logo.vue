@@ -1,5 +1,8 @@
 <template>
-  <div class="logo">Iguana Portfolio</div>
+  <div class="logo">
+    <strong>твой фотограф</strong>
+    <span class="openhouse">Kira Sekira</span>
+  </div>
 </template>
 
 <script>
@@ -12,8 +15,13 @@ export default {
 @require '../../assets/colors.styl'
 
 .logo
-  font-family Openhouse, sans-serif
+  display flex
+  flex-direction column
   color $titleColor
   text-align center
-  font-size 70px
+  font-size 50px
+  font-family monospace
+  .openhouse
+    font-family Openhouse, sans-serif
+    font-size 70px
 </style>

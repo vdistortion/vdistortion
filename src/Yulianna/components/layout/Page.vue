@@ -72,7 +72,6 @@ export default {
   &__header
     margin 40px 0
   &__logo
-    display block
     max-width 1280px
     margin 0 auto
   &__title,
