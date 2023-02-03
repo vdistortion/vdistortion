@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <strong>твой фотограф</strong>
+    <span>твой фотограф</span>
     <span class="openhouse">Kira Sekira</span>
   </div>
 </template>
