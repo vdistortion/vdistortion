@@ -5,12 +5,6 @@ export default createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',
-      redirect: {
-        name: 'home',
-      },
-    },
-    {
       path: '/portfolio/',
       name: 'home',
       component: HomeView,
