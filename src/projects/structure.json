@@ -161,6 +161,10 @@
     "children": [
       {
         "type": "file",
+        "name": "0.webp"
+      },
+      {
+        "type": "file",
         "name": "1.webp"
       },
       {
@@ -174,10 +178,6 @@
       {
         "type": "file",
         "name": "4.webp"
-      },
-      {
-        "type": "file",
-        "name": "bitrix24-stickerpack-bot.webp"
       }
     ]
   },
