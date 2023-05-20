@@ -1,16 +1,22 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from './views/HomeView.vue';
 
 export default createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
+      redirect: {
+        name: 'home',
+      },
+    },
+    {
+      path: '/portfolio/',
       name: 'home',
       component: HomeView,
     },
     {
-      path: '/:id',
+      path: '/portfolio/:id',
       name: 'project-view',
       component: () => import('./views/ProjectView.vue'),
     },
