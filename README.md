@@ -2,10 +2,6 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
@@ -37,3 +33,4 @@ npm run lint
 ### Links
 * [JavaScript library to make drawing animation on SVG](https://maxwellito.github.io/vivus-instant/).
 * [HTML Arrow Symbol](https://www.toptal.com/designers/htmlarrows/arrows/)
+* [How to Deploy a Vue.js Application with Dynamic Routing on GitHub Pages](https://huishun.medium.com/how-to-deploy-a-vue-js-application-with-dynamic-routing-on-github-pages-3d36f4644e54)
