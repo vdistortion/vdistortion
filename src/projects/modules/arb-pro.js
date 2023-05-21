@@ -2,7 +2,12 @@ export default {
   code: 'arb-pro',
   name: 'АРБ Про',
   description: 'Фронтенд для сайта',
-  link: 'https://arb-pro.ru/',
+  links: [
+    {
+      name: 'Сайт',
+      url: 'https://arb-pro.ru/',
+    },
+  ],
   tags: [
     'legacy', 'markup', 'ajax', 'svg', 'gulp', 'jquery', 'responsive', 'pug', 'stylus', 'smartgrid',
     'old',

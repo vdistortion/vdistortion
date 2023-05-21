@@ -12,6 +12,8 @@ import vueb24 from './modules/vue-bitrix24';
 import create from './modules/bitrix24-create-app';
 import bot from './modules/bitrix24-stickerpack-bot';
 import oldPages from './modules/old-pages';
+import kira from './modules/kira-sekira';
+import master from './modules/master';
 import directories from './structure.json';
 
 function getImages(folderName) {
@@ -28,7 +30,7 @@ function parseProject(project, imagesList = []) {
     name,
     description = '',
     detail = '',
-    link = null,
+    links = [],
     tags = [],
     imageNames = {},
     videos = [],
@@ -46,7 +48,7 @@ function parseProject(project, imagesList = []) {
       name,
       description,
       detail,
-      link,
+      links,
       tags,
       images,
       videos,
@@ -58,7 +60,8 @@ export default {
   ...parseProject(vueb24, getImages('vue-bitrix24')),
   ...parseProject(create, getImages('bitrix24-create-app')),
   ...parseProject(bot, getImages('bitrix24-stickerpack-bot')),
-  ...parseProject(arb, getImages('arb-pro')),
+  ...parseProject(master, getImages('master')),
+  ...parseProject(kira, getImages('kira-sekira')),
   ...parseProject(infomats, getImages('infomats')),
   ...parseProject(med, getImages('is-med')),
   ...parseProject(ios, getImages('ios')),
@@ -68,5 +71,6 @@ export default {
   ...parseProject(constructor, getImages('constructor')),
   ...parseProject(scenapro, getImages('scenapro')),
   ...parseProject(nordw, getImages('nordw')),
+  ...parseProject(arb, getImages('arb-pro')),
   ...parseProject(oldPages, getImages('old-pages')),
 };

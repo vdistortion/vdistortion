@@ -3,8 +3,17 @@ export default {
   name: 'bitrix24-create-app',
   description: 'Удобный сборщик для приложений Битрикс24',
   detail: 'Удобный сборщик для приложений Битрикс24 первого и второго типов',
-  link: 'https://www.npmjs.com/package/bitrix24-create-app',
-  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin'],
+  links: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/astrotrain55/bitrix24-create-app',
+    },
+    {
+      name: 'npmjs',
+      url: 'https://www.npmjs.com/package/bitrix24-create-app',
+    },
+  ],
+  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin', 'vite'],
   imageNames: {
     'Screenshot 2022-04-12 at 00-19-00 bitrix24-create-app_templates_vue-template at master · astrotrain55_bitrix24-create-app.webp': 'Документация',
   },

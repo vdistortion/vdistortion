@@ -1,10 +1,15 @@
 <template>
-  <svg-icon type="mdi" :path="path"></svg-icon>
+  <svg-icon
+    type="mdi"
+    :path="path"
+    :size="size"
+  ></svg-icon>
 </template>
 
 <script>
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiArrowLeft, mdiLinkVariant } from '@mdi/js';
+
 export default {
   computed: {
     path() {
@@ -23,6 +28,10 @@ export default {
     icon: {
       type: String,
       required: true,
+    },
+    size: {
+      type: Number,
+      default: 24,
     },
   },
   components: {
