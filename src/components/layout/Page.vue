@@ -10,7 +10,7 @@
         <page-title
           class="page__title"
           :title="title"
-          :link="link"
+          :links="links"
         ></page-title>
         <tags-cloud
           class="page__tags"
@@ -41,9 +41,9 @@ export default {
       type: String,
       default: '',
     },
-    link: {
-      type: String,
-      default: '',
+    links: {
+      type: Array,
+      default: () => [],
     },
     tags: {
       type: Array,

@@ -2,8 +2,17 @@ export default {
   code: 'birthdays',
   name: 'Дни рождения сотрудников',
   description: 'Коммерческое приложение для Битрикс24',
-  link: 'https://www.bitrix24.ru/apps/?app=sozdavatel.birthday',
-  tags: ['vue', 'ajax', 'bitrix24', 'stylus'],
+  links: [
+    {
+      name: 'Маркетплейс',
+      url: 'https://www.bitrix24.ru/apps/?app=sozdavatel.birthday',
+    },
+    {
+      name: 'Лендинг',
+      url: 'https://application.bitrix24.site/birthdays/',
+    },
+  ],
+  tags: ['vue', 'ajax', 'bitrix24', 'stylus', 'marketplace'],
   imageNames: {
     'ДРсотрудников-01.webp': 'Дни рождения сотрудников',
     'ДРсотрудников-02.webp': 'Дни рождения коллег на смартфоне',

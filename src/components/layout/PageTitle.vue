@@ -7,13 +7,13 @@
       title="На главную"
       @click="$router.push('/')"
     ></app-icon>
-    <a v-if="link" class="page-title__link" :href="link" target="_blank">
-      <h1 class="page-title__name">
-        {{ title }}
-        <app-icon icon="mdiLinkVariant"></app-icon>
-      </h1>
+    <h1 class="page-title__name">{{ title }}</h1>
+  </div>
+  <div v-if="links.length" class="page-title__links">
+    <a v-for="link in links" :key="link.url" class="page-title__link" :href="link.url" target="_blank">
+      <app-icon icon="mdiLinkVariant" :size="16"></app-icon>
+      {{ link.name }}
     </a>
-    <h1 v-else class="page-title__name">{{ title }}</h1>
   </div>
 </template>
 
@@ -26,9 +26,9 @@ export default {
       type: String,
       default: '',
     },
-    link: {
-      type: String,
-      default: '',
+    links: {
+      type: Array,
+      default: () => [],
     },
   },
   components: {
@@ -47,9 +47,15 @@ export default {
   align-items center
   &__back
     cursor pointer
+  &__links
+    display flex
+    column-gap 20px
+    margin 10px 0 20px
   &__link
     text-decoration none
-    border-bottom 2px solid $titleColor
+    border-bottom 2px solid currentColor
+    font-size 20px
+    color inherit
   &__name
     color $titleColor
     font-size 40px

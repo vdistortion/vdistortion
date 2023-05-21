@@ -5,8 +5,21 @@ export default {
     Promise-обёртка для работы с JavaScript REST API Bitrix24, библиотека компонентов в стилистике
     Bitrix24 и набор новых методов
   `,
-  link: 'https://www.npmjs.com/package/vue-bitrix24',
-  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin'],
+  links: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/astrotrain55/vue-bitrix24',
+    },
+    {
+      name: 'npmjs',
+      url: 'https://www.npmjs.com/package/vue-bitrix24',
+    },
+    {
+      name: 'Демо',
+      url: 'http://astrotrain55.github.io/vue-bitrix24/',
+    },
+  ],
+  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin', 'vite'],
   imageNames: {
     'Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.webp': 'bx-button',
     'Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.webp': 'bx-input',

@@ -14,7 +14,10 @@ export default {
     изменить расположение ящика, изменить положение изгиба кабеля, добавить и удалить точки изгиба
     кабелей, включить и отключить отображения слоев карты сети.
   `,
-  tags: ['legacy', 'ajax', 'svg', 'vue', 'maps', 'google-maps', 'jquery', 'bootstrap', 'stylus'],
+  tags: [
+    'legacy', 'ajax', 'svg', 'vue', 'maps', 'google-maps', 'jquery', 'bootstrap', 'stylus',
+    'интерсвязь',
+  ],
   videos: [
     {
       src: 'hdkjtQ_-s6k',

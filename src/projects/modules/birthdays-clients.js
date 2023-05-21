@@ -2,8 +2,17 @@ export default {
   code: 'birthdays-crm',
   name: 'Дни рождения клиентов',
   description: 'Коммерческое приложение для Битрикс24',
-  link: 'https://www.bitrix24.ru/apps/?app=sozdavatel.birthdaycrm',
-  tags: ['vue', 'ajax', 'bitrix24', 'stylus'],
+  links: [
+    {
+      name: 'Маркетплейс',
+      url: 'https://www.bitrix24.ru/apps/?app=sozdavatel.birthdaycrm',
+    },
+    {
+      name: 'Лендинг',
+      url: 'https://application.bitrix24.site/birthdaycrm/',
+    },
+  ],
+  tags: ['vue', 'ajax', 'bitrix24', 'stylus', 'marketplace'],
   imageNames: {
     'ДРклиентов-01.webp': 'Дни рождения клиентов',
     'ДРклиентов-02.webp': 'Дни рождения клиентов на смартфоне',

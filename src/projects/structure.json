@@ -161,10 +161,6 @@
     "children": [
       {
         "type": "file",
-        "name": "0.webp"
-      },
-      {
-        "type": "file",
         "name": "1.webp"
       },
       {
@@ -178,6 +174,42 @@
       {
         "type": "file",
         "name": "4.webp"
+      }
+    ]
+  },
+  {
+    "name": "master",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "Cover1.png"
+      },
+      {
+        "type": "file",
+        "name": "Cover2.png"
+      },
+      {
+        "type": "file",
+        "name": "Cover3.png"
+      },
+      {
+        "type": "file",
+        "name": "Cover4.png"
+      }
+    ]
+  },
+  {
+    "name": "kira-sekira",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "site.png"
+      },
+      {
+        "type": "file",
+        "name": "project.png"
       }
     ]
   },

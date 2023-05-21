@@ -1,5 +1,5 @@
 <template>
-  <the-page :title="project.name" :link="project.link" :tags="project.tags">
+  <the-page :title="project.name" :links="project.links" :tags="project.tags">
     <project-detail
       :description="project.detail || project.description"
       :videos="project.videos"
