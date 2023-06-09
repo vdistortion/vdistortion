@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "directory-structure-json": "^1.0.0",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "gh-pages": "^4.0.0",
