@@ -10,7 +10,13 @@
     <h1 class="page-title__name">{{ title }}</h1>
   </div>
   <div v-if="links.length" class="page-title__links">
-    <a v-for="link in links" :key="link.url" class="page-title__link" :href="link.url" target="_blank">
+    <a
+      v-for="link in links"
+      :key="link.url"
+      class="page-title__link"
+      :href="link.url"
+      target="_blank"
+    >
       <app-icon icon="mdiLinkVariant" :size="16"></app-icon>
       {{ link.name }}
     </a>

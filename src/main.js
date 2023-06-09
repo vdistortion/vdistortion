@@ -13,4 +13,4 @@ createApp(App)
   .use(VueParticles)
   .use(MasonryWall)
   .provide(YoutubeAPI.name, YoutubeAPI)
-  .mount('#app')
+  .mount('#app');
