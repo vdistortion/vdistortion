@@ -7,7 +7,7 @@ export default {
   computed: {
     currentRouteName() {
       return this.$route.name;
-    }
+    },
   },
   watch: {
     currentRouteName(name) {

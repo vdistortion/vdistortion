@@ -38,5 +38,5 @@ export default {
     SvgIcon,
   },
   name: 'app-icon',
-}
+};
 </script>
