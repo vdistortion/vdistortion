@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card">
+  <router-link class="project-card" :to="link">
     <app-card project>
       <div class="project-card__wrapper">
         <div class="project-card__name">{{ project.name }}</div>
@@ -13,7 +13,7 @@
         </div>
       </div>
     </app-card>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -32,9 +32,13 @@ export default {
     },
   },
   props: {
+    link: {
+      type: String,
+      required: true,
+    },
     project: {
       type: Object,
-      default: () => {},
+      required: true,
     },
   },
   components: {
@@ -49,6 +53,8 @@ export default {
 
 .project-card
   height 100%
+  text-decoration none
+  color inherit
   &__wrapper
     display flex
     flex-direction column

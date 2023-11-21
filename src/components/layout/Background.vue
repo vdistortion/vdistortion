@@ -4,23 +4,9 @@
 
 <script>
 export default {
-  computed: {
-    currentRouteName() {
-      return this.$route.name;
-    },
-  },
-  watch: {
-    currentRouteName(name) {
-      if (name && ['yulianna-home', 'yulianna-view'].includes(this.$route.name)) {
-        this.color = '#ff0000';
-      } else {
-        this.color = '#99a1b3';
-      }
-    },
-  },
   data() {
     return {
-      color: null,
+      color: '#99a1b3',
     };
   },
   name: 'the-background',

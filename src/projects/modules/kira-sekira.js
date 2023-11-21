@@ -5,7 +5,7 @@ export default {
   links: [
     {
       name: 'Сайт',
-      url: 'http://astrotrain55.github.io/kira-sekira/',
+      url: '/kira-sekira/',
     },
   ],
   tags: ['pet-project', 'vue', 'stylus', 'smartgrid', 'markup', 'vite'],
