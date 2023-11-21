@@ -6,8 +6,8 @@
       class="project-list__item"
     >
       <project-card
+        :link="link"
         :project="project"
-        @click="$router.push(link)"
       ></project-card>
     </div>
   </div>

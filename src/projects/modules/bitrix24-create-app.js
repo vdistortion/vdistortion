@@ -13,7 +13,7 @@ export default {
       url: 'https://www.npmjs.com/package/bitrix24-create-app',
     },
   ],
-  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin', 'vite'],
+  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'vite'],
   imageNames: {
     'bitrix24-create-app.webp': 'Документация',
   },

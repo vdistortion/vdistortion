@@ -10,7 +10,6 @@ export default {
   ],
   tags: [
     'legacy', 'markup', 'ajax', 'svg', 'gulp', 'jquery', 'responsive', 'pug', 'stylus', 'smartgrid',
-    'old',
   ],
   imageNames: {
     'Вход-min.webp': 'Вход',

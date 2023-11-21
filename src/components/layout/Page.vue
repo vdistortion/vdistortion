@@ -7,17 +7,19 @@
     </header>
     <main>
       <div class="l-wrapper">
-        <page-title
-          class="page__title"
-          :title="title"
-          :links="links"
-        ></page-title>
-        <tags-cloud
-          class="page__tags"
-          :tags="tags"
-          :active-tag="activeTag"
-          @visible="$emit('visible', $event)"
-        ></tags-cloud>
+        <div class="page__title">
+          <page-title
+            :title="title"
+            :links="links"
+          ></page-title>
+        </div>
+        <div class="page__tags">
+          <tags-cloud
+            :tags="tags"
+            :active-tag="activeTag"
+            @visible="$emit('visible', $event)"
+          ></tags-cloud>
+        </div>
         <slot></slot>
       </div>
     </main>

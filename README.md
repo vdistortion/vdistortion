@@ -9,7 +9,8 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+npm i
+sh fixed-particles.sh
 ```
 
 ### Compile and Hot-Reload for Development

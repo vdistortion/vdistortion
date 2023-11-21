@@ -78,6 +78,16 @@
     ]
   },
   {
+    "name": "bitrix24-library",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "bitrix24-library.webp"
+      }
+    ]
+  },
+  {
     "name": "arb-pro",
     "type": "folder",
     "children": [
@@ -452,20 +462,6 @@
       {
         "type": "file",
         "name": "KlTX4Ya5Aq4-min.webp"
-      }
-    ]
-  },
-  {
-    "name": "old-pages",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "keram.webp"
-      },
-      {
-        "type": "file",
-        "name": "white-print.webp"
       }
     ]
   },

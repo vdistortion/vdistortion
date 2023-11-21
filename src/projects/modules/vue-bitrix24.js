@@ -16,7 +16,7 @@ export default {
     },
     {
       name: 'Демо',
-      url: 'http://astrotrain55.github.io/vue-bitrix24/',
+      url: '/vue-bitrix24/',
     },
   ],
   tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'npm', 'plugin', 'vite'],

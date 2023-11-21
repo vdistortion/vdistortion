@@ -9,7 +9,7 @@ export default {
     },
     {
       name: 'Демо',
-      url: 'http://astrotrain55.github.io/bitrix24-stickerpack-bot/',
+      url: '/bitrix24-stickerpack-bot/',
     },
     {
       name: 'Маркетплейс',

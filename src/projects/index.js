@@ -10,8 +10,8 @@ import scenapro from './modules/scenapro';
 import nordw from './modules/nordw';
 import vueb24 from './modules/vue-bitrix24';
 import create from './modules/bitrix24-create-app';
+import library from './modules/bitrix24-library';
 import bot from './modules/bitrix24-stickerpack-bot';
-import oldPages from './modules/old-pages';
 import kira from './modules/kira-sekira';
 import master from './modules/master';
 import directories from './structure.json';
@@ -58,6 +58,7 @@ function parseProject(project, imagesList = []) {
 
 export default {
   ...parseProject(vueb24, getImages('vue-bitrix24')),
+  ...parseProject(library, getImages('bitrix24-library')),
   ...parseProject(create, getImages('bitrix24-create-app')),
   ...parseProject(bot, getImages('bitrix24-stickerpack-bot')),
   ...parseProject(master, getImages('master')),
@@ -72,5 +73,4 @@ export default {
   ...parseProject(scenapro, getImages('scenapro')),
   ...parseProject(nordw, getImages('nordw')),
   ...parseProject(arb, getImages('arb-pro')),
-  ...parseProject(oldPages, getImages('old-pages')),
 };
