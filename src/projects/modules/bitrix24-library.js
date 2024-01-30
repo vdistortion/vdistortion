@@ -2,7 +2,8 @@ export default {
   code: 'bitrix24-library',
   name: 'bitrix24-library',
   description: 'Promise-обёртка для работы с JavaScript REST API Bitrix24',
-  detail: 'Promise-обёртка для работы с JavaScript REST API Bitrix24 и набор новых методов',
+  detail:
+    'Promise-обёртка для работы с JavaScript REST API Bitrix24 и набор новых методов',
   links: [
     {
       name: 'GitHub',

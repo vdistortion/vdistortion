@@ -1,14 +1,24 @@
 export default {
   code: 'scenapro',
   name: 'ПРО-Сцена',
-  description: 'Доработка сайта для поставщика сценических конструкций и оборудования',
+  description:
+    'Доработка сайта для поставщика сценических конструкций и оборудования',
   links: [
     {
       name: 'Страница "Наши проекты"',
       url: 'https://scenapro.ru/o-kompanii/nashi-proekty/',
     },
   ],
-  tags: ['ajax', 'vue', 'maps', 'swiper', 'responsive', 'stylus', 'yandex-maps', 'markup'],
+  tags: [
+    'ajax',
+    'vue',
+    'maps',
+    'swiper',
+    'responsive',
+    'stylus',
+    'yandex-maps',
+    'markup',
+  ],
   imageNames: {
     'Screenshot at Aug 23 12-47-08.webp': 'Сцены на карте и фильтр',
     'Screenshot at Aug 23 12-47-56.webp': 'Детальная страница со слайдером',

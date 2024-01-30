@@ -1,7 +1,8 @@
 export default {
   code: 'bitrix24-stickerpack-bot',
   name: 'bitrix24-stickerpack-bot',
-  description: 'Стикеры для порталов Битрикс24<br>Ctrl+Shift+T переключает страницы',
+  description:
+    'Стикеры для порталов Битрикс24<br>Ctrl+Shift+T переключает страницы',
   links: [
     {
       name: 'GitHub',

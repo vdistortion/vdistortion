@@ -12,5 +12,13 @@ export default {
       url: 'https://application.bitrix24.site/konstruktor_otchetov/',
     },
   ],
-  tags: ['vue', 'ajax', 'bitrix24', 'vuetify', 'stylus', 'markup', 'marketplace'],
+  tags: [
+    'vue',
+    'ajax',
+    'bitrix24',
+    'vuetify',
+    'stylus',
+    'markup',
+    'marketplace',
+  ],
 };
