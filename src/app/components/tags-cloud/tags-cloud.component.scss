@@ -1,0 +1,24 @@
+@import "../../../styles/colors";
+
+.tags-cloud {
+  &__title {
+    color: $tagColor;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &__list {
+    margin-top: 5px;
+  }
+
+  &__tag {
+    display: inline-block;
+    text-decoration: none;
+    color: currentColor;
+    margin-right: 10px;
+
+    &.active {
+      color: $activeTagColor;
+    }
+  }
+}
