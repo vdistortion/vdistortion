@@ -16,7 +16,15 @@ export default {
       url: '/vue-bitrix24/',
     },
   ],
-  tags: ['pet-project', 'vue', 'storybook', 'bitrix24', 'npm', 'plugin', 'vite'],
+  tags: [
+    'pet-project',
+    'vue',
+    'storybook',
+    'bitrix24',
+    'npm',
+    'plugin',
+    'vite',
+  ],
   imageNames: {
     'Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.webp': 'bx-button',
     'Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.webp': 'bx-input',
