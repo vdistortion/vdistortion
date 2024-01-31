@@ -1,0 +1,81 @@
+@import '../../../styles/colors';
+
+svg.logo {
+  .logo_0,
+  .logo_1,
+  .logo_2,
+  .logo_3,
+  .logo_4,
+  .logo_5,
+  .logo_6,
+  .logo_8 {
+    stroke: $titleColor;
+    stroke-width: 1;
+    stroke-linecap: round;
+    fill: none;
+  }
+
+  .logo_7 {
+    fill: $titleColor;
+  }
+
+  .logo_0 {
+    stroke-dasharray: 102 104;
+    stroke-dashoffset: 103;
+    animation: logo_draw 2000ms linear 0ms forwards;
+  }
+
+  .logo_1 {
+    stroke-dasharray: 114 116;
+    stroke-dashoffset: 115;
+    animation: logo_draw 2000ms linear 125ms forwards;
+  }
+
+  .logo_2 {
+    stroke-dasharray: 87 89;
+    stroke-dashoffset: 88;
+    animation: logo_draw 2000ms linear 250ms forwards;
+  }
+
+  .logo_3 {
+    stroke-dasharray: 114 116;
+    stroke-dashoffset: 115;
+    animation: logo_draw 2000ms linear 375ms forwards;
+  }
+
+  .logo_4 {
+    stroke-dasharray: 55 57;
+    stroke-dashoffset: 56;
+    animation: logo_draw 2000ms linear 500ms forwards;
+  }
+
+  .logo_5 {
+    stroke-dasharray: 48 50;
+    stroke-dashoffset: 49;
+    animation: logo_draw 2000ms linear 625ms forwards;
+  }
+
+  .logo_6 {
+    stroke-dasharray: 114 116;
+    stroke-dashoffset: 115;
+    animation: logo_draw 2000ms linear 750ms forwards;
+  }
+
+  .logo_7 {
+    stroke-dasharray: 7 9;
+    stroke-dashoffset: 8;
+    animation: logo_draw 2000ms linear 875ms forwards;
+  }
+
+  .logo_8 {
+    stroke-dasharray: 125 127;
+    stroke-dashoffset: 126;
+    animation: logo_draw 2000ms linear 1000ms forwards;
+  }
+
+  @keyframes logo_draw {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+}

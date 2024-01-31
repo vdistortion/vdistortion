@@ -1,0 +1,35 @@
+@import '../../../../styles/colors';
+
+.project-card {
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  &__name {
+    padding: 10px 0;
+    color: $titleColor;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    margin-top: auto;
+    padding: 10px 0;
+  }
+
+  &__tag {
+    color: $tagColor;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}

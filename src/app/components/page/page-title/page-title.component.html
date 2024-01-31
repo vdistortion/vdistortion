@@ -1,0 +1,21 @@
+<div class="page-title">
+  @if (!isHomePage) {
+    <a routerLink="">
+      <app-ui-icon
+        icon="mdiArrowLeft"
+        title="На главную"
+      ></app-ui-icon>
+    </a>
+  }
+  <h1 class="page-title__name">{{ title }}</h1>
+</div>
+@if (links.length) {
+  <div class="page-title__links">
+    @for (link of links; track link.url) {
+      <a class="page-title__link" [href]="link.url" target="_blank">
+        <app-ui-icon icon="mdiLinkVariant" [size]="16"></app-ui-icon>
+        {{ link.name }}
+      </a>
+    }
+  </div>
+}
