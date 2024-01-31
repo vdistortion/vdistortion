@@ -1,1 +1,10 @@
-<app-project-card></app-project-card>
+<div class="project-list">
+  @for (project of visibleProject; track project.link) {
+    <div class="project-list__item">
+      <app-project-card
+        [link]="project.link"
+        [project]="project"
+      ></app-project-card>
+    </div>
+  }
+</div>

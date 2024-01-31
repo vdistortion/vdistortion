@@ -16,47 +16,107 @@ import kira from './modules/kira-sekira';
 import master from './modules/master';
 import directories from './structure.json';
 
-function getImages(folderName) {
-  const folder = directories.find((dir) => dir.name === folderName);
-  return folder.children.map((file) => ({
+type TypeFile = {
+  type: string;
+  name: string;
+};
+
+type TypeFolder = {
+  type: string;
+  name: string;
+  children: TypeFile[];
+};
+
+export type TypeLink = {
+  url: string;
+  name: string;
+};
+
+export type TypeVideo = {
+  src: string;
+  title?: string;
+};
+
+type TypeImageList = {
+  file: string;
+  path: string;
+};
+
+export type TypeImage = {
+  src: string;
+  title: string;
+};
+
+type TypeModule = {
+  code: string;
+  name: string;
+  tags: string[];
+  description: string;
+  detail?: string;
+  links?: TypeLink[];
+  videos?: TypeVideo[];
+  imageNames?: {
+    [index: string]: string;
+  };
+};
+
+export type TypeProject = {
+  name: string;
+  tags: string[];
+  description: string;
+  detail: string;
+  links: TypeLink[];
+  videos: TypeVideo[];
+  images: TypeImage[];
+};
+
+export type TypeProjects = {
+  [index: string]: TypeProject;
+};
+
+function getImages(folderName: string) {
+  const folder: TypeFolder = directories.find(
+    (dir: TypeFolder) => dir.name === folderName,
+  )!;
+  return folder.children.map((file: TypeFile) => ({
     file: file.name,
-    path: `./images/projects/${folderName}/${file.name}`,
+    path: `assets/images/projects/${folderName}/${file.name}`,
   }));
 }
 
-function parseProject(project, imagesList = []) {
+function parseProject(project: TypeModule, imagesList: TypeImageList[] = []) {
   const {
     code,
     name,
-    description = '',
+    tags,
+    description,
     detail = '',
     links = [],
-    tags = [],
     imageNames = {},
     videos = [],
   } = project;
-
-  if (!code || !name) return {};
 
   const images = imagesList.map((image) => ({
     title: imageNames[image.file] ?? '',
     src: image.path,
   }));
 
+  const result: TypeProject = {
+    name,
+    description,
+    detail,
+    links,
+    tags,
+    images,
+    videos,
+  };
+
   return {
-    [code]: {
-      name,
-      description,
-      detail,
-      links,
-      tags,
-      images,
-      videos,
-    },
+    [code]: result,
   };
 }
 
-export default {
+export const projects: TypeProjects = {
   ...parseProject(vueb24, getImages('vue-bitrix24')),
   ...parseProject(library, getImages('bitrix24-library')),
   ...parseProject(create, getImages('bitrix24-create-app')),

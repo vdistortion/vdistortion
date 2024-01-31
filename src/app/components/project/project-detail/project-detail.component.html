@@ -1,2 +1,13 @@
-<app-video-list></app-video-list>
-<app-picture-list></app-picture-list>
+<div class="project-detail">
+  @if (description) {
+    <div class="project-detail__item">
+      <div class="project-detail__description" [innerHTML]="description"></div>
+    </div>
+  }
+  <div class="project-detail__item">
+    <app-video-list [videos]="videos"></app-video-list>
+  </div>
+  <div class="project-detail__item">
+    <app-picture-list [images]="images"></app-picture-list>
+  </div>
+</div>

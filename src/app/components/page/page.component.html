@@ -1,4 +1,36 @@
-<app-logo></app-logo>
-<app-page-title></app-page-title>
-<app-tags-cloud></app-tags-cloud>
-<app-footer-content></app-footer-content>
+<div id="app">
+  <div class="page">
+    @if (isHomePage) {
+      <header class="page__header">
+        <div class="l-wrapper">
+          <app-logo class="page__logo"></app-logo>
+        </div>
+      </header>
+    }
+    <main>
+      <div class="l-wrapper">
+        <div class="page__title">
+          <app-page-title
+            [title]="title"
+            [links]="links"
+            [isHomePage]="isHomePage"
+          ></app-page-title>
+        </div>
+        <div class="page__tags">
+          <app-tags-cloud
+            [tags]="tags"
+            [activeTag]="activeTag"
+            [isHomePage]="isHomePage"
+            (visible)="onVisible($event)"
+          ></app-tags-cloud>
+        </div>
+        <ng-content></ng-content>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="l-wrapper">
+      <app-footer-content></app-footer-content>
+    </div>
+  </footer>
+</div>

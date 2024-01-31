@@ -1,1 +1,15 @@
-<app-ui-card></app-ui-card>
+<a class="project-card" [routerLink]="'project/' + link">
+  <app-ui-card [isProject]="true">
+    <div class="project-card__wrapper">
+      <div class="project-card__name">{{ project.name }}</div>
+      <div class="project-card__description" [innerHTML]="project.description"></div>
+      <div class="project-card__tags">
+        @for (tag of tags; track tag) {
+          <div class="project-card__tag">
+            {{ tag }}
+          </div>
+        }
+      </div>
+    </div>
+  </app-ui-card>
+</a>

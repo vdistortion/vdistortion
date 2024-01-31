@@ -1,13 +1,9 @@
-@import "../../../../styles/colors";
+@import '../../../../styles/colors';
 
 .page-title {
   display: flex;
   column-gap: 20px;
   align-items: center;
-
-  &__back {
-    cursor: pointer;
-  }
 
   &__links {
     display: flex;

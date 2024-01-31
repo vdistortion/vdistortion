@@ -2,6 +2,12 @@ export default {
   code: 'smart-stop',
   name: 'Умная остановка',
   description: 'Расписание общественного транспорта на остановках',
+  links: [
+    {
+      name: 'Описание проекта',
+      url: 'https://russiasmartcity.ru/solutions/76',
+    },
+  ],
   tags: [
     'ajax',
     'gulp',

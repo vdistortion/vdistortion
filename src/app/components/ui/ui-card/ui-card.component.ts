@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-ui-card',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './ui-card.component.html',
   styleUrl: './ui-card.component.scss',
 })
-export class UiCardComponent {}
+export class UiCardComponent {
+  @Input() public isProject: boolean = false;
+}

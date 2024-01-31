@@ -1,3 +1,9 @@
-<app-page>
-  <app-project-list></app-project-list>
+<app-page
+  title="Проекты"
+  [tags]="cloud"
+  [activeTag]="activeTag"
+  [isHomePage]="true"
+  (visible)="onVisible($event)"
+>
+  <app-project-list [projects]="visibleProjects"></app-project-list>
 </app-page>
