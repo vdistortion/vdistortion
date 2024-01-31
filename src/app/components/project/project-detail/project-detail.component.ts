@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { VideoListComponent } from '../../video/video-list/video-list.component';
 import { PictureListComponent } from '../../pictures/picture-list/picture-list.component';
+import { TypeImage, TypeVideo } from '../../../../projects';
 
 @Component({
   selector: 'app-project-detail',
@@ -9,4 +10,8 @@ import { PictureListComponent } from '../../pictures/picture-list/picture-list.c
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss',
 })
-export class ProjectDetailComponent {}
+export class ProjectDetailComponent {
+  @Input() public description: string = '';
+  @Input() public videos: TypeVideo[] = [];
+  @Input() public images: TypeImage[] = [];
+}

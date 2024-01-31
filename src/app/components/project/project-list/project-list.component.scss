@@ -1,4 +1,4 @@
-@import "../../../../styles/smartgrid";
+@import '../../../../styles/smartgrid';
 
 .project-list {
   @include row-flex();
@@ -9,6 +9,7 @@
     @include col-size-w500(12);
     @include col-size-w1000(8);
     @include col-size-w1200(6);
+    display: block;
     margin-bottom: $offset;
   }
 }

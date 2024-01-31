@@ -8,5 +8,5 @@ export default {
       url: '/kira-sekira/',
     },
   ],
-  tags: ['pet-project', 'vue', 'stylus', 'smartgrid', 'markup', 'vite'],
+  tags: ['pet-project', 'angular', 'scss', 'smartgrid', 'markup', 'typescript'],
 };

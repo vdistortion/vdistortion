@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { VideoCardComponent } from '../video-card/video-card.component';
+import { TypeVideo } from '../../../../projects';
 
 @Component({
   selector: 'app-video-list',
@@ -8,4 +9,6 @@ import { VideoCardComponent } from '../video-card/video-card.component';
   templateUrl: './video-list.component.html',
   styleUrl: './video-list.component.scss',
 })
-export class VideoListComponent {}
+export class VideoListComponent {
+  @Input() public videos: TypeVideo[] = [];
+}

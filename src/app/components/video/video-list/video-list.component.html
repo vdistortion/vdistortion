@@ -1,1 +1,9 @@
-<app-video-card></app-video-card>
+@if (videos.length) {
+  <div class="video-list">
+    @for (video of videos; track video.src) {
+      <div class="video-list__item">
+        <app-video-card [id]="video.src" [name]="video.title"></app-video-card>
+      </div>
+    }
+  </div>
+}
