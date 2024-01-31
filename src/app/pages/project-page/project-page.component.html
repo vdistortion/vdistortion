@@ -1,0 +1,13 @@
+@if (project) {
+  <app-page
+    [title]="project.name"
+    [links]="project.links"
+    [tags]="project.tags"
+  >
+    <app-project-detail
+      [description]="project.detail || project.description"
+      [videos]="project.videos"
+      [images]="project.images"
+    ></app-project-detail>
+  </app-page>
+}

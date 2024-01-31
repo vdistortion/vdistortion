@@ -1,0 +1,34 @@
+<div class="tags-cloud">
+  @if (isHomePage) {
+    <app-ui-card>
+      <h2 class="tags-cloud__title">Облако тегов</h2>
+      <div class="tags-cloud__list">
+        @for (tag of sortedTags; track tag) {
+          <a
+            href="#"
+            class="tags-cloud__tag"
+            [ngClass]="{ active: activeTag === tag }"
+            (click)="onVisible(tag)"
+          >
+            @if (tag === 'all') {
+              <span>Все проекты</span>
+            } @else {
+              <span>#{{ tag }}</span>
+            }
+          </a>
+        }
+      </div>
+    </app-ui-card>
+  } @else {
+    <app-ui-card>
+      <h2 class="tags-cloud__title">Теги</h2>
+      <div class="tags-cloud__list">
+        @for (tag of sortedTags; track tag) {
+          <div class="tags-cloud__tag">
+            <span>#{{ tag }}</span>
+          </div>
+        }
+      </div>
+    </app-ui-card>
+  }
+</div>
