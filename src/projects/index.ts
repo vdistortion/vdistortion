@@ -1,21 +1,21 @@
-import arb from './modules/arb-pro';
+import arbPro from './modules/arb-pro';
 import smartStop from './modules/smart-stop';
-import med from './modules/is-med';
+import isMobile from './modules/is-mobile';
 import ios from './modules/ios';
 import usm from './modules/usm';
 import birthdays from './modules/birthdays';
-import birthdaysCRM from './modules/birthdays-clients';
+import birthdaysClients from './modules/birthdays-clients';
 import constructor from './modules/constructor';
-import scenapro from './modules/scenapro';
+import scenaPro from './modules/scenapro';
 import nordw from './modules/nordw';
-import vueb24 from './modules/vue-bitrix24';
-import create from './modules/bitrix24-create-app';
-import library from './modules/bitrix24-library';
-import stickers from './modules/bitrix24-stickerpack-app';
-import kira from './modules/kira-sekira';
+import vueBitrix24 from './modules/vue-bitrix24';
+import bitrix24CreateApp from './modules/bitrix24-create-app';
+import bitrix24Library from './modules/bitrix24-library';
+import bitrix24StickersApp from './modules/bitrix24-stickerpack-app';
+import kiraSekira from './modules/kira-sekira';
 import creablast from './modules/creablast';
 import master from './modules/master';
-import bot from './modules/imp-telegram-bot';
+import impTelegramBot from './modules/imp-telegram-bot';
 import directories from './structure.json';
 
 type TypeFile = {
@@ -119,22 +119,22 @@ function parseProject(project: TypeModule, imagesList: TypeImageList[] = []) {
 }
 
 export const projects: TypeProjects = {
-  ...parseProject(vueb24, getImages('vue-bitrix24')),
-  ...parseProject(library, getImages('bitrix24-library')),
-  ...parseProject(create, getImages('bitrix24-create-app')),
-  ...parseProject(stickers, getImages('bitrix24-stickerpack-app')),
+  ...parseProject(vueBitrix24, getImages('vue-bitrix24')),
+  ...parseProject(bitrix24Library, getImages('bitrix24-library')),
+  ...parseProject(bitrix24CreateApp, getImages('bitrix24-create-app')),
+  ...parseProject(bitrix24StickersApp, getImages('bitrix24-stickerpack-app')),
   ...parseProject(master, getImages('master')),
-  ...parseProject(kira, getImages('kira-sekira')),
+  ...parseProject(kiraSekira, getImages('kira-sekira')),
   ...parseProject(creablast, getImages('creablast')),
-  ...parseProject(bot, getImages('imp-telegram-bot')),
+  ...parseProject(impTelegramBot, getImages('imp-telegram-bot')),
   ...parseProject(smartStop, getImages('smart-stop')),
-  ...parseProject(med, getImages('is-med')),
+  ...parseProject(isMobile, getImages('is-mobile')),
   ...parseProject(ios, getImages('ios')),
   ...parseProject(usm),
   ...parseProject(birthdays, getImages('birthdays')),
-  ...parseProject(birthdaysCRM, getImages('birthdays-clients')),
+  ...parseProject(birthdaysClients, getImages('birthdays-clients')),
   ...parseProject(constructor, getImages('constructor')),
-  ...parseProject(scenapro, getImages('scenapro')),
+  ...parseProject(scenaPro, getImages('scenapro')),
   ...parseProject(nordw, getImages('nordw')),
-  ...parseProject(arb, getImages('arb-pro')),
+  ...parseProject(arbPro, getImages('arb-pro')),
 };

@@ -398,7 +398,7 @@
     ]
   },
   {
-    "name": "is-med",
+    "name": "is-mobile",
     "type": "folder",
     "children": [
       {
