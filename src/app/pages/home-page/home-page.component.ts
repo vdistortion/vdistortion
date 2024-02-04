@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project/project-list/project-list.component';
 import { projects, TypeProjects, TypeProject } from '../../../projects';
@@ -9,13 +9,9 @@ import { projects, TypeProjects, TypeProject } from '../../../projects';
   imports: [PageComponent, ProjectListComponent],
   templateUrl: './home-page.component.html',
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
   public projects: TypeProjects = projects;
   public activeTag: string = 'all';
-
-  ngOnInit() {
-    document.title = 'Портфолио';
-  }
 
   onVisible(tag: string) {
     this.activeTag = this.activeTag === tag ? 'all' : tag;
