@@ -1,5 +1,5 @@
 import arb from './modules/arb-pro';
-import infomats from './modules/infomats';
+import smartStop from './modules/smart-stop';
 import med from './modules/is-med';
 import ios from './modules/ios';
 import usm from './modules/usm';
@@ -11,9 +11,11 @@ import nordw from './modules/nordw';
 import vueb24 from './modules/vue-bitrix24';
 import create from './modules/bitrix24-create-app';
 import library from './modules/bitrix24-library';
-import bot from './modules/bitrix24-stickerpack-bot';
+import stickers from './modules/bitrix24-stickerpack-app';
 import kira from './modules/kira-sekira';
+import creablast from './modules/creablast';
 import master from './modules/master';
+import bot from './modules/imp-telegram-bot';
 import directories from './structure.json';
 
 type TypeFile = {
@@ -120,10 +122,12 @@ export const projects: TypeProjects = {
   ...parseProject(vueb24, getImages('vue-bitrix24')),
   ...parseProject(library, getImages('bitrix24-library')),
   ...parseProject(create, getImages('bitrix24-create-app')),
-  ...parseProject(bot, getImages('bitrix24-stickerpack-bot')),
+  ...parseProject(stickers, getImages('bitrix24-stickerpack-app')),
   ...parseProject(master, getImages('master')),
   ...parseProject(kira, getImages('kira-sekira')),
-  ...parseProject(infomats, getImages('infomats')),
+  ...parseProject(creablast, getImages('creablast')),
+  ...parseProject(bot, getImages('imp-telegram-bot')),
+  ...parseProject(smartStop, getImages('smart-stop')),
   ...parseProject(med, getImages('is-med')),
   ...parseProject(ios, getImages('ios')),
   ...parseProject(usm),

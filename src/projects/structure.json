@@ -166,24 +166,50 @@
     ]
   },
   {
-    "name": "bitrix24-stickerpack-bot",
+    "name": "bitrix24-stickerpack-app",
     "type": "folder",
     "children": [
       {
         "type": "file",
-        "name": "1.webp"
+        "name": "1.png"
       },
       {
         "type": "file",
-        "name": "2.webp"
+        "name": "2.png"
       },
       {
         "type": "file",
-        "name": "3.webp"
+        "name": "3.png"
       },
       {
         "type": "file",
-        "name": "4.webp"
+        "name": "4.png"
+      },
+      {
+        "type": "file",
+        "name": "5.png"
+      },
+      {
+        "type": "file",
+        "name": "6.png"
+      }
+    ]
+  },
+  {
+    "name": "creablast",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "1.png"
+      },
+      {
+        "type": "file",
+        "name": "2.png"
+      },
+      {
+        "type": "file",
+        "name": "3.png"
       }
     ]
   },
@@ -282,7 +308,7 @@
     ]
   },
   {
-    "name": "infomats",
+    "name": "smart-stop",
     "type": "folder",
     "children": [
       {
@@ -364,10 +390,6 @@
       {
         "type": "file",
         "name": "Screenshot at Oct 22 11-37-58-min.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Oct 30 16-26-36-min.webp"
       },
       {
         "type": "file",
@@ -542,6 +564,24 @@
       {
         "type": "file",
         "name": "Screenshot 2022-04-12 at 00-24-35 vue-bitrix24.webp"
+      }
+    ]
+  },
+  {
+    "name": "imp-telegram-bot",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "1.jpg"
+      },
+      {
+        "type": "file",
+        "name": "2.png"
+      },
+      {
+        "type": "file",
+        "name": "3.png"
       }
     ]
   }
