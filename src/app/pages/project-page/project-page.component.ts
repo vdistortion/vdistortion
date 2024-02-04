@@ -19,7 +19,9 @@ export class ProjectPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    document.title = this.project ? this.project.name : '';
+    document.title = this.project
+      ? `${this.project.name} | ${this.route.snapshot.title}`
+      : '';
   }
 
   get project(): TypeProject | null {

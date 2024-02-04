@@ -5,10 +5,12 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 export const routes: Routes = [
   {
     path: '',
+    title: 'Портфолио фронтенд-разработчика',
     component: HomePageComponent,
   },
   {
     path: 'project/:id',
+    title: 'Портфолио фронтенд-разработчика',
     component: ProjectPageComponent,
   },
   {
