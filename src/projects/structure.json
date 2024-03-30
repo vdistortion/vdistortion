@@ -241,11 +241,15 @@
     "children": [
       {
         "type": "file",
-        "name": "site.png"
+        "name": "index.webp"
       },
       {
         "type": "file",
-        "name": "project.png"
+        "name": "project.webp"
+      },
+      {
+        "type": "file",
+        "name": "animals.webp"
       }
     ]
   },
