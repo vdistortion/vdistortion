@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier --write src",
-    "grid": "node smartgrid.js",
+    "grid": "node smartgrid.js && npx sass-migrator division src/styles/_smartgrid.scss && prettier --write src/styles/_smartgrid.scss",
     "public": "npm run build && gh-pages -d dist/portfolio/browser -t --nojekyll",
     "reset": "git fetch --all && git reset --hard origin/master"
   },

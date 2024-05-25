@@ -1,7 +1,8 @@
 export default {
   code: 'bitrix24-stickerpack-app',
   name: 'bitrix24-stickerpack-app',
-  description:
+  description: 'Стикеры для порталов Битрикс24',
+  detail:
     'Стикеры для порталов Битрикс24<br>Ctrl+Shift+T переключает страницы<br>Приложение поддерживает новые чаты',
   links: [
     {
@@ -21,5 +22,15 @@ export default {
       url: 'https://application.bitrix24.site/stickers/',
     },
   ],
-  tags: ['pet-project', 'vue', 'stylus', 'bitrix24', 'marketplace', 'vite'],
+  tags: [
+    'angular',
+    'typescript',
+    'scss',
+    'pet-project',
+    'vue',
+    'stylus',
+    'bitrix24',
+    'marketplace',
+    'vite',
+  ],
 };
