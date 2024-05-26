@@ -12,5 +12,5 @@ export default {
       url: 'https://t.me/ImpTelegramBot',
     },
   ],
-  tags: ['bot', 'telegram', 'nodejs', 'ajax', 'pet-project'],
+  tags: ['bot', 'telegram', 'nodejs', 'ajax', 'pet-project', 'typescript'],
 };
