@@ -9,6 +9,7 @@ import constructor from './modules/constructor';
 import scenaPro from './modules/scenapro';
 import nordw from './modules/nordw';
 import vueBitrix24 from './modules/vue-bitrix24';
+import toWebpJson from './modules/to-webp-json';
 import bitrix24CreateApp from './modules/bitrix24-create-app';
 import bitrix24Library from './modules/bitrix24-library';
 import bitrix24StickersApp from './modules/bitrix24-stickerpack-app';
@@ -123,6 +124,7 @@ export const projects: TypeProjects = {
   ...parseProject(bitrix24Library, getImages('bitrix24-library')),
   ...parseProject(bitrix24CreateApp, getImages('bitrix24-create-app')),
   ...parseProject(bitrix24StickersApp, getImages('bitrix24-stickerpack-app')),
+  ...parseProject(toWebpJson, getImages('to-webp-json')),
   ...parseProject(master, getImages('master')),
   ...parseProject(kiraSekira, getImages('kira-sekira')),
   ...parseProject(creablast, getImages('creablast')),
