@@ -254,6 +254,16 @@
     ]
   },
   {
+    "name": "to-webp-json",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "to-webp-json.webp"
+      }
+    ]
+  },
+  {
     "name": "constructor",
     "type": "folder",
     "children": [
