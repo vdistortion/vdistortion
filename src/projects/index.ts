@@ -18,6 +18,45 @@ import master from './modules/master';
 import impTelegramBot from './modules/imp-telegram-bot';
 import directories from './structure.json';
 
+export type TypeTag =
+  | 'ajax'
+  | 'angular'
+  | 'bitrix24'
+  | 'bootstrap'
+  | 'bot'
+  | 'google-maps'
+  | 'gulp'
+  | 'jquery'
+  | 'latex'
+  | 'leaflet'
+  | 'legacy'
+  | 'maps'
+  | 'marketplace'
+  | 'markup'
+  | 'nodejs'
+  | 'npm'
+  | 'pet-project'
+  | 'plugin'
+  | 'pug'
+  | 'responsive'
+  | 'scss'
+  | 'smartgrid'
+  | 'storybook'
+  | 'stylus'
+  | 'svg'
+  | 'swiper'
+  | 'telegram'
+  | 'typescript'
+  | 'vite'
+  | 'vue'
+  | 'vuetify'
+  | 'webpack'
+  | 'yandex-maps'
+  | 'интерсвязь';
+
+const t: TypeTag[] = ['ajax', 'vue', 'stylus'];
+console.log(t);
+
 type TypeFile = {
   type: string;
   name: string;
@@ -52,7 +91,7 @@ export type TypeImage = {
 type TypeModule = {
   code: string;
   name: string;
-  tags: string[];
+  tags: TypeTag[];
   description: string;
   detail?: string;
   links?: TypeLink[];
@@ -64,7 +103,7 @@ type TypeModule = {
 
 export type TypeProject = {
   name: string;
-  tags: string[];
+  tags: TypeTag[];
   description: string;
   detail: string;
   links: TypeLink[];
@@ -86,7 +125,10 @@ function getImages(folderName: string) {
   }));
 }
 
-function parseProject(project: TypeModule, imagesList: TypeImageList[] = []) {
+function parseProject(
+  project: TypeModule,
+  imagesList: TypeImageList[] = [],
+): Record<string, TypeProject> {
   const {
     code,
     name,
@@ -119,22 +161,31 @@ function parseProject(project: TypeModule, imagesList: TypeImageList[] = []) {
 }
 
 export const projects: TypeProjects = {
-  ...parseProject(vueBitrix24, getImages('vue-bitrix24')),
-  ...parseProject(bitrix24Library, getImages('bitrix24-library')),
-  ...parseProject(bitrix24CreateApp, getImages('bitrix24-create-app')),
-  ...parseProject(bitrix24StickersApp, getImages('bitrix24-stickerpack-app')),
-  ...parseProject(toWebpJson, getImages('to-webp-json')),
-  ...parseProject(master, getImages('master')),
-  ...parseProject(kiraSekira, getImages('kira-sekira')),
-  ...parseProject(creablast, getImages('creablast')),
-  ...parseProject(impTelegramBot, getImages('imp-telegram-bot')),
-  ...parseProject(smartStop, getImages('smart-stop')),
-  ...parseProject(isMobile, getImages('is-mobile')),
-  ...parseProject(ios, getImages('ios')),
-  ...parseProject(usm),
-  ...parseProject(birthdays, getImages('birthdays')),
-  ...parseProject(birthdaysClients, getImages('birthdays-clients')),
-  ...parseProject(constructor, getImages('constructor')),
-  ...parseProject(scenaPro, getImages('scenapro')),
-  ...parseProject(arbPro, getImages('arb-pro')),
+  ...parseProject(vueBitrix24 as TypeModule, getImages('vue-bitrix24')),
+  ...parseProject(bitrix24Library as TypeModule, getImages('bitrix24-library')),
+  ...parseProject(
+    bitrix24CreateApp as TypeModule,
+    getImages('bitrix24-create-app'),
+  ),
+  ...parseProject(
+    bitrix24StickersApp as TypeModule,
+    getImages('bitrix24-stickerpack-app'),
+  ),
+  ...parseProject(toWebpJson as TypeModule, getImages('to-webp-json')),
+  ...parseProject(master as TypeModule, getImages('master')),
+  ...parseProject(kiraSekira as TypeModule, getImages('kira-sekira')),
+  ...parseProject(creablast as TypeModule, getImages('creablast')),
+  ...parseProject(impTelegramBot as TypeModule, getImages('imp-telegram-bot')),
+  ...parseProject(smartStop as TypeModule, getImages('smart-stop')),
+  ...parseProject(isMobile as TypeModule, getImages('is-mobile')),
+  ...parseProject(ios as TypeModule, getImages('ios')),
+  ...parseProject(usm as TypeModule),
+  ...parseProject(birthdays as TypeModule, getImages('birthdays')),
+  ...parseProject(
+    birthdaysClients as TypeModule,
+    getImages('birthdays-clients'),
+  ),
+  ...parseProject(constructor as TypeModule, getImages('constructor')),
+  ...parseProject(scenaPro as TypeModule, getImages('scenapro')),
+  ...parseProject(arbPro as TypeModule, getImages('arb-pro')),
 };
