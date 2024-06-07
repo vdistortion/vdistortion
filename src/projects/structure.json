@@ -42,7 +42,7 @@
     ]
   },
   {
-    "name": "birthdays-clients",
+    "name": "birthdays-crm",
     "type": "folder",
     "children": [
       {
@@ -264,7 +264,7 @@
     ]
   },
   {
-    "name": "constructor",
+    "name": "master-crm",
     "type": "folder",
     "children": [
       {

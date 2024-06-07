@@ -4,8 +4,8 @@ import isMobile from './modules/is-mobile';
 import ios from './modules/ios';
 import usm from './modules/usm';
 import birthdays from './modules/birthdays';
-import birthdaysClients from './modules/birthdays-clients';
-import constructor from './modules/constructor';
+import birthdaysCrm from './modules/birthdays-crm';
+import masterCrm from './modules/master-crm';
 import scenaPro from './modules/scenapro';
 import vueBitrix24 from './modules/vue-bitrix24';
 import toWebpJson from './modules/to-webp-json';
@@ -171,21 +171,18 @@ export const projects: TypeProjects = {
     bitrix24StickersApp as TypeModule,
     getImages('bitrix24-stickerpack-app'),
   ),
-  ...parseProject(toWebpJson as TypeModule, getImages('to-webp-json')),
-  ...parseProject(master as TypeModule, getImages('master')),
-  ...parseProject(kiraSekira as TypeModule, getImages('kira-sekira')),
-  ...parseProject(creablast as TypeModule, getImages('creablast')),
-  ...parseProject(impTelegramBot as TypeModule, getImages('imp-telegram-bot')),
-  ...parseProject(smartStop as TypeModule, getImages('smart-stop')),
-  ...parseProject(isMobile as TypeModule, getImages('is-mobile')),
-  ...parseProject(ios as TypeModule, getImages('ios')),
+  ...parseProject(toWebpJson as TypeModule, getImages(toWebpJson.code)),
+  ...parseProject(master as TypeModule, getImages(master.code)),
+  ...parseProject(kiraSekira as TypeModule, getImages(kiraSekira.code)),
+  ...parseProject(creablast as TypeModule, getImages(creablast.code)),
+  ...parseProject(impTelegramBot as TypeModule, getImages(impTelegramBot.code)),
+  ...parseProject(smartStop as TypeModule, getImages(smartStop.code)),
+  ...parseProject(isMobile as TypeModule, getImages(isMobile.code)),
+  ...parseProject(ios as TypeModule, getImages(ios.code)),
   ...parseProject(usm as TypeModule),
-  ...parseProject(birthdays as TypeModule, getImages('birthdays')),
-  ...parseProject(
-    birthdaysClients as TypeModule,
-    getImages('birthdays-clients'),
-  ),
-  ...parseProject(constructor as TypeModule, getImages('constructor')),
-  ...parseProject(scenaPro as TypeModule, getImages('scenapro')),
-  ...parseProject(arbPro as TypeModule, getImages('arb-pro')),
+  ...parseProject(birthdays as TypeModule, getImages(birthdays.code)),
+  ...parseProject(birthdaysCrm as TypeModule, getImages(birthdaysCrm.code)),
+  ...parseProject(masterCrm as TypeModule, getImages(masterCrm.code)),
+  ...parseProject(scenaPro as TypeModule, getImages(scenaPro.code)),
+  ...parseProject(arbPro as TypeModule, getImages(arbPro.code)),
 };
