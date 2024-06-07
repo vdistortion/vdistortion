@@ -398,20 +398,6 @@
     ]
   },
   {
-    "name": "nordw",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "Screenshot at Oct 22 11-37-58-min.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Oct 30 16-27-05-min.webp"
-      }
-    ]
-  },
-  {
     "name": "is-mobile",
     "type": "folder",
     "children": [

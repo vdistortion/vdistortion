@@ -7,7 +7,6 @@ import birthdays from './modules/birthdays';
 import birthdaysClients from './modules/birthdays-clients';
 import constructor from './modules/constructor';
 import scenaPro from './modules/scenapro';
-import nordw from './modules/nordw';
 import vueBitrix24 from './modules/vue-bitrix24';
 import toWebpJson from './modules/to-webp-json';
 import bitrix24CreateApp from './modules/bitrix24-create-app';
@@ -137,6 +136,5 @@ export const projects: TypeProjects = {
   ...parseProject(birthdaysClients, getImages('birthdays-clients')),
   ...parseProject(constructor, getImages('constructor')),
   ...parseProject(scenaPro, getImages('scenapro')),
-  ...parseProject(nordw, getImages('nordw')),
   ...parseProject(arbPro, getImages('arb-pro')),
 };
