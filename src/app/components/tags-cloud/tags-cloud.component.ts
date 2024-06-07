@@ -1,12 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { UiCardComponent } from '../ui/ui-card/ui-card.component';
-import { NgClass } from '@angular/common';
 import type { TypeTag } from '../../../projects';
 
 @Component({
   selector: 'app-tags-cloud',
   standalone: true,
-  imports: [UiCardComponent, NgClass],
+  imports: [UiCardComponent],
   templateUrl: './tags-cloud.component.html',
   styleUrl: './tags-cloud.component.scss',
 })
