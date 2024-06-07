@@ -7,7 +7,7 @@
           <a
             href="#"
             class="tags-cloud__tag"
-            [ngClass]="{ active: activeTag === tag }"
+            [class.active]="activeTag === tag"
             (click)="onVisible(tag)"
           >
             @if (tag === 'all') {
