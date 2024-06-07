@@ -11,7 +11,7 @@ export const module: TypeModule = {
     },
     {
       name: 'Лендинг',
-      url: 'https://application.bitrix24.site/birthdaycrm/',
+      url: 'https://apps.sozdavatel.ru/birthdaycrm/',
     },
   ],
   tags: ['vue', 'ajax', 'bitrix24', 'stylus', 'marketplace'],
