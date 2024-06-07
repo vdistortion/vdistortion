@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'imp-telegram-bot',
   name: '😈 ImpBot 😈',
   description: 'Бот для Telegram',

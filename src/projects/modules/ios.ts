@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'ios',
   name: 'Интерфейс оптических схем',
   description:

@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectDetailComponent } from '../../components/project/project-detail/project-detail.component';
-import { projects, TypeProjects, TypeProject } from '../../../projects';
+import {
+  projects,
+  type TypeProjects,
+  type TypeProject,
+} from '../../../projects';
 
 @Component({
   selector: 'app-project-page',

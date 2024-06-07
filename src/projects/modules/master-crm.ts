@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'master-crm',
   name: 'Мастер отчётов CRM',
   description: 'Коммерческое приложение для Битрикс24',

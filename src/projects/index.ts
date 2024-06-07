@@ -1,118 +1,46 @@
-import arbPro from './modules/arb-pro';
-import smartStop from './modules/smart-stop';
-import isMobile from './modules/is-mobile';
-import ios from './modules/ios';
-import usm from './modules/usm';
-import birthdays from './modules/birthdays';
-import birthdaysCrm from './modules/birthdays-crm';
-import masterCrm from './modules/master-crm';
-import scenaPro from './modules/scenapro';
-import vueBitrix24 from './modules/vue-bitrix24';
-import toWebpJson from './modules/to-webp-json';
-import bitrix24CreateApp from './modules/bitrix24-create-app';
-import bitrix24Library from './modules/bitrix24-library';
-import bitrix24StickersApp from './modules/bitrix24-stickerpack-app';
-import kiraSekira from './modules/kira-sekira';
-import creablast from './modules/creablast';
-import master from './modules/master';
-import impTelegramBot from './modules/imp-telegram-bot';
+import { module as arbPro } from './modules/arb-pro';
+import { module as smartStop } from './modules/smart-stop';
+import { module as isMobile } from './modules/is-mobile';
+import { module as ios } from './modules/ios';
+import { module as usm } from './modules/usm';
+import { module as birthdays } from './modules/birthdays';
+import { module as birthdaysCrm } from './modules/birthdays-crm';
+import { module as masterCrm } from './modules/master-crm';
+import { module as scenaPro } from './modules/scenapro';
+import { module as vueBitrix24 } from './modules/vue-bitrix24';
+import { module as toWebpJson } from './modules/to-webp-json';
+import { module as bitrix24CreateApp } from './modules/bitrix24-create-app';
+import { module as bitrix24Library } from './modules/bitrix24-library';
+import { module as bitrix24StickersApp } from './modules/bitrix24-stickerpack-app';
+import { module as kiraSekira } from './modules/kira-sekira';
+import { module as creablast } from './modules/creablast';
+import { module as master } from './modules/master';
+import { module as impTelegramBot } from './modules/imp-telegram-bot';
 import directories from './structure.json';
+import type {
+  TypeTag,
+  TypeFile,
+  TypeLink,
+  TypeImage,
+  TypeVideo,
+  TypeFolder,
+  TypeModule,
+  TypeProject,
+  TypeProjects,
+  TypeImageList,
+} from './types';
 
-export type TypeTag =
-  | 'ajax'
-  | 'angular'
-  | 'bitrix24'
-  | 'bootstrap'
-  | 'bot'
-  | 'google-maps'
-  | 'gulp'
-  | 'jquery'
-  | 'latex'
-  | 'leaflet'
-  | 'legacy'
-  | 'maps'
-  | 'marketplace'
-  | 'markup'
-  | 'nodejs'
-  | 'npm'
-  | 'pet-project'
-  | 'plugin'
-  | 'pug'
-  | 'responsive'
-  | 'scss'
-  | 'smartgrid'
-  | 'storybook'
-  | 'stylus'
-  | 'svg'
-  | 'swiper'
-  | 'telegram'
-  | 'typescript'
-  | 'vite'
-  | 'vue'
-  | 'vuetify'
-  | 'webpack'
-  | 'yandex-maps'
-  | 'интерсвязь';
-
-const t: TypeTag[] = ['ajax', 'vue', 'stylus'];
-console.log(t);
-
-type TypeFile = {
-  type: string;
-  name: string;
-};
-
-type TypeFolder = {
-  type: string;
-  name: string;
-  children: TypeFile[];
-};
-
-export type TypeLink = {
-  url: string;
-  name: string;
-};
-
-export type TypeVideo = {
-  src: string;
-  title?: string;
-};
-
-type TypeImageList = {
-  file: string;
-  path: string;
-};
-
-export type TypeImage = {
-  src: string;
-  title: string;
-};
-
-type TypeModule = {
-  code: string;
-  name: string;
-  tags: TypeTag[];
-  description: string;
-  detail?: string;
-  links?: TypeLink[];
-  videos?: TypeVideo[];
-  imageNames?: {
-    [index: string]: string;
-  };
-};
-
-export type TypeProject = {
-  name: string;
-  tags: TypeTag[];
-  description: string;
-  detail: string;
-  links: TypeLink[];
-  videos: TypeVideo[];
-  images: TypeImage[];
-};
-
-export type TypeProjects = {
-  [index: string]: TypeProject;
+export {
+  TypeTag,
+  TypeFile,
+  TypeLink,
+  TypeImage,
+  TypeVideo,
+  TypeFolder,
+  TypeModule,
+  TypeProject,
+  TypeProjects,
+  TypeImageList,
 };
 
 function getImages(folderName: string) {
@@ -128,7 +56,7 @@ function getImages(folderName: string) {
 function parseProject(
   project: TypeModule,
   imagesList: TypeImageList[] = [],
-): Record<string, TypeProject> {
+): TypeProjects {
   const {
     code,
     name,
@@ -161,28 +89,22 @@ function parseProject(
 }
 
 export const projects: TypeProjects = {
-  ...parseProject(vueBitrix24 as TypeModule, getImages('vue-bitrix24')),
-  ...parseProject(bitrix24Library as TypeModule, getImages('bitrix24-library')),
-  ...parseProject(
-    bitrix24CreateApp as TypeModule,
-    getImages('bitrix24-create-app'),
-  ),
-  ...parseProject(
-    bitrix24StickersApp as TypeModule,
-    getImages('bitrix24-stickerpack-app'),
-  ),
-  ...parseProject(toWebpJson as TypeModule, getImages(toWebpJson.code)),
-  ...parseProject(master as TypeModule, getImages(master.code)),
-  ...parseProject(kiraSekira as TypeModule, getImages(kiraSekira.code)),
-  ...parseProject(creablast as TypeModule, getImages(creablast.code)),
-  ...parseProject(impTelegramBot as TypeModule, getImages(impTelegramBot.code)),
-  ...parseProject(smartStop as TypeModule, getImages(smartStop.code)),
-  ...parseProject(isMobile as TypeModule, getImages(isMobile.code)),
-  ...parseProject(ios as TypeModule, getImages(ios.code)),
-  ...parseProject(usm as TypeModule),
-  ...parseProject(birthdays as TypeModule, getImages(birthdays.code)),
-  ...parseProject(birthdaysCrm as TypeModule, getImages(birthdaysCrm.code)),
-  ...parseProject(masterCrm as TypeModule, getImages(masterCrm.code)),
-  ...parseProject(scenaPro as TypeModule, getImages(scenaPro.code)),
-  ...parseProject(arbPro as TypeModule, getImages(arbPro.code)),
+  ...parseProject(vueBitrix24, getImages(vueBitrix24.code)),
+  ...parseProject(bitrix24Library, getImages(bitrix24Library.code)),
+  ...parseProject(bitrix24CreateApp, getImages(bitrix24CreateApp.code)),
+  ...parseProject(bitrix24StickersApp, getImages(bitrix24StickersApp.code)),
+  ...parseProject(toWebpJson, getImages(toWebpJson.code)),
+  ...parseProject(master, getImages(master.code)),
+  ...parseProject(kiraSekira, getImages(kiraSekira.code)),
+  ...parseProject(creablast, getImages(creablast.code)),
+  ...parseProject(impTelegramBot, getImages(impTelegramBot.code)),
+  ...parseProject(smartStop, getImages(smartStop.code)),
+  ...parseProject(isMobile, getImages(isMobile.code)),
+  ...parseProject(ios, getImages(ios.code)),
+  ...parseProject(usm),
+  ...parseProject(birthdays, getImages(birthdays.code)),
+  ...parseProject(birthdaysCrm, getImages(birthdaysCrm.code)),
+  ...parseProject(masterCrm, getImages(masterCrm.code)),
+  ...parseProject(scenaPro, getImages(scenaPro.code)),
+  ...parseProject(arbPro, getImages(arbPro.code)),
 };

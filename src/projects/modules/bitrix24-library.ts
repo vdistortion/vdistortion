@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'bitrix24-library',
   name: 'bitrix24-library',
   description: 'Promise-обёртка для работы с JavaScript REST API Bitrix24',

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { UiIconComponent } from '../../ui/ui-icon/ui-icon.component';
-import { TypeLink } from '../../../../projects';
+import type { TypeLink } from '../../../../projects';
 import { RouterLink } from '@angular/router';
 
 @Component({

@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'birthdays-crm',
   name: 'Дни рождения клиентов',
   description: 'Коммерческое приложение для Битрикс24',

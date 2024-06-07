@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { VideoCardComponent } from '../video-card/video-card.component';
-import { TypeVideo } from '../../../../projects';
+import type { TypeVideo } from '../../../../projects';
 
 @Component({
   selector: 'app-video-list',
