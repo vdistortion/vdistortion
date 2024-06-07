@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { UiCardComponent } from '../ui/ui-card/ui-card.component';
 import type { TypeTag } from '../../../projects';
 
@@ -13,13 +13,6 @@ export class TagsCloudComponent {
   @Input() public tags: (TypeTag | 'all')[] = [];
   @Input({ required: true }) public activeTag: TypeTag | 'all';
   @Input() public isHomePage: boolean = false;
-  @Output() public visible: EventEmitter<TypeTag | 'all'> = new EventEmitter<
-    TypeTag | 'all'
-  >();
-
-  onVisible(tag: TypeTag | 'all') {
-    this.visible.emit(tag);
-  }
 
   get sortedTags(): (TypeTag | 'all')[] {
     const sortedTags = this.tags

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project/project-list/project-list.component';
 import {
@@ -18,8 +19,10 @@ export class HomePageComponent {
   public projects: TypeProjects = projects;
   public activeTag: TypeTag | 'all' = 'all';
 
-  onVisible(tag: TypeTag | 'all') {
-    this.activeTag = this.activeTag === tag ? 'all' : tag;
+  constructor(private route: ActivatedRoute) {
+    this.route.fragment.subscribe((hash: any) => {
+      if (this.cloud.includes(hash)) this.activeTag = hash;
+    });
   }
 
   get tags(): Record<TypeTag | 'all', string[]> {
