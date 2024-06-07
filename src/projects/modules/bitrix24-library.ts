@@ -9,14 +9,14 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/bitrix24-library',
+      url: 'bitrix24-library',
     },
     {
       name: 'npmjs',
-      url: 'https://www.npmjs.com/package/bitrix24-library',
+      url: 'bitrix24-library',
     },
   ],
-  tags: ['pet-project', 'bitrix24', 'npm', 'vite', 'plugin'],
+  tags: ['github', 'pet-project', 'bitrix24', 'npm', 'vite', 'plugin'],
   imageNames: {
     'bitrix24-library.webp': 'Документация',
   },

@@ -7,11 +7,11 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/vue-bitrix24',
+      url: 'vue-bitrix24',
     },
     {
       name: 'npmjs',
-      url: 'https://www.npmjs.com/package/vue-bitrix24',
+      url: 'vue-bitrix24',
     },
     {
       name: 'Storybook',
@@ -19,6 +19,7 @@ export const module: TypeModule = {
     },
   ],
   tags: [
+    'github',
     'pet-project',
     'vue',
     'storybook',

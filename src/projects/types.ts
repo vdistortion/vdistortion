@@ -5,6 +5,7 @@ export type TypeTag =
   | 'bootstrap'
   | 'bot'
   | 'google-maps'
+  | 'github'
   | 'gulp'
   | 'jquery'
   | 'latex'
