@@ -21,7 +21,7 @@ export const module: TypeModule = {
     },
     {
       name: 'Лендинг',
-      url: 'https://application.bitrix24.site/stickers/',
+      url: 'https://apps.sozdavatel.ru/stickers/',
     },
   ],
   tags: [

@@ -20,7 +20,7 @@ export const module: TypeModule = {
   links: [
     {
       name: 'Структурная схема дома на SVG',
-      url: '/house-scheme/',
+      url: '/house-scheme-svg/',
     },
   ],
   tags: [

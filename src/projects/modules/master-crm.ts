@@ -11,7 +11,7 @@ export const module: TypeModule = {
     },
     {
       name: 'Лендинг',
-      url: 'https://application.bitrix24.site/konstruktor_otchetov/',
+      url: 'https://apps.sozdavatel.ru/konstruktor_otchetov/',
     },
   ],
   tags: [
