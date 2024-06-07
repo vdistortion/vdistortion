@@ -3,9 +3,9 @@ import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project/project-list/project-list.component';
 import {
   projects,
-  TypeProjects,
-  TypeProject,
-  TypeTag,
+  type TypeProjects,
+  type TypeProject,
+  type TypeTag,
 } from '../../../projects';
 
 @Component({

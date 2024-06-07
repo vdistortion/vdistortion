@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'to-webp-json',
   name: 'to-webp-json',
   description: 'Обработчик изображений для статики',

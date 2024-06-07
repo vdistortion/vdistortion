@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'bitrix24-stickerpack-app',
   name: 'bitrix24-stickerpack-app',
   description: 'Стикеры для порталов Битрикс24',

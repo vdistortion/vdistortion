@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { VideoListComponent } from '../../video/video-list/video-list.component';
 import { PictureListComponent } from '../../pictures/picture-list/picture-list.component';
-import { TypeImage, TypeVideo } from '../../../../projects';
+import type { TypeImage, TypeVideo } from '../../../../projects';
 
 @Component({
   selector: 'app-project-detail',

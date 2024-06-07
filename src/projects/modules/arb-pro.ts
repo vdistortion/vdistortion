@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'arb-pro',
   name: 'АРБ Про',
   description: 'Фронтенд для сайта',

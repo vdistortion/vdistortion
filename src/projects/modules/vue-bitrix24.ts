@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'vue-bitrix24',
   name: 'vue-bitrix24',
   description: `Библиотека компонентов в стилистике Bitrix24`,

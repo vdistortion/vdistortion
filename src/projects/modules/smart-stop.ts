@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'smart-stop',
   name: 'Умная остановка',
   description: 'Расписание общественного транспорта на остановках',

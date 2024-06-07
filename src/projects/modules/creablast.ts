@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'creablast',
   name: 'Creablast',
   description: 'Портфолио в розовых тонах',

@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'usm',
   name: 'Приложение для регионального менеджера',
   description: 'Интерфейс для редактирования регионов на карте',

@@ -3,7 +3,7 @@ import { LogoComponent } from '../logo/logo.component';
 import { PageTitleComponent } from './page-title/page-title.component';
 import { TagsCloudComponent } from '../tags-cloud/tags-cloud.component';
 import { FooterContentComponent } from '../footer-content/footer-content.component';
-import { TypeLink, TypeTag } from '../../../projects';
+import type { TypeLink, TypeTag } from '../../../projects';
 
 @Component({
   selector: 'app-page',

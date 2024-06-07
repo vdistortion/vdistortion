@@ -1,4 +1,6 @@
-export default {
+import type { TypeModule } from '../types';
+
+export const module: TypeModule = {
   code: 'bitrix24-create-app',
   name: 'bitrix24-create-app',
   description: 'Удобный сборщик для приложений Битрикс24',
