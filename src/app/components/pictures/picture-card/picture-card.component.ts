@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class PictureCardComponent {
   @Input({ required: true }) public image: string;
-  @Input() public description: string = '';
+  @Input({ required: true }) public description: string;
 }

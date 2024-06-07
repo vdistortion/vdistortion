@@ -11,7 +11,7 @@ import type { TypeImage, TypeVideo } from '../../../../projects';
   styleUrl: './project-detail.component.scss',
 })
 export class ProjectDetailComponent {
-  @Input() public description: string = '';
-  @Input() public videos: TypeVideo[] = [];
-  @Input() public images: TypeImage[] = [];
+  @Input({ required: true }) public description: string;
+  @Input({ required: true }) public videos: TypeVideo[];
+  @Input({ required: true }) public images: TypeImage[];
 }

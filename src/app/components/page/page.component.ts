@@ -18,9 +18,9 @@ import type { TypeLink, TypeTag } from '../../../projects';
   styleUrl: './page.component.scss',
 })
 export class PageComponent {
-  @Input() public title: string = '';
+  @Input({ required: true }) public name: string;
+  @Input({ required: true }) public tags: (TypeTag | 'all')[];
+  @Input() public activeTag: TypeTag | 'all' = 'all';
   @Input() public links: TypeLink[] = [];
-  @Input() public tags: (TypeTag | 'all')[] = [];
-  @Input({ required: true }) public activeTag: TypeTag | 'all';
   @Input() public isHomePage: boolean = false;
 }

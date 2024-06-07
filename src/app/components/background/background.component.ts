@@ -44,10 +44,6 @@ export class BackgroundComponent implements OnInit {
   constructor(private readonly ngParticlesService: NgParticlesService) {}
 
   ngOnInit(): void {
-    this.ngParticlesService
-      .init(async (engine) => {
-        await loadLinksPreset(engine);
-      })
-      .catch(console.error);
+    this.ngParticlesService.init(loadLinksPreset).catch(console.error);
   }
 }
