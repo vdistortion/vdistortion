@@ -8,11 +8,29 @@
 </div>
 @if (links.length) {
   <div class="page-title__links">
-    @for (link of links; track link.url) {
-      <a class="page-title__link" [href]="link.url" target="_blank">
-        <app-ui-icon icon="mdiLinkVariant" [size]="16"></app-ui-icon>
-        {{ link.name }}
-      </a>
+    @for (link of links; track link.name) {
+      @if (link.name === 'GitHub') {
+        <a
+          class="page-title__link"
+          [href]="'https://github.com/astrotrain55/' + link.url"
+          target="_blank"
+        >
+          <app-ui-icon icon="mdiGithub" [size]="30"></app-ui-icon>
+        </a>
+      } @else if (link.name === 'npmjs') {
+        <a
+          class="page-title__link"
+          [href]="'https://www.npmjs.com/package/' + link.url"
+          target="_blank"
+        >
+          <app-ui-icon icon="mdiNpm" [size]="40"></app-ui-icon>
+        </a>
+      } @else {
+        <a class="page-title__link" [href]="link.url" target="_blank">
+          <app-ui-icon icon="mdiLinkVariant" [size]="16"></app-ui-icon>
+          {{ link.name }}
+        </a>
+      }
     }
   </div>
 }

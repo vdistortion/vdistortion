@@ -7,8 +7,8 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/Master100pages',
+      url: 'Master100pages',
     },
   ],
-  tags: ['nodejs', 'latex', 'pet-project'],
+  tags: ['github', 'nodejs', 'latex', 'pet-project'],
 };

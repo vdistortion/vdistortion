@@ -5,7 +5,7 @@
       <div class="tags-cloud__list">
         @for (tag of sortedTags; track tag) {
           <a
-            [href]="'#'+(activeTag === tag ? 'all' : tag)"
+            [href]="'#' + (activeTag === tag ? 'all' : tag)"
             class="tags-cloud__tag"
             [class.active]="activeTag === tag"
           >

@@ -7,12 +7,20 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/imp-telegram-bot',
+      url: 'imp-telegram-bot',
     },
     {
       name: 'Telegram',
       url: 'https://t.me/ImpTelegramBot',
     },
   ],
-  tags: ['bot', 'telegram', 'nodejs', 'ajax', 'pet-project', 'typescript'],
+  tags: [
+    'github',
+    'bot',
+    'telegram',
+    'nodejs',
+    'ajax',
+    'pet-project',
+    'typescript',
+  ],
 };

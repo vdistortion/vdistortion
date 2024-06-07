@@ -8,14 +8,15 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/bitrix24-create-app',
+      url: 'bitrix24-create-app',
     },
     {
       name: 'npmjs',
-      url: 'https://www.npmjs.com/package/bitrix24-create-app',
+      url: 'bitrix24-create-app',
     },
   ],
   tags: [
+    'github',
     'angular',
     'typescript',
     'scss',

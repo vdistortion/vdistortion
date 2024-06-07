@@ -9,14 +9,14 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/to-webp-json',
+      url: 'to-webp-json',
     },
     {
       name: 'npmjs',
-      url: 'https://www.npmjs.com/package/to-webp-json',
+      url: 'to-webp-json',
     },
   ],
-  tags: ['typescript', 'nodejs', 'npm', 'pet-project'],
+  tags: ['github', 'typescript', 'nodejs', 'npm', 'pet-project'],
   imageNames: {
     'to-webp-json.webp': 'Документация',
   },

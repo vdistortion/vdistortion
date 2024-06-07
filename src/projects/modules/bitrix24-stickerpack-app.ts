@@ -9,7 +9,7 @@ export const module: TypeModule = {
   links: [
     {
       name: 'GitHub',
-      url: 'https://github.com/astrotrain55/bitrix24-stickerpack-app',
+      url: 'bitrix24-stickerpack-app',
     },
     {
       name: 'Демо',
@@ -25,6 +25,7 @@ export const module: TypeModule = {
     },
   ],
   tags: [
+    'github',
     'angular',
     'typescript',
     'scss',
