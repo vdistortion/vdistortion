@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { UiCardComponent } from '../ui/ui-card/ui-card.component';
-import { NgClass } from '@angular/common';
 
 type Item = {
   name: string;
@@ -10,7 +9,7 @@ type Item = {
 @Component({
   selector: 'app-footer-content',
   standalone: true,
-  imports: [UiCardComponent, NgClass],
+  imports: [UiCardComponent],
   templateUrl: './footer-content.component.html',
   styleUrl: './footer-content.component.scss',
 })

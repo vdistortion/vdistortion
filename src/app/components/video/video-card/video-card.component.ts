@@ -10,5 +10,5 @@ import { YouTubePlayer } from '@angular/youtube-player';
 })
 export class VideoCardComponent {
   @Input({ required: true }) public id: string;
-  @Input() public name: string | undefined = '';
+  @Input({ required: true }) public name: string | undefined;
 }

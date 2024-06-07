@@ -11,7 +11,7 @@ import type { TypeImage } from '../../../../projects';
   styleUrl: './picture-list.component.scss',
 })
 export class PictureListComponent implements OnInit {
-  @Input() public images: TypeImage[] = [];
+  @Input({ required: true }) public images: TypeImage[];
   public isInit: boolean = false;
 
   options = {

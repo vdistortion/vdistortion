@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { UiIconComponent } from '../../ui/ui-icon/ui-icon.component';
 import type { TypeLink } from '../../../../projects';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-page-title',
@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './page-title.component.scss',
 })
 export class PageTitleComponent {
-  @Input() public title: string = '';
-  @Input() public links: TypeLink[] = [];
-  @Input() public isHomePage: boolean = false;
+  @Input({ required: true }) public title: string;
+  @Input({ required: true }) public links: TypeLink[];
+  @Input({ required: true }) public isHomePage: boolean;
 }

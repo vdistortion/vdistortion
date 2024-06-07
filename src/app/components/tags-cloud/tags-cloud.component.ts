@@ -10,9 +10,9 @@ import type { TypeTag } from '../../../projects';
   styleUrl: './tags-cloud.component.scss',
 })
 export class TagsCloudComponent {
-  @Input() public tags: (TypeTag | 'all')[] = [];
+  @Input({ required: true }) public tags: (TypeTag | 'all')[];
   @Input({ required: true }) public activeTag: TypeTag | 'all';
-  @Input() public isHomePage: boolean = false;
+  @Input({ required: true }) public isHomePage: boolean;
 
   get sortedTags(): (TypeTag | 'all')[] {
     const sortedTags = this.tags

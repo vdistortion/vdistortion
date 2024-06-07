@@ -10,5 +10,5 @@ import type { TypeVideo } from '../../../../projects';
   styleUrl: './video-list.component.scss',
 })
 export class VideoListComponent {
-  @Input() public videos: TypeVideo[] = [];
+  @Input({ required: true }) public videos: TypeVideo[];
 }

@@ -1,4 +1,6 @@
 <div class="video-card">
   <youtube-player [videoId]="id"></youtube-player>
-  <h2 class="video-card__title">{{ name }}</h2>
+  @if (name) {
+    <h2 class="video-card__title">{{ name }}</h2>
+  }
 </div>
