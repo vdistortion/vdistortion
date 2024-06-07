@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { UiCardComponent } from '../ui/ui-card/ui-card.component';
 import { NgClass } from '@angular/common';
+import { TypeTag } from '../../../projects';
 
 @Component({
   selector: 'app-tags-cloud',
@@ -10,16 +11,18 @@ import { NgClass } from '@angular/common';
   styleUrl: './tags-cloud.component.scss',
 })
 export class TagsCloudComponent {
-  @Input() public tags: string[] = [];
-  @Input() public activeTag: string = '';
+  @Input() public tags: (TypeTag | 'all')[] = [];
+  @Input({ required: true }) public activeTag: TypeTag | 'all';
   @Input() public isHomePage: boolean = false;
-  @Output() public visible: EventEmitter<any> = new EventEmitter();
+  @Output() public visible: EventEmitter<TypeTag | 'all'> = new EventEmitter<
+    TypeTag | 'all'
+  >();
 
-  onVisible(tag: string) {
+  onVisible(tag: TypeTag | 'all') {
     this.visible.emit(tag);
   }
 
-  get sortedTags() {
+  get sortedTags(): (TypeTag | 'all')[] {
     const sortedTags = this.tags
       .filter((tag) => tag !== 'all')
       .sort((a, b) => {

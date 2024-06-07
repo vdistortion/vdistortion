@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project/project-list/project-list.component';
-import { projects, TypeProjects, TypeProject } from '../../../projects';
+import {
+  projects,
+  TypeProjects,
+  TypeProject,
+  TypeTag,
+} from '../../../projects';
 
 @Component({
   selector: 'app-home-page',
@@ -11,31 +16,32 @@ import { projects, TypeProjects, TypeProject } from '../../../projects';
 })
 export class HomePageComponent {
   public projects: TypeProjects = projects;
-  public activeTag: string = 'all';
+  public activeTag: TypeTag | 'all' = 'all';
 
-  onVisible(tag: string) {
+  onVisible(tag: TypeTag | 'all') {
     this.activeTag = this.activeTag === tag ? 'all' : tag;
   }
 
-  get tags() {
-    return Object.entries(projects).reduce(
+  get tags(): Record<TypeTag | 'all', string[]> {
+    const sortedProjects = Object.entries(projects).reduce(
       (acc, [id, project]: [string, TypeProject]) => {
-        project.tags.forEach((tag: string) => {
+        project.tags.forEach((tag: TypeTag) => {
           if (!acc[tag]) acc[tag] = [];
           acc[tag].push(id);
         });
         return acc;
       },
-      {
-        all: Object.keys(projects),
-      } as {
-        [index: string]: string[];
-      },
+      {} as Record<TypeTag, string[]>,
     );
+
+    return {
+      ...sortedProjects,
+      all: Object.keys(projects),
+    };
   }
 
-  get cloud() {
-    return Object.keys(this.tags);
+  get cloud(): (TypeTag | 'all')[] {
+    return Object.keys(this.tags) as (TypeTag | 'all')[];
   }
 
   get visibleProjects() {
