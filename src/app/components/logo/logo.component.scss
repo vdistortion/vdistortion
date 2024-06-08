@@ -9,14 +9,14 @@ svg.logo {
   .logo_5,
   .logo_6,
   .logo_8 {
-    stroke: $titleColor;
+    stroke: var(--title-color);
     stroke-width: 1;
     stroke-linecap: round;
     fill: none;
   }
 
   .logo_7 {
-    fill: $titleColor;
+    fill: var(--title-color);
   }
 
   .logo_0 {

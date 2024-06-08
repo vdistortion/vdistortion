@@ -1,9 +1,9 @@
 @import '../../../styles/colors';
 
 path {
-  fill: $defaultColor;
+  fill: var(--default-сolor);
 }
 
 svg:hover path {
-  fill: $titleColor;
+  fill: var(--title-color);
 }

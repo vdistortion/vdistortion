@@ -18,12 +18,12 @@
     color: inherit;
 
     &:hover {
-      color: $titleColor;
+      color: var(--title-color);
     }
   }
 
   &__name {
-    color: $titleColor;
+    color: var(--title-color);
     font-size: 40px;
     margin: 0;
   }
