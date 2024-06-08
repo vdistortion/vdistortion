@@ -5,7 +5,14 @@ export const module: TypeModule = {
   name: 'ПРО-Сцена',
   description:
     'Доработка сайта для поставщика сценических конструкций и оборудования',
+  detail: `
+Фронтенд для сайта, а также страница с проектами на Vue.
+`,
   links: [
+    {
+      name: 'Сайт',
+      url: 'https://scenapro.ru',
+    },
     {
       name: 'Страница "Наши проекты"',
       url: 'https://scenapro.ru/o-kompanii/nashi-proekty/',
