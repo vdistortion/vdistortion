@@ -3,7 +3,6 @@ import { module as smartStop } from './modules/smart-stop';
 import { module as isMobile } from './modules/is-mobile';
 import { module as ios } from './modules/ios';
 import { module as usm } from './modules/usm';
-import { module as birthdays } from './modules/birthdays';
 import { module as birthdaysCrm } from './modules/birthdays-crm';
 import { module as masterCrm } from './modules/master-crm';
 import { module as scenaPro } from './modules/scenapro';
@@ -102,7 +101,6 @@ export const projects: TypeProjects = {
   ...parseProject(isMobile, getImages(isMobile.code)),
   ...parseProject(ios, getImages(ios.code)),
   ...parseProject(usm),
-  ...parseProject(birthdays, getImages(birthdays.code)),
   ...parseProject(birthdaysCrm, getImages(birthdaysCrm.code)),
   ...parseProject(masterCrm, getImages(masterCrm.code)),
   ...parseProject(scenaPro, getImages(scenaPro.code)),
