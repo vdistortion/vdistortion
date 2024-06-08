@@ -4,6 +4,11 @@ export const module: TypeModule = {
   code: 'vue-bitrix24',
   name: 'vue-bitrix24',
   description: `Библиотека компонентов в стилистике Bitrix24`,
+  detail: `
+UI-компоненты этой библиотеки изначально были созданы в <strong>bitrix24-create-app</strong>, чтобы приложения выглядели похожими на окружение Битрикс24.
+Сейчас этот пакет переписан на <strong>TypeScript</strong>, также подключен <strong>Storybook</strong> взамен собственного велосипеда для страницы с демонстрацией (см. скриншоты).
+Компоненты <em>bx-input-date</em> и <em>bx-select</em> переехали обратно в <strong>bitrix24-create-app</strong>.
+`,
   links: [
     {
       name: 'GitHub',

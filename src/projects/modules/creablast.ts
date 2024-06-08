@@ -4,6 +4,9 @@ export const module: TypeModule = {
   code: 'creablast',
   name: 'Creablast',
   description: 'Портфолио в розовых тонах',
+  detail: `
+Изначально сайт сделан на <strong>Vue</strong>, потом переписан на <strong>Angular</strong> и <strong>TypeScript</strong>.
+`,
   links: [
     {
       name: 'Сайт',
