@@ -27,7 +27,7 @@ export class ProjectPageComponent implements OnInit {
     if (this.pageId && this.projects[this.pageId]) {
       this.project = this.projects[this.pageId];
     } else {
-      this.router.navigateByUrl('');
+      this.router.navigateByUrl('404');
     }
   }
 

@@ -1,0 +1,20 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6em;
+  padding: 0 16px;
+  height: 100vh;
+
+  h1 {
+    color: var(--title-color);
+    font-size: 2em;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
