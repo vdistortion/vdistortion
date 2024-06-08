@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UiIconComponent } from '../../ui/ui-icon/ui-icon.component';
-import type { TypeLink } from '../../../../projects';
+import { UiIconComponent } from '../ui-icon/ui-icon.component';
+import type { TypeLink } from '../../../projects';
 
 @Component({
   selector: 'app-page-title',

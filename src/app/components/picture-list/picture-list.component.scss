@@ -1,5 +1,5 @@
-@use '@material/image-list/mdc-image-list';
-@use '@material/image-list';
+@use '../../../../node_modules/@material/image-list/mdc-image-list';
+@use '../../../../node_modules/@material/image-list';
 
 .picture-list-masonry {
   @include image-list.masonry-columns(3, 20);

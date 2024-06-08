@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { UiCardComponent } from '../ui/ui-card/ui-card.component';
+import { UiCardComponent } from '../ui-card/ui-card.component';
 import type { TypeTag } from '../../../projects';
 
 @Component({

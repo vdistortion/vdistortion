@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UiCardComponent } from '../../ui/ui-card/ui-card.component';
-import type { TypeProject } from '../../../../projects';
+import { UiCardComponent } from '../ui-card/ui-card.component';
+import type { TypeProject } from '../../../projects';
 
 @Component({
   selector: 'app-project-card',
