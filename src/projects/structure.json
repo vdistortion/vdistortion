@@ -1,6 +1,6 @@
 [
   {
-    "name": "birthdays",
+    "name": "birthdays-crm",
     "type": "folder",
     "children": [
       {
@@ -38,13 +38,7 @@
       {
         "type": "file",
         "name": "ДРсотрудников-10.webp"
-      }
-    ]
-  },
-  {
-    "name": "birthdays-crm",
-    "type": "folder",
-    "children": [
+      },
       {
         "type": "file",
         "name": "ДРклиентов-01.webp"
