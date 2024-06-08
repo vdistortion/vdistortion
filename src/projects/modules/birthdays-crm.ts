@@ -4,10 +4,15 @@ export const module: TypeModule = {
   code: 'birthdays-crm',
   name: 'Дни рождения клиентов',
   description: 'Коммерческое приложение для Битрикс24',
+  detail: `
+Приложение на <strong>Vue</strong> для напоминаний о днях рождения клиентов.
+Изначально было частью приложения, в котором были ещё сотрудники компании и экстранет.
+Есть группировка по своим клиентам.
+`,
   links: [
     {
       name: 'Маркетплейс',
-      url: 'https://www.bitrix24.ru/apps/?app=sozdavatel.birthdaycrm',
+      url: 'https://www.bitrix24.ru/apps/app/sozdavatel.birthdaycrm',
     },
     {
       name: 'Лендинг',

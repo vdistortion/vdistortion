@@ -4,8 +4,16 @@ export const module: TypeModule = {
   code: 'bitrix24-stickerpack-app',
   name: 'bitrix24-stickerpack-app',
   description: 'Стикеры для порталов Битрикс24',
-  detail:
-    'Стикеры для порталов Битрикс24<br>Ctrl+Shift+T переключает страницы<br>Приложение поддерживает новые чаты',
+  detail: `
+Стикеры для порталов Битрикс24.
+Приложение встраивается в мессенджер.
+Можно выключать встроенные стикеры, а также добавлять и удалять свои.
+Приложение сохраняет своё состояние в localStorage.
+Ctrl+Shift+T переключает страницы.
+Приложение поддерживает новые чаты.
+<br>
+Сделано на <strong>Vue</strong>-версии <strong>bitrix24-create-app</strong>, сейчас переписано на <strong>Angular</strong>.
+`,
   links: [
     {
       name: 'GitHub',

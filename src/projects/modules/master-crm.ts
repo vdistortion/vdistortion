@@ -7,7 +7,7 @@ export const module: TypeModule = {
   links: [
     {
       name: 'Маркетплейс',
-      url: 'https://www.bitrix24.ru/apps/?app=sozdavatel.konstruktor_otchetov_bitriks24',
+      url: 'https://www.bitrix24.ru/apps/app/sozdavatel.konstruktor_otchetov_bitriks24/',
     },
     {
       name: 'Лендинг',
