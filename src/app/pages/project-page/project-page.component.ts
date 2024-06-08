@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
-import { ProjectDetailComponent } from '../../components/project/project-detail/project-detail.component';
+import { ProjectDetailComponent } from '../../components/project-detail/project-detail.component';
 import {
   projects,
   type TypeProjects,
@@ -16,19 +16,24 @@ import {
 })
 export class ProjectPageComponent implements OnInit {
   public projects: TypeProjects = projects;
+  public project: TypeProject;
   public pageId: string | null;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+  ) {
     this.pageId = this.route.snapshot.paramMap.get('id');
+    if (this.pageId && this.projects[this.pageId]) {
+      this.project = this.projects[this.pageId];
+    } else {
+      this.router.navigateByUrl('');
+    }
   }
 
   ngOnInit() {
     document.title = this.project
       ? `${this.project.name} | ${this.route.snapshot.title}`
       : '';
-  }
-
-  get project(): TypeProject | null {
-    return this.pageId ? this.projects[this.pageId] : null;
   }
 }

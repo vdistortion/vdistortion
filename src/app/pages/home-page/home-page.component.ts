@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
-import { ProjectListComponent } from '../../components/project/project-list/project-list.component';
+import { ProjectListComponent } from '../../components/project-list/project-list.component';
 import {
   projects,
   type TypeProjects,

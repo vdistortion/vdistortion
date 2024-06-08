@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
-import type { TypeProjects } from '../../../../projects';
+import type { TypeProjects } from '../../../projects';
 
 @Component({
   selector: 'app-project-list',

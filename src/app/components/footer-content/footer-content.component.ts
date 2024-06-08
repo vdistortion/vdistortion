@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UiCardComponent } from '../ui/ui-card/ui-card.component';
+import { UiCardComponent } from '../ui-card/ui-card.component';
 
 type Item = {
   name: string;
