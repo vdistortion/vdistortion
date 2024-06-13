@@ -7,6 +7,7 @@ import { module as birthdaysCrm } from './modules/birthdays-crm';
 import { module as masterCrm } from './modules/master-crm';
 import { module as scenaPro } from './modules/scenapro';
 import { module as vueBitrix24 } from './modules/vue-bitrix24';
+import { module as reactBitrix24 } from './modules/react-bitrix24';
 import { module as toWebpJson } from './modules/to-webp-json';
 import { module as bitrix24CreateApp } from './modules/bitrix24-create-app';
 import { module as bitrix24Library } from './modules/bitrix24-library';
@@ -93,10 +94,8 @@ export const projects: TypeProjects = {
   ...parseProject(bitrix24CreateApp, getImages(bitrix24CreateApp.code)),
   ...parseProject(bitrix24StickersApp, getImages(bitrix24StickersApp.code)),
   ...parseProject(toWebpJson, getImages(toWebpJson.code)),
-  ...parseProject(master, getImages(master.code)),
   ...parseProject(kiraSekira, getImages(kiraSekira.code)),
   ...parseProject(creablast, getImages(creablast.code)),
-  ...parseProject(impTelegramBot, getImages(impTelegramBot.code)),
   ...parseProject(smartStop, getImages(smartStop.code)),
   ...parseProject(isMobile, getImages(isMobile.code)),
   ...parseProject(ios, getImages(ios.code)),
@@ -105,4 +104,7 @@ export const projects: TypeProjects = {
   ...parseProject(masterCrm, getImages(masterCrm.code)),
   ...parseProject(scenaPro, getImages(scenaPro.code)),
   ...parseProject(arbPro, getImages(arbPro.code)),
+  ...parseProject(reactBitrix24, getImages(reactBitrix24.code)),
+  ...parseProject(impTelegramBot, getImages(impTelegramBot.code)),
+  ...parseProject(master, getImages(master.code)),
 };

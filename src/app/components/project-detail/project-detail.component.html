@@ -4,10 +4,14 @@
       <div class="project-detail__description" [innerHTML]="description"></div>
     </div>
   }
-  <div class="project-detail__item">
-    <app-video-list [videos]="videos"></app-video-list>
-  </div>
-  <div class="project-detail__item">
-    <app-picture-list [images]="images"></app-picture-list>
-  </div>
+  @if (videos.length) {
+    <div class="project-detail__item">
+      <app-video-list [videos]="videos"></app-video-list>
+    </div>
+  }
+  @if (images.length) {
+    <div class="project-detail__item">
+      <app-picture-list [images]="images"></app-picture-list>
+    </div>
+  }
 </div>
