@@ -30,6 +30,7 @@ export type TypeTag =
   | 'typescript'
   | 'vite'
   | 'vue'
+  | 'react'
   | 'vuetify'
   | 'webpack'
   | 'yandex-maps'
