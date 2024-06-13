@@ -21,6 +21,7 @@ export class PageComponent {
   @Input({ required: true }) public name: string;
   @Input({ required: true }) public tags: (TypeTag | 'all')[];
   @Input() public activeTag: TypeTag | 'all' = 'all';
+  @Input() public repos: TypeLink[] = [];
   @Input() public links: TypeLink[] = [];
   @Input() public isHomePage: boolean = false;
 }

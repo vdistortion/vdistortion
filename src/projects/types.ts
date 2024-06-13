@@ -73,6 +73,7 @@ export type TypeModule = {
   tags: TypeTag[];
   description: string;
   detail?: string;
+  repos?: TypeLink[];
   links?: TypeLink[];
   videos?: TypeVideo[];
   imageNames?: Record<string, string>;
@@ -83,6 +84,7 @@ export type TypeProject = {
   tags: TypeTag[];
   description: string;
   detail: string;
+  repos: TypeLink[];
   links: TypeLink[];
   videos: TypeVideo[];
   images: TypeImage[];

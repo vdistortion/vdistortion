@@ -10,7 +10,7 @@ export const module: TypeModule = {
 Плюсом добавлено несколько методов, например нормальные пакетные запросы.
 Переписана на <strong>TypeScript</strong>.
 `,
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'bitrix24-library',

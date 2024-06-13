@@ -5,7 +5,7 @@ export const module: TypeModule = {
   name: 'Мастер. 100 страниц',
   description: 'Оцифрованная книга на LaTeX',
   detail: 'Оцифрованная книга на TeX Live. Автор — Владимир Марочкин.',
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'Master100pages',

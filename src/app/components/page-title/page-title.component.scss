@@ -5,6 +5,7 @@
   column-gap: 20px;
   align-items: center;
 
+  &__repos,
   &__links {
     display: flex;
     column-gap: 20px;
@@ -12,6 +13,11 @@
     margin: 10px 0 20px;
   }
 
+  &__repos {
+    margin: 0 0 0 auto;
+  }
+
+  &__repo,
   &__link {
     text-decoration: none;
     font-size: 20px;

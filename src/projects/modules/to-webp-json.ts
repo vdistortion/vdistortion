@@ -11,7 +11,7 @@ export const module: TypeModule = {
 <br>
 На этом сайте библиотека также используется.
 `,
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'to-webp-json',
