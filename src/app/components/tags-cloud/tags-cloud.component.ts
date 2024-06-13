@@ -25,4 +25,9 @@ export class TagsCloudComponent {
 
     return this.isHomePage ? ['all', ...sortedTags] : sortedTags;
   }
+
+  onClick(e: MouseEvent, tag: TypeTag | 'all') {
+    e.preventDefault();
+    location.hash = '#' + (this.activeTag === tag ? 'all' : tag);
+  }
 }

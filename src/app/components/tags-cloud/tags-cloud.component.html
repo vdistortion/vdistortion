@@ -5,9 +5,10 @@
       <div class="tags-cloud__list">
         @for (tag of sortedTags; track tag) {
           <a
-            [href]="'#' + (activeTag === tag ? 'all' : tag)"
+            [href]="'#' + tag"
             class="tags-cloud__tag"
             [class.active]="activeTag === tag"
+            (click)="onClick($event, tag)"
           >
             @if (tag === 'all') {
               <span>Все проекты</span>
