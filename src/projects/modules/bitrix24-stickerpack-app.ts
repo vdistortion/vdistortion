@@ -18,11 +18,13 @@ Ctrl+Shift+T переключает страницы с наборами.
 Сделано на <strong>Vue</strong>-версии <strong>bitrix24-create-app</strong>, сейчас переписано на <strong>Angular</strong>.
 Последнюю js-версию на <strong>Vue</strong> можно найти в отдельной ветке репозитория.
 `,
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'bitrix24-stickerpack-app',
     },
+  ],
+  links: [
     {
       name: 'Демо',
       url: '/bitrix24-stickerpack-app/',

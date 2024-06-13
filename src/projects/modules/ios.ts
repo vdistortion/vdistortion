@@ -17,11 +17,13 @@ export const module: TypeModule = {
 изменить расположение ящика, изменить положение изгиба кабеля, добавить и удалить точки изгиба
 кабелей, включить и отключить отображения слоев карты сети.
   `,
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'house-scheme-svg',
     },
+  ],
+  links: [
     {
       name: 'Структурная схема дома на SVG (Vue -> Angular)',
       url: '/house-scheme-svg/',

@@ -11,11 +11,13 @@ export const module: TypeModule = {
 <br>
 И котики, все же прекрасно знают, для чего был придуман интернет. 🤭
 `,
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'imp-telegram-bot',
     },
+  ],
+  links: [
     {
       name: 'Telegram',
       url: 'https://t.me/ImpTelegramBot',

@@ -7,7 +7,7 @@ export const module: TypeModule = {
   detail: `
 UI-компоненты как во <strong>vue-bitrix24</strong>, только для <strong>React</strong> (см. ссылки).
 `,
-  links: [
+  repos: [
     {
       name: 'GitHub',
       url: 'react-bitrix24',
@@ -16,6 +16,8 @@ UI-компоненты как во <strong>vue-bitrix24</strong>, только 
       name: 'npmjs',
       url: 'react-bitrix24',
     },
+  ],
+  links: [
     {
       name: 'Storybook',
       url: '/react-bitrix24/',

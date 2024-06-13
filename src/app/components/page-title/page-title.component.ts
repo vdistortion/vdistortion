@@ -12,6 +12,7 @@ import type { TypeLink } from '../../../projects';
 })
 export class PageTitleComponent {
   @Input({ required: true }) public title: string;
+  @Input({ required: true }) public repos: TypeLink[];
   @Input({ required: true }) public links: TypeLink[];
   @Input({ required: true }) public isHomePage: boolean;
 }

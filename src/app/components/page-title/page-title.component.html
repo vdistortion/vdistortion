@@ -5,13 +5,11 @@
     </a>
   }
   <h1 class="page-title__name">{{ title }}</h1>
-</div>
-@if (links.length) {
-  <div class="page-title__links">
-    @for (link of links; track link.name) {
+  <div class="page-title__repos">
+    @for (link of repos; track link.name) {
       @if (link.name === 'GitHub') {
         <a
-          class="page-title__link"
+          class="page-title__repo"
           [href]="'https://github.com/astrotrain55/' + link.url"
           target="_blank"
         >
@@ -19,18 +17,23 @@
         </a>
       } @else if (link.name === 'npmjs') {
         <a
-          class="page-title__link"
+          class="page-title__repo"
           [href]="'https://www.npmjs.com/package/' + link.url"
           target="_blank"
         >
           <app-ui-icon icon="mdiNpm" [size]="50"></app-ui-icon>
         </a>
-      } @else {
-        <a class="page-title__link" [href]="link.url" target="_blank">
-          <app-ui-icon icon="mdiLinkVariant" [size]="16"></app-ui-icon>
-          {{ link.name }}
-        </a>
       }
+    }
+  </div>
+</div>
+@if (links.length) {
+  <div class="page-title__links">
+    @for (link of links; track link.name) {
+      <a class="page-title__link" [href]="link.url" target="_blank">
+        <app-ui-icon icon="mdiLinkVariant" [size]="16"></app-ui-icon>
+        {{ link.name }}
+      </a>
     }
   </div>
 }
