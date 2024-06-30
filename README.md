@@ -27,6 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 ## Links
-* [How to Deploy an Angular App to GitHub Pages](https://youtu.be/F3HbnbT1Maw)
-* [HTML Arrow Symbol](https://www.toptal.com/designers/htmlarrows/arrows/)
-* [JavaScript library to make drawing animation on SVG](https://maxwellito.github.io/vivus-instant/)
+
+- [How to Deploy an Angular App to GitHub Pages](https://youtu.be/F3HbnbT1Maw)
+- [HTML Arrow Symbol](https://www.toptal.com/designers/htmlarrows/arrows/)
+- [JavaScript library to make drawing animation on SVG](https://maxwellito.github.io/vivus-instant/)
