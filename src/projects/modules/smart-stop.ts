@@ -10,11 +10,18 @@ export const module: TypeModule = {
 Можно строить машруты от остановки до точки Б с показом возможных вариантов проезда.
 Также отображается анимированный транспорт на карте, с задержкой в несколько секунд для плавности анимации.
 Можно посмотреть полный маршрут троллейбуса или автобуса.
+Проект полностью переписан на <b>Angular<b>.
 `,
+  repos: [
+    {
+      name: 'GitHub',
+      url: 'smart-stop',
+    },
+  ],
   links: [
     {
-      name: 'Описание проекта',
-      url: 'https://russiasmartcity.ru/solutions/76',
+      name: 'Посмотреть (Desktop only)',
+      url: '/smart-stop/',
     },
   ],
   tags: [
@@ -30,11 +37,19 @@ export const module: TypeModule = {
     'jquery',
     'markup',
     'интерсвязь',
+    'angular',
+    'typescript',
+    'scss',
+    'github',
   ],
   imageNames: {
     'Screenshot_1-min.webp': 'Расписание',
     'Screenshot_2-min.webp': 'Транспорт на карте',
     'Screenshot_3-min.webp': 'Схема проезда',
     'Screenshot_4-min.webp': 'Маршрут',
+    '1.webp': 'Инфомат на остановке',
+    '2.webp': 'Инфомат на остановке',
+    '3.webp': 'Инфомат на остановке',
+    '4.webp': 'Инфомат на остановке',
   },
 };
