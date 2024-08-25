@@ -1,25 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { LightgalleryModule } from 'lightgallery/angular';
+import { Component, Input } from '@angular/core';
+import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
 import { PictureCardComponent } from '../picture-card/picture-card.component';
 import type { TypeImage } from '../../../projects';
 
 @Component({
   selector: 'app-picture-list',
   standalone: true,
-  imports: [PictureCardComponent, LightgalleryModule],
+  imports: [PictureCardComponent, PhotoGalleryModule],
   templateUrl: './picture-list.component.html',
   styleUrl: './picture-list.component.scss',
 })
-export class PictureListComponent implements OnInit {
+export class PictureListComponent {
   @Input({ required: true }) public images: TypeImage[];
-  public isInit: boolean = false;
-
-  options = {
-    download: false,
-    getCaptionFromTitleOrAlt: false,
-  };
-
-  ngOnInit() {
-    this.isInit = true;
-  }
 }
