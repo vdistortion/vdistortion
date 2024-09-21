@@ -5,5 +5,5 @@ path {
 }
 
 svg:hover path {
-  fill: var(--title-color);
+  fill: var(--title-color) !important;
 }

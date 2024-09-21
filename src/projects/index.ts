@@ -14,8 +14,6 @@ import { module as bitrix24Library } from './modules/bitrix24-library';
 import { module as bitrix24StickersApp } from './modules/bitrix24-stickerpack-app';
 import { module as kiraSekira } from './modules/kira-sekira';
 import { module as creablast } from './modules/creablast';
-import { module as master } from './modules/master';
-import { module as impTelegramBot } from './modules/imp-telegram-bot';
 import directories from './structure.json';
 import type {
   TypeTag,
@@ -95,18 +93,16 @@ export const projects: TypeProjects = {
   ...parseProject(bitrix24Library, getImages(bitrix24Library.code)),
   ...parseProject(bitrix24CreateApp, getImages(bitrix24CreateApp.code)),
   ...parseProject(bitrix24StickersApp, getImages(bitrix24StickersApp.code)),
+  ...parseProject(reactBitrix24, getImages(reactBitrix24.code)),
   ...parseProject(toWebpJson, getImages(toWebpJson.code)),
   ...parseProject(kiraSekira, getImages(kiraSekira.code)),
   ...parseProject(creablast, getImages(creablast.code)),
   ...parseProject(smartStop, getImages(smartStop.code)),
   ...parseProject(isMobile, getImages(isMobile.code)),
   ...parseProject(ios, getImages(ios.code)),
-  ...parseProject(usm),
+  ...parseProject(usm, getImages(usm.code)),
   ...parseProject(birthdaysCrm, getImages(birthdaysCrm.code)),
   ...parseProject(masterCrm, getImages(masterCrm.code)),
   ...parseProject(scenaPro, getImages(scenaPro.code)),
   ...parseProject(arbPro, getImages(arbPro.code)),
-  ...parseProject(reactBitrix24, getImages(reactBitrix24.code)),
-  ...parseProject(impTelegramBot, getImages(impTelegramBot.code)),
-  ...parseProject(master, getImages(master.code)),
 };

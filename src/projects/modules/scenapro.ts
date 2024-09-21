@@ -18,16 +18,7 @@ export const module: TypeModule = {
       url: 'https://scenapro.ru/o-kompanii/nashi-proekty/',
     },
   ],
-  tags: [
-    'ajax',
-    'vue',
-    'maps',
-    'swiper',
-    'responsive',
-    'stylus',
-    'yandex-maps',
-    'markup',
-  ],
+  tags: ['ajax', 'vue', 'maps', 'swiper', 'responsive', 'stylus', 'markup'],
   imageNames: {
     'Screenshot at Aug 23 12-47-08.webp': 'Сцены на карте и фильтр',
     'Screenshot at Aug 23 12-47-56.webp': 'Детальная страница со слайдером',

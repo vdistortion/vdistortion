@@ -5,12 +5,12 @@ export const module: TypeModule = {
   name: 'react-bitrix24',
   description: `Библиотека компонентов в стилистике Bitrix24`,
   detail: `
-UI-компоненты как во <strong>vue-bitrix24</strong>, только для <strong>React</strong> (см. ссылки).
+UI-компоненты как во <strong>vue-bitrix24</strong>, только для <strong>React</strong>.
 `,
   repos: [
     {
       name: 'GitHub',
-      url: 'react-bitrix24',
+      url: 'ui-bitrix24',
     },
     {
       name: 'npmjs',
@@ -20,7 +20,7 @@ UI-компоненты как во <strong>vue-bitrix24</strong>, только 
   links: [
     {
       name: 'Storybook',
-      url: '/react-bitrix24/',
+      url: '/ui-bitrix24/react/',
     },
   ],
   tags: [
@@ -35,6 +35,6 @@ UI-компоненты как во <strong>vue-bitrix24</strong>, только 
     'vite',
   ],
   imageNames: {
-    'README.webp': 'README.md',
+    'README.webp': 'Документация',
   },
 };

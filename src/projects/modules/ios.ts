@@ -25,7 +25,7 @@ export const module: TypeModule = {
   ],
   links: [
     {
-      name: 'Структурная схема дома на SVG (Vue -> Angular)',
+      name: 'Структурная схема дома на SVG',
       url: '/house-scheme-svg/',
     },
   ],
@@ -36,9 +36,7 @@ export const module: TypeModule = {
     'vue',
     'maps',
     'github',
-    'google-maps',
     'jquery',
-    'bootstrap',
     'stylus',
     'интерсвязь',
   ],

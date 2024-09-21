@@ -23,4 +23,9 @@ export const module: TypeModule = {
     'typescript',
     'vite',
   ],
+  imageNames: {
+    'index.webp': 'Главная страница',
+    'project.webp': 'Персонажи',
+    'animals.webp': 'Животные',
+  },
 };
