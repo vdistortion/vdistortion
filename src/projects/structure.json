@@ -67,7 +67,7 @@
     "children": [
       {
         "type": "file",
-        "name": "bitrix24-create-app.webp"
+        "name": "README.webp"
       }
     ]
   },
@@ -77,7 +77,7 @@
     "children": [
       {
         "type": "file",
-        "name": "bitrix24-library.webp"
+        "name": "README.webp"
       }
     ]
   },
@@ -165,27 +165,27 @@
     "children": [
       {
         "type": "file",
-        "name": "1.png"
+        "name": "1.webp"
       },
       {
         "type": "file",
-        "name": "2.png"
+        "name": "2.webp"
       },
       {
         "type": "file",
-        "name": "3.png"
+        "name": "3.webp"
       },
       {
         "type": "file",
-        "name": "4.png"
+        "name": "4.webp"
       },
       {
         "type": "file",
-        "name": "5.png"
+        "name": "5.webp"
       },
       {
         "type": "file",
-        "name": "6.png"
+        "name": "6.webp"
       }
     ]
   },
@@ -195,37 +195,15 @@
     "children": [
       {
         "type": "file",
-        "name": "1.png"
+        "name": "1.webp"
       },
       {
         "type": "file",
-        "name": "2.png"
+        "name": "2.webp"
       },
       {
         "type": "file",
-        "name": "3.png"
-      }
-    ]
-  },
-  {
-    "name": "master",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "Cover1.png"
-      },
-      {
-        "type": "file",
-        "name": "Cover2.png"
-      },
-      {
-        "type": "file",
-        "name": "Cover3.png"
-      },
-      {
-        "type": "file",
-        "name": "Cover4.png"
+        "name": "3.webp"
       }
     ]
   },
@@ -253,7 +231,7 @@
     "children": [
       {
         "type": "file",
-        "name": "to-webp-json.webp"
+        "name": "README.webp"
       }
     ]
   },
@@ -529,51 +507,43 @@
     "children": [
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-21-40 vue-bitrix24.webp"
+        "name": "bx-button.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-21-55 vue-bitrix24.webp"
+        "name": "bx-input.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-09 vue-bitrix24.webp"
+        "name": "bx-input-file.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-24 vue-bitrix24.webp"
+        "name": "bx-textarea.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-33 vue-bitrix24.webp"
+        "name": "bx-progressbar.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-41 vue-bitrix24.webp"
+        "name": "bx-alert.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-22-55 vue-bitrix24.webp"
+        "name": "bx-icon.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-07 vue-bitrix24.webp"
+        "name": "bx-entity-selector.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-16 vue-bitrix24.webp"
+        "name": "bx-radio.webp"
       },
       {
         "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-34 vue-bitrix24.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-23-47 vue-bitrix24.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot 2022-04-12 at 00-24-35 vue-bitrix24.webp"
+        "name": "bx-checkbox.webp"
       }
     ]
   },
@@ -588,20 +558,16 @@
     ]
   },
   {
-    "name": "imp-telegram-bot",
+    "name": "usm",
     "type": "folder",
     "children": [
       {
         "type": "file",
-        "name": "1.jpg"
+        "name": "1.webp"
       },
       {
         "type": "file",
-        "name": "2.png"
-      },
-      {
-        "type": "file",
-        "name": "3.png"
+        "name": "2.webp"
       }
     ]
   }

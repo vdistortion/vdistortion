@@ -23,8 +23,8 @@ export const module: TypeModule = {
     'vite',
   ],
   imageNames: {
-    '1.png': 'Main Page',
-    '2.png': 'Work Page',
-    '3.png': 'Project Page',
+    '1.webp': 'Main Page',
+    '2.webp': 'Work Page',
+    '3.webp': 'Project Page',
   },
 };

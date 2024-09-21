@@ -22,6 +22,6 @@ export const module: TypeModule = {
   ],
   tags: ['github', 'pet-project', 'bitrix24', 'npm', 'vite', 'plugin'],
   imageNames: {
-    'bitrix24-library.webp': 'Документация',
+    'README.webp': 'Документация',
   },
 };

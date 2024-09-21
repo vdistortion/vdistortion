@@ -10,7 +10,7 @@ export const module: TypeModule = {
 Можно строить машруты от остановки до точки Б с показом возможных вариантов проезда.
 Также отображается анимированный транспорт на карте, с задержкой в несколько секунд для плавности анимации.
 Можно посмотреть полный маршрут троллейбуса или автобуса.
-Проект полностью переписан на <b>Angular<b>.
+Проект переписан на <b>Angular<b>.
 `,
   repos: [
     {
@@ -20,7 +20,7 @@ export const module: TypeModule = {
   ],
   links: [
     {
-      name: 'Посмотреть (Desktop only)',
+      name: 'Desktop only',
       url: '/smart-stop/',
     },
   ],
@@ -29,8 +29,6 @@ export const module: TypeModule = {
     'gulp',
     'webpack',
     'maps',
-    'yandex-maps',
-    'leaflet',
     'stylus',
     'pug',
     'smartgrid',

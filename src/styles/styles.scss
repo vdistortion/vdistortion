@@ -24,3 +24,12 @@ footer {
 .l-wrapper {
   @include wrapper();
 }
+
+youtube-player {
+  youtube-player-placeholder,
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+}

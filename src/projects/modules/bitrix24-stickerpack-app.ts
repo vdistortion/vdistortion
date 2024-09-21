@@ -16,7 +16,6 @@ Ctrl+Shift+T переключает страницы с наборами.
 <br>
 Изначально это был бот, который при встраивании в чат не имел доступа к API, но с обновлением чата Битриксом ситуация улучшилась.
 Сделано на <strong>Vue</strong>-версии <strong>bitrix24-create-app</strong>, сейчас переписано на <strong>Angular</strong>.
-Последнюю js-версию на <strong>Vue</strong> можно найти в отдельной ветке репозитория.
 `,
   repos: [
     {
@@ -44,8 +43,6 @@ Ctrl+Shift+T переключает страницы с наборами.
     'typescript',
     'scss',
     'pet-project',
-    'vue',
-    'stylus',
     'bitrix24',
     'marketplace',
     'vite',
