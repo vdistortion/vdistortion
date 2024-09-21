@@ -1,6 +1,6 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
 
 ## Development server
 
@@ -28,6 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Links
 
-- [How to Deploy an Angular App to GitHub Pages](https://youtu.be/F3HbnbT1Maw)
-- [HTML Arrow Symbol](https://www.toptal.com/designers/htmlarrows/arrows/)
 - [JavaScript library to make drawing animation on SVG](https://maxwellito.github.io/vivus-instant/)
