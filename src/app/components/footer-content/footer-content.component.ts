@@ -17,11 +17,11 @@ export class FooterContentComponent {
   public list: Item[] = [
     {
       name: 'GitHub',
-      link: 'https://github.com/astrotrain55',
+      link: 'https://github.com/vdistortion',
     },
     {
       name: 'npmjs',
-      link: 'https://www.npmjs.com/~astrotrain',
+      link: 'https://www.npmjs.com/~vdistortion',
     },
     {
       name: 'Telegram',
