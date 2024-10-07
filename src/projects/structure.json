@@ -68,6 +68,14 @@
       {
         "type": "file",
         "name": "README.webp"
+      },
+      {
+        "type": "file",
+        "name": "1.webp"
+      },
+      {
+        "type": "file",
+        "name": "2.webp"
       }
     ]
   },
