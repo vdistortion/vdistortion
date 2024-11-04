@@ -40,14 +40,4 @@ export const module: TypeModule = {
     'stylus',
     'интерсвязь',
   ],
-  videos: [
-    {
-      src: 'hdkjtQ_-s6k',
-      title: 'Интерфейс оптических схем',
-    },
-    {
-      src: 'ib2tqQQrrBc',
-      title: 'Проект с созданием строения',
-    },
-  ],
 };
