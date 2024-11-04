@@ -25,7 +25,7 @@ export class FooterContentComponent {
     },
     {
       name: 'Telegram',
-      link: 'https://t.me/valentin_fatherland',
+      link: 'https://t.me/ng_valentin',
     },
     {
       name: 'LinkedIn',
