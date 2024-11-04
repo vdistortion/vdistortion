@@ -12,8 +12,7 @@
     "format": "prettier . --write",
     "grid": "tsx grid.ts && npx sass-migrator division src/styles/_smartgrid.scss && prettier --write src/styles/_smartgrid.scss",
     "public": "npm run build && gh-pages -d dist/portfolio/browser -t --nojekyll",
-    "to-webp": "npx to-webp-json json=source width=1000 height=1000",
-    "reset": "git fetch --all && git reset --hard origin/master"
+    "to-webp": "npx to-webp-json json=source width=1000 height=1000"
   },
   "dependencies": {
     "@angular/animations": "^18.2.0",
