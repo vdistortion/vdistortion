@@ -12,6 +12,7 @@ import { module as toWebpJson } from './modules/to-webp-json';
 import { module as bitrix24CreateApp } from './modules/bitrix24-create-app';
 import { module as bitrix24Library } from './modules/bitrix24-library';
 import { module as bitrix24StickersApp } from './modules/bitrix24-stickerpack-app';
+import { module as typesDsj } from './modules/types-directory-structure-json';
 import { module as kiraSekira } from './modules/kira-sekira';
 import { module as creablast } from './modules/creablast';
 import directories from './structure.json';
@@ -97,6 +98,7 @@ export const projects: TypeProjects = {
   ...parseProject(toWebpJson, getImages(toWebpJson.code)),
   ...parseProject(kiraSekira, getImages(kiraSekira.code)),
   ...parseProject(creablast, getImages(creablast.code)),
+  ...parseProject(typesDsj),
   ...parseProject(smartStop, getImages(smartStop.code)),
   ...parseProject(isMobile, getImages(isMobile.code)),
   ...parseProject(ios, getImages(ios.code)),
