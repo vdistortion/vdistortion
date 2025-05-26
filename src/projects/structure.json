@@ -1,5 +1,19 @@
 [
   {
+    "name": "imp-telegram-bot",
+    "type": "folder",
+    "children": [
+      {
+        "type": "file",
+        "name": "photo_2025-05-26_12-43-43.webp"
+      },
+      {
+        "type": "file",
+        "name": "photo_2025-05-26_12-43-45.webp"
+      }
+    ]
+  },
+  {
     "name": "birthdays-crm",
     "type": "folder",
     "children": [
