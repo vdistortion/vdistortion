@@ -15,6 +15,7 @@ import { module as bitrix24StickersApp } from './modules/bitrix24-stickerpack-ap
 import { module as typesDsj } from './modules/types-directory-structure-json';
 import { module as kiraSekira } from './modules/kira-sekira';
 import { module as creablast } from './modules/creablast';
+import { module as bot } from './modules/imp-telegram-bot';
 import directories from './structure.json';
 import type {
   TypeTag,
@@ -99,6 +100,7 @@ export const projects: TypeProjects = {
   ...parseProject(kiraSekira, getImages(kiraSekira.code)),
   ...parseProject(creablast, getImages(creablast.code)),
   ...parseProject(typesDsj),
+  ...parseProject(bot, getImages(bot.code)),
   ...parseProject(smartStop, getImages(smartStop.code)),
   ...parseProject(isMobile, getImages(isMobile.code)),
   ...parseProject(ios, getImages(ios.code)),

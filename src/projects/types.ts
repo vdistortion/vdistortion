@@ -21,6 +21,7 @@ export type TypeTag =
   | 'stylus'
   | 'svg'
   | 'swiper'
+  | 'telegram-bot'
   | 'typescript'
   | 'vite'
   | 'vue'
