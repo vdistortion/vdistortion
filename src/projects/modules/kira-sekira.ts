@@ -14,15 +14,7 @@ export const module: TypeModule = {
       url: '/kira-sekira/',
     },
   ],
-  tags: [
-    'pet-project',
-    'angular',
-    'scss',
-    'smartgrid',
-    'markup',
-    'typescript',
-    'vite',
-  ],
+  tags: ['pet-project', 'angular', 'scss', 'markup', 'typescript', 'vite'],
   imageNames: {
     'index.webp': 'Главная страница',
     'project.webp': 'Персонажи',

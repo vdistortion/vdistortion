@@ -1,12 +1,9 @@
-@import '../../../styles/smartgrid';
-
 .video-list {
-  @include row-flex();
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
 
-  &__item {
-    @include col();
-    @include col-size(24);
-    @include col-size-w1000(12);
-    margin-bottom: $offset;
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

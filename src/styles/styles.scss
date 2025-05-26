@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
-@import './smartgrid.scss';
 @import './colors.scss';
 
 html,
@@ -22,7 +21,9 @@ footer {
 }
 
 .l-wrapper {
-  @include wrapper();
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 youtube-player {

@@ -10,7 +10,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier . --write",
-    "grid": "tsx grid.ts && npx sass-migrator division src/styles/_smartgrid.scss && prettier --write src/styles/_smartgrid.scss",
     "public": "npm run build && gh-pages -d dist/portfolio/browser -t --nojekyll",
     "to-webp": "npx to-webp-json json=source width=1000 height=1000"
   },
@@ -45,8 +44,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "3.3.3",
-    "smart-grid": "^2.1.2",
-    "tsx": "^4.19.1",
     "typescript": "~5.5.2"
   }
 }

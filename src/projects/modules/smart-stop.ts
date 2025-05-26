@@ -31,7 +31,6 @@ export const module: TypeModule = {
     'maps',
     'stylus',
     'pug',
-    'smartgrid',
     'jquery',
     'markup',
     'интерсвязь',
