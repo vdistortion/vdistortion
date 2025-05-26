@@ -16,7 +16,6 @@ export type TypeTag =
   | 'pug'
   | 'responsive'
   | 'scss'
-  | 'smartgrid'
   | 'storybook'
   | 'stylus'
   | 'svg'

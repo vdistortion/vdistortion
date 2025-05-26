@@ -1,15 +1,17 @@
-@import '../../../styles/smartgrid';
-
 .project-list {
-  @include row-flex();
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
 
-  &__item {
-    @include col();
-    @include col-size(24);
-    @include col-size-w500(12);
-    @include col-size-w1000(8);
-    @include col-size-w1200(6);
-    display: block;
-    margin-bottom: $offset;
+  @media (min-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

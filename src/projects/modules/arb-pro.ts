@@ -26,7 +26,6 @@ export const module: TypeModule = {
     'responsive',
     'pug',
     'stylus',
-    'smartgrid',
   ],
   imageNames: {
     'Вход-min.webp': 'Вход',

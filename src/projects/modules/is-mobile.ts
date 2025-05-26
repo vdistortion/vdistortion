@@ -19,7 +19,6 @@ export const module: TypeModule = {
     'pug',
     'markup',
     'jquery',
-    'smartgrid',
     'интерсвязь',
   ],
 };
