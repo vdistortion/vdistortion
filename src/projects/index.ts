@@ -2,10 +2,8 @@ import { module as arbPro } from './modules/arb-pro';
 import { module as smartStop } from './modules/smart-stop';
 import { module as isMobile } from './modules/is-mobile';
 import { module as ios } from './modules/ios';
-import { module as usm } from './modules/usm';
 import { module as birthdaysCrm } from './modules/birthdays-crm';
 import { module as masterCrm } from './modules/master-crm';
-import { module as scenaPro } from './modules/scenapro';
 import { module as vueBitrix24 } from './modules/vue-bitrix24';
 import { module as reactBitrix24 } from './modules/react-bitrix24';
 import { module as toWebpJson } from './modules/to-webp-json';
@@ -106,9 +104,7 @@ export const projects: TypeProjects = {
   ...parseProject(smartStop, getImages(smartStop.code)),
   ...parseProject(isMobile, getImages(isMobile.code)),
   ...parseProject(ios, getImages(ios.code)),
-  ...parseProject(usm, getImages(usm.code)),
   ...parseProject(birthdaysCrm, getImages(birthdaysCrm.code)),
   ...parseProject(masterCrm, getImages(masterCrm.code)),
-  ...parseProject(scenaPro, getImages(scenaPro.code)),
   ...parseProject(arbPro, getImages(arbPro.code)),
 };

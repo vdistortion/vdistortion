@@ -19,20 +19,23 @@ UI-компоненты как во <strong>vue-bitrix24</strong>, только 
   ],
   links: [
     {
+      name: 'Docs',
+      url: '/ui-bitrix24/',
+    },
+    {
       name: 'Storybook',
       url: '/ui-bitrix24/react/',
     },
   ],
   tags: [
     'github',
-    'pet-project',
     'react',
     'storybook',
     'bitrix24',
     'npm',
-    'plugin',
     'typescript',
     'vite',
+    'vitepress',
   ],
   imageNames: {
     'README.webp': 'Документация',

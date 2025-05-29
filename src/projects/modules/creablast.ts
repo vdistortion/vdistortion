@@ -13,7 +13,7 @@ export const module: TypeModule = {
       url: '/creablast/',
     },
   ],
-  tags: ['pet-project', 'angular', 'scss', 'markup', 'typescript', 'vite'],
+  tags: ['angular', 'scss', 'typescript'],
   imageNames: {
     '1.webp': 'Main Page',
     '2.webp': 'Work Page',

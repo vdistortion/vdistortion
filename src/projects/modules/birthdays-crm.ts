@@ -33,5 +33,5 @@ export const module: TypeModule = {
       url: 'https://apps.sozdavatel.ru/birthdaycrm/',
     },
   ],
-  tags: ['vue', 'ajax', 'bitrix24', 'stylus', 'marketplace'],
+  tags: ['vue', 'bitrix24', 'stylus', 'marketplace'],
 };
