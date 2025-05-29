@@ -29,6 +29,8 @@ export type TypeTag =
   | 'webpack'
   | 'интерсвязь';
 
+export type TypeAllTag = TypeTag | 'all';
+
 export type TypeFile = {
   type: string;
   name: string;

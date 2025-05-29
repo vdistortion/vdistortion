@@ -13,7 +13,7 @@ export class UiIconComponent {
   @Input() public size: number = 24;
   @Input() public color: string = '';
 
-  public icons: any = {
+  public icons: Record<string, string> = {
     mdiArrowLeft,
     mdiLinkVariant,
     mdiNpm,
