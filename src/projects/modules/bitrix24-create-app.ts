@@ -38,6 +38,7 @@ export const module: TypeModule = {
     'typescript',
     'scss',
     'vue',
+    'open-source',
     'bitrix24',
     'npm',
     'vitepress',

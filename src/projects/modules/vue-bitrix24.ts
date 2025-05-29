@@ -34,6 +34,7 @@ UI-компоненты этой библиотеки изначально бы�
     'storybook',
     'bitrix24',
     'npm',
+    'open-source',
     'typescript',
     'vite',
     'vitepress',
