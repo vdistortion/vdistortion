@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
-import type { TypeProjects } from '../../../projects';
+import type { TypeProject, TypeProjects } from '../../../projects';
 
 @Component({
   selector: 'app-project-list',
@@ -9,13 +9,16 @@ import type { TypeProjects } from '../../../projects';
   templateUrl: './project-list.component.html',
   styleUrl: './project-list.component.scss',
 })
-export class ProjectListComponent {
+export class ProjectListComponent implements OnInit {
   @Input({ required: true }) public projects: TypeProjects;
+  public visibleProjects: [string, TypeProject][];
 
-  get visibleProject() {
-    return Object.entries(this.projects).map(([link, project]) => ({
-      link,
-      ...project,
-    }));
+  ngOnInit(): void {
+    this.visibleProjects = Object.entries(this.projects);
+    this.shuffle();
+  }
+
+  shuffle() {
+    this.visibleProjects.sort(() => Math.random() - 0.5);
   }
 }
