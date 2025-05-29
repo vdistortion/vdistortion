@@ -3,8 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project-list/project-list.component';
 import {
+  tagsMap,
   projects,
-  type TypeProjects,
+  projectsArray,
   type TypeAllTag,
 } from '../../../projects';
 
@@ -15,42 +16,20 @@ import {
   templateUrl: './home-page.component.html',
 })
 export class HomePageComponent {
-  public projects: TypeProjects = projects;
+  public projects = projectsArray;
   public activeTag: TypeAllTag = 'all';
+  public cloudTags = Object.keys(tagsMap) as TypeAllTag[];
 
   constructor(private route: ActivatedRoute) {
     // ToDo
     this.route.fragment.subscribe((hash: any) => {
-      if (this.cloud.includes(hash)) this.activeTag = hash;
+      if (this.cloudTags.includes(hash)) {
+        this.activeTag = hash;
+        this.projects = tagsMap[this.activeTag].map((link: string) => [
+          link,
+          projects[link],
+        ]);
+      }
     });
-  }
-
-  get tags(): Record<TypeAllTag, string[]> {
-    return Object.entries(projects).reduce(
-      (acc, [id, project]) => {
-        project.tags.forEach((tag) => {
-          if (!acc[tag]) acc[tag] = [];
-          acc[tag].push(id);
-        });
-        return acc;
-      },
-      {
-        all: Object.keys(projects),
-      } as Record<TypeAllTag, string[]>,
-    );
-  }
-
-  get cloud(): TypeAllTag[] {
-    return Object.keys(this.tags) as TypeAllTag[];
-  }
-
-  get visibleProjects() {
-    return this.tags[this.activeTag].reduce(
-      (list, id: string) => ({
-        ...list,
-        [id]: projects[id],
-      }),
-      {},
-    );
   }
 }
