@@ -108,3 +108,20 @@ export const projects: TypeProjects = {
   ...parseProject(masterCrm, getImages(masterCrm.code)),
   ...parseProject(arbPro, getImages(arbPro.code)),
 };
+
+export const projectsArray = Object.entries(projects).sort(
+  () => Math.random() - 0.5,
+);
+
+export const tagsMap = projectsArray.reduce(
+  (acc, [id, project]) => {
+    project.tags.forEach((tag) => {
+      if (!acc[tag]) acc[tag] = [];
+      acc[tag].push(id);
+    });
+    return acc;
+  },
+  {
+    all: projectsArray.map(([id]) => id),
+  } as Record<TypeAllTag, string[]>,
+);
