@@ -25,12 +25,13 @@ import type {
   TypeVideo,
   TypeFolder,
   TypeModule,
+  TypeAllTag,
   TypeProject,
   TypeProjects,
   TypeImageList,
 } from './types';
 
-export {
+export type {
   TypeTag,
   TypeFile,
   TypeLink,
@@ -38,6 +39,7 @@ export {
   TypeVideo,
   TypeFolder,
   TypeModule,
+  TypeAllTag,
   TypeProject,
   TypeProjects,
   TypeImageList,

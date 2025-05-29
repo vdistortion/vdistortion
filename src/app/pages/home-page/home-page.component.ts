@@ -5,8 +5,7 @@ import { ProjectListComponent } from '../../components/project-list/project-list
 import {
   projects,
   type TypeProjects,
-  type TypeProject,
-  type TypeTag,
+  type TypeAllTag,
 } from '../../../projects';
 
 @Component({
@@ -17,34 +16,32 @@ import {
 })
 export class HomePageComponent {
   public projects: TypeProjects = projects;
-  public activeTag: TypeTag | 'all' = 'all';
+  public activeTag: TypeAllTag = 'all';
 
   constructor(private route: ActivatedRoute) {
+    // ToDo
     this.route.fragment.subscribe((hash: any) => {
       if (this.cloud.includes(hash)) this.activeTag = hash;
     });
   }
 
-  get tags(): Record<TypeTag | 'all', string[]> {
-    const sortedProjects = Object.entries(projects).reduce(
-      (acc, [id, project]: [string, TypeProject]) => {
-        project.tags.forEach((tag: TypeTag) => {
+  get tags(): Record<TypeAllTag, string[]> {
+    return Object.entries(projects).reduce(
+      (acc, [id, project]) => {
+        project.tags.forEach((tag) => {
           if (!acc[tag]) acc[tag] = [];
           acc[tag].push(id);
         });
         return acc;
       },
-      {} as Record<TypeTag, string[]>,
+      {
+        all: Object.keys(projects),
+      } as Record<TypeAllTag, string[]>,
     );
-
-    return {
-      ...sortedProjects,
-      all: Object.keys(projects),
-    };
   }
 
-  get cloud(): (TypeTag | 'all')[] {
-    return Object.keys(this.tags) as (TypeTag | 'all')[];
+  get cloud(): TypeAllTag[] {
+    return Object.keys(this.tags) as TypeAllTag[];
   }
 
   get visibleProjects() {
