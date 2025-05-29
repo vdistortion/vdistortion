@@ -20,7 +20,13 @@ export const module: TypeModule = {
       url: 'bitrix24-library',
     },
   ],
-  tags: ['github', 'pet-project', 'bitrix24', 'npm', 'vite', 'plugin'],
+  links: [
+    {
+      name: 'Docs',
+      url: '/bitrix24-library/',
+    },
+  ],
+  tags: ['github', 'bitrix24', 'npm', 'vite', 'vitepress'],
   imageNames: {
     'README.webp': 'Документация',
   },

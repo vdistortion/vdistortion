@@ -498,32 +498,6 @@
     ]
   },
   {
-    "name": "scenapro",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-47-08.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-47-56.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-48-18.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-49-11.webp"
-      },
-      {
-        "type": "file",
-        "name": "Screenshot at Aug 23 12-49-40.webp"
-      }
-    ]
-  },
-  {
     "name": "vue-bitrix24",
     "type": "folder",
     "children": [
@@ -576,20 +550,6 @@
       {
         "type": "file",
         "name": "README.webp"
-      }
-    ]
-  },
-  {
-    "name": "usm",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "1.webp"
-      },
-      {
-        "type": "file",
-        "name": "2.webp"
       }
     ]
   }

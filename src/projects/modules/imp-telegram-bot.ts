@@ -29,12 +29,5 @@ export const module: TypeModule = {
       url: 'https://vdistortion.github.io/flag-connect',
     },
   ],
-  tags: [
-    'telegram-bot',
-    'github',
-    'nodejs',
-    'ajax',
-    'pet-project',
-    'typescript',
-  ],
+  tags: ['telegram-bot', 'github', 'nodejs', 'api', 'typescript'],
 };

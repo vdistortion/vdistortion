@@ -20,20 +20,23 @@ UI-компоненты этой библиотеки изначально бы�
   ],
   links: [
     {
+      name: 'Docs',
+      url: '/ui-bitrix24/',
+    },
+    {
       name: 'Storybook',
       url: '/ui-bitrix24/vue/',
     },
   ],
   tags: [
     'github',
-    'pet-project',
     'vue',
     'storybook',
     'bitrix24',
     'npm',
-    'plugin',
     'typescript',
     'vite',
+    'vitepress',
   ],
   imageNames: {
     'bx-button.webp': 'bx-button',

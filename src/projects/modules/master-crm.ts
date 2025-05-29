@@ -14,13 +14,5 @@ export const module: TypeModule = {
       url: 'https://apps.sozdavatel.ru/konstruktor_otchetov/',
     },
   ],
-  tags: [
-    'vue',
-    'ajax',
-    'bitrix24',
-    'vuetify',
-    'stylus',
-    'markup',
-    'marketplace',
-  ],
+  tags: ['vue', 'bitrix24', 'vuetify', 'stylus', 'marketplace'],
 };

@@ -26,16 +26,21 @@ export const module: TypeModule = {
       url: 'bitrix24-create-app',
     },
   ],
+  links: [
+    {
+      name: 'Docs',
+      url: '/bitrix24-create-app/',
+    },
+  ],
   tags: [
     'github',
     'angular',
     'typescript',
     'scss',
-    'pet-project',
     'vue',
     'bitrix24',
     'npm',
-    'vite',
+    'vitepress',
   ],
   imageNames: {
     'README.webp': 'Документация',
