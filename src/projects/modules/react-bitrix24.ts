@@ -33,6 +33,7 @@ UI-компоненты как во <strong>vue-bitrix24</strong>, только 
     'storybook',
     'bitrix24',
     'npm',
+    'open-source',
     'typescript',
     'vite',
     'vitepress',

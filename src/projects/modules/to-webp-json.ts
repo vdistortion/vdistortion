@@ -29,7 +29,7 @@ export const module: TypeModule = {
       url: '/to-webp-json/',
     },
   ],
-  tags: ['github', 'typescript', 'nodejs', 'npm', 'vitepress'],
+  tags: ['github', 'typescript', 'open-source', 'nodejs', 'npm', 'vitepress'],
   imageNames: {
     'README.webp': 'Документация',
   },
