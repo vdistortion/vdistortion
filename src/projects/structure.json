@@ -5,11 +5,27 @@
     "children": [
       {
         "type": "file",
-        "name": "photo_2025-05-26_12-43-43.webp"
+        "name": "flag_connect.webp"
       },
       {
         "type": "file",
-        "name": "photo_2025-05-26_12-43-45.webp"
+        "name": "flag_connect_settings.webp"
+      },
+      {
+        "type": "file",
+        "name": "miniapp_1.webp"
+      },
+      {
+        "type": "file",
+        "name": "miniapp_settings.webp"
+      },
+      {
+        "type": "file",
+        "name": "miniapp_2.webp"
+      },
+      {
+        "type": "file",
+        "name": "cat.webp"
       }
     ]
   },

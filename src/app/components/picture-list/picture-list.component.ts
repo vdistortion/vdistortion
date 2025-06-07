@@ -5,11 +5,10 @@ import type { TypeImage } from '../../../projects';
 
 @Component({
   selector: 'app-picture-list',
-  standalone: true,
   imports: [PictureCardComponent, PhotoGalleryModule],
   templateUrl: './picture-list.component.html',
   styleUrl: './picture-list.component.scss',
 })
 export class PictureListComponent {
-  @Input({ required: true }) public images: TypeImage[];
+  @Input({ required: true }) public images!: TypeImage[];
 }

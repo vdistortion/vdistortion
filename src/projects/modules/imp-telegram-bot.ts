@@ -9,7 +9,7 @@ export const module: TypeModule = {
 <br>
 У этого тестового бота нет специализации, самое полезное это погода.
 <br>
-Также есть игра на знание флагов.
+Также есть тест на знание флагов + MiniApp.
 <br>
 И кошки, все же прекрасно знают, для чего был придуман интернет.
 `,
@@ -26,8 +26,16 @@ export const module: TypeModule = {
     },
     {
       name: 'MiniApp',
-      url: 'https://vdistortion.github.io/flag-connect',
+      url: '/flag-connect/',
     },
   ],
   tags: ['telegram-bot', 'github', 'nodejs', 'api', 'typescript'],
+  imageNames: {
+    'cat.webp': '/cat',
+    'flag_connect.webp': '/flag_connect',
+    'flag_connect_settings.webp': 'Settings',
+    'miniapp_1.webp': 'MiniApp',
+    'miniapp_2.webp': 'MiniApp',
+    'miniapp_settings.webp': 'MiniApp Settings',
+  },
 };

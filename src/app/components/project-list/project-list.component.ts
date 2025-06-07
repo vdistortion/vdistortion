@@ -4,11 +4,10 @@ import type { TypeProject } from '../../../projects';
 
 @Component({
   selector: 'app-project-list',
-  standalone: true,
   imports: [ProjectCardComponent],
   templateUrl: './project-list.component.html',
   styleUrl: './project-list.component.scss',
 })
 export class ProjectListComponent {
-  @Input({ required: true }) public projects: [string, TypeProject][];
+  @Input({ required: true }) public projects!: [string, TypeProject][];
 }

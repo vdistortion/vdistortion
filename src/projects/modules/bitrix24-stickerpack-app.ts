@@ -37,13 +37,5 @@ Ctrl+Shift+T переключает страницы с наборами.
       url: 'https://apps.sozdavatel.ru/stickers/',
     },
   ],
-  tags: [
-    'github',
-    'open-source',
-    'angular',
-    'typescript',
-    'scss',
-    'bitrix24',
-    'marketplace',
-  ],
+  tags: ['github', 'open-source', 'angular', 'typescript', 'scss', 'bitrix24', 'marketplace'],
 };

@@ -4,15 +4,14 @@ import type { TypeTag } from '../../../projects';
 
 @Component({
   selector: 'app-tags-cloud',
-  standalone: true,
   imports: [UiCardComponent],
   templateUrl: './tags-cloud.component.html',
   styleUrl: './tags-cloud.component.scss',
 })
 export class TagsCloudComponent {
-  @Input({ required: true }) public tags: (TypeTag | 'all')[];
-  @Input({ required: true }) public activeTag: TypeTag | 'all';
-  @Input({ required: true }) public isHomePage: boolean;
+  @Input({ required: true }) public tags!: (TypeTag | 'all')[];
+  @Input({ required: true }) public activeTag!: TypeTag | 'all';
+  @Input({ required: true }) public isHomePage!: boolean;
 
   get sortedTags(): (TypeTag | 'all')[] {
     const sortedTags = this.tags

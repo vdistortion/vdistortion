@@ -18,16 +18,7 @@ export const module: TypeModule = {
       url: 'smart-stop/tree/master',
     },
   ],
-  tags: [
-    'api',
-    'gulp',
-    'webpack',
-    'leaflet',
-    'stylus',
-    'pug',
-    'jquery',
-    'github',
-  ],
+  tags: ['api', 'gulp', 'webpack', 'leaflet', 'stylus', 'pug', 'jquery', 'github'],
   imageNames: {
     'Screenshot_1-min.webp': 'Расписание',
     'Screenshot_2-min.webp': 'Транспорт на карте',

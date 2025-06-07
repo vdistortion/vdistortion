@@ -4,11 +4,10 @@ import type { TypeVideo } from '../../../projects';
 
 @Component({
   selector: 'app-video-list',
-  standalone: true,
   imports: [VideoCardComponent],
   templateUrl: './video-list.component.html',
   styleUrl: './video-list.component.scss',
 })
 export class VideoListComponent {
-  @Input({ required: true }) public videos: TypeVideo[];
+  @Input({ required: true }) public videos!: TypeVideo[];
 }
