@@ -44,19 +44,14 @@ export type {
 };
 
 function getImages(folderName: string) {
-  const folder: TypeFolder = directories.find(
-    (dir: TypeFolder) => dir.name === folderName,
-  )!;
+  const folder: TypeFolder = directories.find((dir: TypeFolder) => dir.name === folderName)!;
   return folder.children.map((file: TypeFile) => ({
     file: file.name,
-    path: `assets/images/projects/${folderName}/${file.name}`,
+    path: `images/projects/${folderName}/${file.name}`,
   }));
 }
 
-function parseProject(
-  project: TypeModule,
-  imagesList: TypeImageList[] = [],
-): TypeProjects {
+function parseProject(project: TypeModule, imagesList: TypeImageList[] = []): TypeProjects {
   const {
     code,
     name,
@@ -109,9 +104,7 @@ export const projects: TypeProjects = {
   ...parseProject(arbPro, getImages(arbPro.code)),
 };
 
-export const projectsArray = Object.entries(projects).sort(
-  () => Math.random() - 0.5,
-);
+export const projectsArray = Object.entries(projects).sort(() => Math.random() - 0.5);
 
 export const tagsMap = projectsArray.reduce(
   (acc, [id, project]) => {

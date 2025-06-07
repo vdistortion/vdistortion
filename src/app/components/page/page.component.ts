@@ -6,14 +6,13 @@ import type { TypeLink, TypeTag } from '../../../projects';
 
 @Component({
   selector: 'app-page',
-  standalone: true,
   imports: [PageTitleComponent, TagsCloudComponent, FooterContentComponent],
   templateUrl: './page.component.html',
   styleUrl: './page.component.scss',
 })
 export class PageComponent {
-  @Input({ required: true }) public name: string;
-  @Input({ required: true }) public tags: (TypeTag | 'all')[];
+  @Input({ required: true }) public name!: string;
+  @Input({ required: true }) public tags!: (TypeTag | 'all')[];
   @Input() public activeTag: TypeTag | 'all' = 'all';
   @Input() public repos: TypeLink[] = [];
   @Input() public links: TypeLink[] = [];

@@ -1,14 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
-import {
-  NgxParticlesModule,
-  NgParticlesService,
-  type IParticlesProps,
-} from '@tsparticles/angular';
+import { NgxParticlesModule, NgParticlesService, type IParticlesProps } from '@tsparticles/angular';
 import { loadLinksPreset } from '@tsparticles/preset-links';
 
 @Component({
   selector: 'app-background',
-  standalone: true,
   imports: [NgxParticlesModule],
   templateUrl: './background.component.html',
 })

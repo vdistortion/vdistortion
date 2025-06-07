@@ -8,7 +8,6 @@ type Item = {
 
 @Component({
   selector: 'app-footer-content',
-  standalone: true,
   imports: [UiCardComponent],
   templateUrl: './footer-content.component.html',
   styleUrl: './footer-content.component.scss',
