@@ -3,7 +3,12 @@
     @if (isHomePage) {
       <header class="page__header">
         <div class="l-wrapper">
-          <app-logo class="page__logo" title="Валентин"></app-logo>
+          <img
+            class="page__logo"
+            [src]="'/assets/logo.svg?hash=' + cacheBust"
+            alt="logo"
+            title="Валентин"
+          />
         </div>
       </header>
     }
