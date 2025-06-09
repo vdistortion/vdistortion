@@ -1,63 +1,36 @@
-# Portfolio
+<h3 align="center">Hi 🤟, I'm Valentin</h2>
+<h4 align="center">A frontend developer from Russia</h3>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+<p align="center">
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+    <img src="https://www.svgrepo.com/show/303600/typescript-logo.svg" alt="typescript" width="40"/>
+  </a>
+  <a href="https://rxjs.dev/" target="_blank" rel="noreferrer">
+    <img src="https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png" alt="rxjs" width="40"/>
+  </a>
+  <a href="https://angular.dev/" target="_blank" rel="noreferrer">
+    <img src="https://angular.dev/assets/icons/favicon-48x48.png" alt="angular" width="40"/>
+  </a>
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+    <img src="https://www.svgrepo.com/show/354528/vue.svg" alt="vuejs" width="40"/>
+  </a>
+  <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noreferrer">
+    <img src="https://www.svgrepo.com/show/354555/webstorm.svg" alt="webstorm" width="40"/>
+  </a>
+  <a href="https://manjaro.org/products/download/x86" target="_blank" rel="noreferrer">
+    <img src="https://manjaro.org/logo.svg" alt="manjaro linux" width="40"/>
+  </a>
+</p>
 
-## Development server
+[![GitHub User's stars](https://img.shields.io/github/stars/vdistortion?style=flat&logo=github)](https://github.com/vdistortion)
+[![NPM Downloads by package author](https://img.shields.io/npm-stat/dw/vdistortion?style=flat&logo=npm&color=cb3837)](https://www.npmjs.com/~vdistortion)
 
-To start a local development server, run:
+- 🌱 I’m currently learning **Angular** and **RxJS**
 
-```bash
-ng serve
-```
+- ✨ All of my projects are available at [npmjs](https://www.npmjs.com/~vdistortion)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- 🎸 I’m currently working on [a music engine](https://github.com/vdistortion/nebuloud)
 
-## Code scaffolding
+- 📄 Know about my [experiences](https://vdistortion.github.io/vdistortion/)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-## Links
-
-[JavaScript library to make drawing animation on SVG](https://maxwellito.github.io/vivus-instant/)
+[![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vdistortion&layout=compact&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)

@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "vdistortion",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier . --write",
-    "public": "ng build --base-href /portfolio/ && cd dist/portfolio/browser && cp index.html 404.html && gh-pages -d . -t --nojekyll",
+    "public": "ng build --base-href /vdistortion/ && cd dist/vdistortion/browser && cp index.html 404.html && gh-pages -d . -t --nojekyll",
     "to-webp": "npx to-webp-json@latest json=source width=1000 height=1000"
   },
   "dependencies": {
