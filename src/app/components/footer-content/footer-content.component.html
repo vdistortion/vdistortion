@@ -3,7 +3,9 @@
     <ul class="footer-content__contacts">
       @for (item of list; track item.link) {
         <li>
-          <a [href]="item.link" target="_blank">{{ item.name }}</a>
+          <a [href]="item.link" target="_blank" (click)="onClick(`contacts_${item.name}_click`)">
+            {{ item.name }}
+          </a>
         </li>
       }
     </ul>
