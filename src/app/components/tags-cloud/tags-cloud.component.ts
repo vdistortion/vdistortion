@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { UiCardComponent } from '../ui-card/ui-card.component';
+import { Analytics } from '../../services/analytics.service';
 import type { TypeTag } from '../../../projects';
 
 @Component({
@@ -12,6 +13,7 @@ export class TagsCloudComponent {
   @Input({ required: true }) public tags!: (TypeTag | 'all')[];
   @Input({ required: true }) public activeTag!: TypeTag | 'all';
   @Input({ required: true }) public isHomePage!: boolean;
+  analytics = inject(Analytics);
 
   get sortedTags(): (TypeTag | 'all')[] {
     const sortedTags = this.tags
@@ -28,5 +30,6 @@ export class TagsCloudComponent {
   onClick(e: MouseEvent, tag: TypeTag | 'all') {
     e.preventDefault();
     location.hash = '#' + (this.activeTag === tag ? 'all' : tag);
+    this.analytics.sendEvent('tags_cloud_click', { category: 'UI' });
   }
 }

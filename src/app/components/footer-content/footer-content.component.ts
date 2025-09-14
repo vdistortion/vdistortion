@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { UiCardComponent } from '../ui-card/ui-card.component';
+import { Analytics } from '../../services/analytics.service';
 
 type Item = {
   name: string;
@@ -31,4 +32,9 @@ export class FooterContentComponent {
       link: 'https://www.linkedin.com/in/valentin-zolotov/',
     },
   ];
+  analytics = inject(Analytics);
+
+  onClick(event: string) {
+    this.analytics.sendEvent(event, { category: 'UI' });
+  }
 }

@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { UiCardComponent } from '../ui-card/ui-card.component';
+import { Analytics } from '../../services/analytics.service';
 import type { TypeProject } from '../../../projects';
 
 @Component({
@@ -12,6 +13,11 @@ import type { TypeProject } from '../../../projects';
 export class ProjectCardComponent {
   @Input({ required: true }) public project!: TypeProject;
   @Input({ required: true }) public link!: string;
+  analytics = inject(Analytics);
+
+  onClick(event: string) {
+    this.analytics.sendEvent(event, { category: 'UI' });
+  }
 
   get tags() {
     return this.project.tags
