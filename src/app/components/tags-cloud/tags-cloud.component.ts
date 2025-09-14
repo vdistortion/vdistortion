@@ -30,6 +30,6 @@ export class TagsCloudComponent {
   onClick(e: MouseEvent, tag: TypeTag | 'all') {
     e.preventDefault();
     location.hash = '#' + (this.activeTag === tag ? 'all' : tag);
-    this.analytics.sendEvent('tags_cloud_click', { category: 'UI' });
+    this.analytics.sendEvent(`tags_cloud_${tag}_click`, { category: 'UI' });
   }
 }
