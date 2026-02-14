@@ -1,13 +1,12 @@
 @if (project) {
   <app-page
     [name]="project.name"
-    [tags]="project.tags"
+    [tech]="project.tech"
     [repos]="project.repos"
     [links]="project.links"
   >
     <app-project-detail
       [description]="project.detail || project.description"
-      [videos]="project.videos"
       [images]="project.images"
     ></app-project-detail>
   </app-page>

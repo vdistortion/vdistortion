@@ -2,16 +2,12 @@ import type { TypeModule } from '../types';
 
 export const module: TypeModule = {
   code: 'imp-telegram-bot',
-  name: '😈 ImpBot 😈',
-  description: 'Бот для Telegram',
+  name: 'Telegram Bot',
+  description: 'Универсальный Telegram-бот с MiniApp',
   detail: `
-Использует библиотеку <strong>grammY</strong>, крутится на Vercel, написан на <strong>TypeScript</strong>.
-<br>
-У этого тестового бота нет специализации, самое полезное это погода.
-<br>
-Также есть тест на знание флагов + MiniApp.
-<br>
-И кошки, все же прекрасно знают, для чего был придуман интернет.
+Универсальный Telegram-бот на Node.js/TypeScript (grammY). Playground для экспериментов с Bot API. Работает на
+Serverless-архитектуре (Vercel). Включает интеграцию погодных сервисов и генерацию контента. Также есть MiniApp
+(Flag Connect), который может подхватывать темы телеграма, а также использоваться отдельно от бота.
 `,
   repos: [
     {
@@ -29,7 +25,8 @@ export const module: TypeModule = {
       url: '/flag-connect/',
     },
   ],
-  tags: ['telegram-bot', 'github', 'nodejs', 'api', 'typescript'],
+  tags: ['all'],
+  tech: ['telegram', 'nodejs', 'typescript'],
   imageNames: {
     'cat.webp': '/cat',
     'flag_connect.webp': '/flag_connect',

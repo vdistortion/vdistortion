@@ -1,7 +1,7 @@
 import { Component, inject, Input } from '@angular/core';
 import { UiCardComponent } from '../ui-card/ui-card.component';
 import { Analytics } from '../../services/analytics.service';
-import type { TypeTag } from '../../../projects';
+import { ProjectTag, type TypeAllTag, TypeTech } from '../../../projects';
 
 @Component({
   selector: 'app-tags-cloud',
@@ -10,24 +10,17 @@ import type { TypeTag } from '../../../projects';
   styleUrl: './tags-cloud.component.scss',
 })
 export class TagsCloudComponent {
-  @Input({ required: true }) public tags!: (TypeTag | 'all')[];
-  @Input({ required: true }) public activeTag!: TypeTag | 'all';
+  @Input() public tags: TypeAllTag[] = [];
+  @Input() public tech: TypeTech[] = [];
+  @Input({ required: true }) public activeTag!: TypeAllTag;
   @Input({ required: true }) public isHomePage!: boolean;
   analytics = inject(Analytics);
 
-  get sortedTags(): (TypeTag | 'all')[] {
-    const sortedTags = this.tags
-      .filter((tag) => tag !== 'all')
-      .sort((a, b) => {
-        if (a < b) return -1;
-        if (a > b) return 1;
-        return 0;
-      });
-
-    return this.isHomePage ? ['all', ...sortedTags] : sortedTags;
+  getNameTag(tag: TypeAllTag): string {
+    return ProjectTag[tag];
   }
 
-  onClick(e: MouseEvent, tag: TypeTag | 'all') {
+  onClick(e: MouseEvent, tag: TypeAllTag) {
     e.preventDefault();
     location.hash = '#' + (this.activeTag === tag ? 'all' : tag);
     this.analytics.sendEvent(`tags_cloud_${tag}_click`, { category: 'UI' });

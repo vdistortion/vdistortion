@@ -1,36 +1,20 @@
-<h3 align="center">Hi 🤟, I'm Valentin</h2>
-<h4 align="center">A frontend developer from Russia</h3>
+### Hi 🤟, I’m Valentin – a Frontend Developer specializing in Angular.
 
-<p align="center">
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-    <img src="https://www.svgrepo.com/show/303600/typescript-logo.svg" alt="typescript" width="40"/>
-  </a>
-  <a href="https://rxjs.dev/" target="_blank" rel="noreferrer">
-    <img src="https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png" alt="rxjs" width="40"/>
-  </a>
-  <a href="https://angular.dev/" target="_blank" rel="noreferrer">
-    <img src="https://angular.dev/assets/icons/favicon-48x48.png" alt="angular" width="40"/>
-  </a>
-  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-    <img src="https://www.svgrepo.com/show/354528/vue.svg" alt="vuejs" width="40"/>
-  </a>
-  <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noreferrer">
-    <img src="https://www.svgrepo.com/show/354555/webstorm.svg" alt="webstorm" width="40"/>
-  </a>
-  <a href="https://manjaro.org/products/download/x86" target="_blank" rel="noreferrer">
-    <img src="https://manjaro.org/logo.svg" alt="manjaro linux" width="40"/>
-  </a>
-</p>
+[![Angular](https://img.shields.io/badge/-Angular-0F0F11?logo=angular&logoColor=white)](https://angular.dev/)
+[![RxJS](https://img.shields.io/badge/-RxJS-B7178C?logo=reactivex&logoColor=white)](https://rxjs.dev/)
+[![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
+[![WebStorm](https://img.shields.io/badge/-WebStorm-000000?logo=webstorm&logoColor=white)](https://www.jetbrains.com/webstorm/)
+[![Linux](https://img.shields.io/badge/-Linux-35BFA4?logo=manjaro&logoColor=white)](https://manjaro.org/products/download/x86)
 
-[![GitHub User's stars](https://img.shields.io/github/stars/vdistortion?style=flat&logo=github)](https://github.com/vdistortion)
+- ✨ **Current Focus:** Building scalable web applications with **[Angular](https://github.com/search?type=repositories&s=stars&q=owner%3Avdistortion%20topic%3Aangular) and TypeScript**.
+- 🌱 **My Open-Source Tools:** All npm packages are available at [npmjs](https://www.npmjs.com/~vdistortion).
+- 🎸 **Side Project:** Developing a modern music platform with **Angular and Node.js** ([nebuloud](https://github.com/vdistortion/nebuloud)).
+- 📄 **Professional Experience:** Detailed resume and portfolio are available on my [website](https://vdistortion.github.io/vdistortion/).
+- 🔭 **Experience** with maps, SVG, dashboards, complex UI.
+- 📚 **Legacy Expertise:** 5+ years of commercial experience with **Vue.js and Bitrix24 ecosystem**.
+
+[![GitHub User's stars](https://img.shields.io/github/stars/vdistortion?style=flat&logo=github)](https://github.com/vdistortion?tab=repositories&sort=stargazers)
 [![NPM Downloads by package author](https://img.shields.io/npm-stat/dw/vdistortion?style=flat&logo=npm&color=cb3837)](https://www.npmjs.com/~vdistortion)
 
-- 🌱 I’m currently learning **Angular** and **RxJS**
-
-- ✨ All of my projects are available at [npmjs](https://www.npmjs.com/~vdistortion)
-
-- 🎸 I’m currently working on [a music engine](https://github.com/vdistortion/nebuloud)
-
-- 📄 Know about my [experiences](https://vdistortion.github.io/vdistortion/)
-
-[![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vdistortion&layout=compact&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
+[![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vdistortion&layout=compact&theme=onedark&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)

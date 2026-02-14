@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "birthdays-crm",
+    "name": "birthdays",
     "type": "folder",
     "children": [
       {
@@ -264,7 +264,7 @@
     ]
   },
   {
-    "name": "to-webp-json",
+    "name": "to-static-images",
     "type": "folder",
     "children": [
       {
@@ -332,7 +332,7 @@
     ]
   },
   {
-    "name": "smart-stop",
+    "name": "transport-infoterminal",
     "type": "folder",
     "children": [
       {
@@ -370,7 +370,7 @@
     ]
   },
   {
-    "name": "ios",
+    "name": "optical-network-ui",
     "type": "folder",
     "children": [
       {
@@ -424,7 +424,7 @@
     ]
   },
   {
-    "name": "is-mobile",
+    "name": "doctor-appointment",
     "type": "folder",
     "children": [
       {
@@ -514,7 +514,7 @@
     ]
   },
   {
-    "name": "vue-bitrix24",
+    "name": "ui-bitrix24",
     "type": "folder",
     "children": [
       {
@@ -556,16 +556,6 @@
       {
         "type": "file",
         "name": "bx-checkbox.webp"
-      }
-    ]
-  },
-  {
-    "name": "react-bitrix24",
-    "type": "folder",
-    "children": [
-      {
-        "type": "file",
-        "name": "README.webp"
       }
     ]
   }

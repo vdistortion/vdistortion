@@ -2,19 +2,14 @@ import type { TypeModule } from '../types';
 
 export const module: TypeModule = {
   code: 'bitrix24-create-app',
-  name: 'bitrix24-create-app',
-  description: 'Удобный сборщик для приложений Битрикс24',
+  name: 'CLI',
+  description: 'Удобный инструмент для автоматизации развертывания Angular/Vue приложений',
   detail: `
-Удобный сборщик для приложений Битрикс24 первого и второго типов.
-Два шаблона: <strong>Angular</strong> и <strong>Vue</strong>.
-Возможность локальной разработки и <strong>TypeScript</strong>.
-Подключена библиотека BX24 на промисах с удобными пакетными запросами (<strong>bitrix24-library</strong>).
-Архив с приложением первого типа при сборке.
-Для Vue подключена библиотека компонентов <strong>vue-bitrix24</strong> в стилистике Битрикс24.
-<br>
-Большой частью задач были приложения для порталов Битрикс24, поэтому создание подобного пакета оставалось вопросом времени.
-Изначально это был один шаблон на <strong>Vue</strong>, включающий функционал <strong>bitrix24-library</strong> и <strong>vue-bitrix24</strong>.
-Впоследствии их было решено разделить.
+Инструмент командной строки, автоматизирующий создание и настройку приложений первого и второго типа для Bitrix24.
+Решает проблему сложной настройки окружения, предоставляя готовые, оптимизированные шаблоны на Angular и Vue с
+предустановленными TypeScript, Vite, а также интеграцией с bitrix24-library (Promise API) и ui-bitrix24 (компоненты).
+Позволяет вести локальную разработку с hot-reload и автоматически генерирует архив для загрузки в маркетплейс Bitrix24,
+экономя часы ручной конфигурации. Используется как отправная точка при разработке коммерческих приложений для портала.
 `,
   repos: [
     {
@@ -32,17 +27,8 @@ export const module: TypeModule = {
       url: '/bitrix24-create-app/',
     },
   ],
-  tags: [
-    'github',
-    'angular',
-    'typescript',
-    'scss',
-    'vue',
-    'open-source',
-    'bitrix24',
-    'npm',
-    'vitepress',
-  ],
+  tags: ['angular', 'all'],
+  tech: ['angular', 'typescript', 'scss', 'vue', 'bitrix24', 'npm', 'vitepress'],
   imageNames: {
     'README.webp': 'Документация',
   },

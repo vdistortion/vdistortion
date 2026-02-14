@@ -2,11 +2,12 @@ import type { TypeModule } from '../types';
 
 export const module: TypeModule = {
   code: 'kira-sekira',
-  name: 'Kira Sekira',
-  description: 'Портфолио для фотографа',
+  name: 'Сайт фотографа',
+  description: 'Портфолио для фотографа на Angular',
   detail: `
-Изначально сайт сделан на <strong>Vue</strong>, потом переписан на <strong>Angular</strong> и <strong>TypeScript</strong>.
-Специально для сайта создан пакет <strong>to-webp-json</strong> для удобной работы с большим количеством изображений.
+Адаптированное портфолио с галереей. Проект мигрирован с Vue на Angular, реализован адаптивный фотогрид и оптимизация
+изображений для быстрой загрузки. Для обработки и оптимизации большого количества фотографий был создан и интегрирован
+инструмент to-static-images, который автоматически генерирует изображения подходящего размера в нужном формате.
 `,
   links: [
     {
@@ -14,7 +15,8 @@ export const module: TypeModule = {
       url: '/kira-sekira/',
     },
   ],
-  tags: ['angular', 'scss', 'typescript'],
+  tags: ['angular', 'all'],
+  tech: ['angular', 'scss', 'typescript'],
   imageNames: {
     'index.webp': 'Главная страница',
     'project.webp': 'Персонажи',

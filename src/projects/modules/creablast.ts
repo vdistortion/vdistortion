@@ -2,10 +2,10 @@ import type { TypeModule } from '../types';
 
 export const module: TypeModule = {
   code: 'creablast',
-  name: 'Creablast',
-  description: 'Портфолио в розовых тонах',
+  name: 'Сайт креатора',
+  description: 'Лендинг для копирайтера и автора на Angular',
   detail: `
-Изначально сайт сделан на <strong>Vue</strong>, потом переписан на <strong>Angular</strong> и <strong>TypeScript</strong>.
+Проект изначально сделан на Vue, потом переписан на Angular и TypeScript для улучшения производительности и контроля.
 `,
   links: [
     {
@@ -13,7 +13,8 @@ export const module: TypeModule = {
       url: '/creablast/',
     },
   ],
-  tags: ['angular', 'scss', 'typescript'],
+  tags: ['angular', 'all'],
+  tech: ['angular', 'scss', 'typescript'],
   imageNames: {
     '1.webp': 'Main Page',
     '2.webp': 'Work Page',

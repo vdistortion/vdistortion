@@ -20,7 +20,7 @@ export class ProjectCardComponent {
   }
 
   get tags() {
-    return this.project.tags
+    return this.project.tech
       .map((tag) => `#${tag}`)
       .sort((a, b) => {
         if (a < b) return -1;

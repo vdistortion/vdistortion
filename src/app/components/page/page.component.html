@@ -24,7 +24,8 @@
         </div>
         <div class="page__tags">
           <app-tags-cloud
-            [tags]="tags"
+            [tags]="isHomePage ? tags : []"
+            [tech]="!isHomePage ? tech : []"
             [activeTag]="activeTag"
             [isHomePage]="isHomePage"
           ></app-tags-cloud>

@@ -10,7 +10,7 @@
     "test": "ng test",
     "format": "prettier . --write",
     "public": "ng build --base-href /vdistortion/ && cd dist/vdistortion/browser && cp index.html 404.html && gh-pages -d . -t --nojekyll",
-    "to-webp": "npx to-webp-json@latest json=source width=1000 height=1000"
+    "to-webp": "npx to-static-images@latest json=source width=1000 height=1000"
   },
   "dependencies": {
     "@angular/common": "^20.0.0",
@@ -19,7 +19,6 @@
     "@angular/forms": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
     "@angular/router": "^20.0.0",
-    "@angular/youtube-player": "^20.0.2",
     "@mdi/js": "^7.4.47",
     "@tsparticles/angular": "^3.0.0",
     "@tsparticles/preset-links": "^3.2.0",

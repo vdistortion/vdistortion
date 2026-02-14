@@ -2,13 +2,15 @@ import type { TypeModule } from '../types';
 
 export const module: TypeModule = {
   code: 'bitrix24-library',
-  name: 'bitrix24-library',
-  description: 'Promise-обёртка для работы с JavaScript REST API Bitrix24',
+  name: 'SDK',
+  description: 'TypeScript SDK для асинхронной работы с REST API Bitrix24',
   detail: `
-Изначально была частью <strong>bitrix24-create-app</strong>.
-Содержит обёртку на промисах для стандартной библиотеки BX24.
-Плюсом добавлено несколько методов, например нормальные пакетные запросы.
-Переписана на <strong>TypeScript</strong>.
+Переработал callback-ориентированный API в современный promise-based интерфейс, добавляющий типы и удобные методы.
+Реализовал продвинутую обработку пакетных запросов, что критично для производительности enterprise-приложений.
+Библиотека изначально выделена из шаблона bitrix24-create-app для повторного использования. Основные преимущества:
+полная типизация, простая обработка батч-запросов и стабильный API. Используется как зависимость в шаблонах
+bitrix24-create-app и рекомендуется для всех моих UI-библиотек под Bitrix24, обеспечивая согласованность и надежность
+кода.
 `,
   repos: [
     {
@@ -26,7 +28,8 @@ export const module: TypeModule = {
       url: '/bitrix24-library/',
     },
   ],
-  tags: ['github', 'bitrix24', 'open-source', 'npm', 'vite', 'vitepress'],
+  tags: ['all'],
+  tech: ['bitrix24', 'npm', 'vite', 'vitepress', 'typescript'],
   imageNames: {
     'README.webp': 'Документация',
   },

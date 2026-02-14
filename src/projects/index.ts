@@ -1,26 +1,28 @@
+import { module as elmirabai } from './modules/elmirabai';
+import { module as nebuloud } from './modules/nebuloud';
 import { module as arbPro } from './modules/arb-pro';
-import { module as smartStop } from './modules/smart-stop';
-import { module as isMobile } from './modules/is-mobile';
-import { module as ios } from './modules/ios';
-import { module as birthdaysCrm } from './modules/birthdays-crm';
+import { module as transportInfoterminal } from './modules/transport-infoterminal';
+import { module as doctorAppointment } from './modules/doctor-appointment';
+import { module as opticalNetworkUi } from './modules/optical-network-ui';
+import { module as birthdays } from './modules/birthdays';
 import { module as masterCrm } from './modules/master-crm';
-import { module as vueBitrix24 } from './modules/vue-bitrix24';
-import { module as reactBitrix24 } from './modules/react-bitrix24';
-import { module as toWebpJson } from './modules/to-webp-json';
+import { module as uiBitrix24 } from './modules/ui-bitrix24';
+import { module as toStaticImages } from './modules/to-static-images';
 import { module as bitrix24CreateApp } from './modules/bitrix24-create-app';
 import { module as bitrix24Library } from './modules/bitrix24-library';
+import { module as bitrix24PricingApp } from './modules/bitrix24-pricing-app';
 import { module as bitrix24StickersApp } from './modules/bitrix24-stickerpack-app';
-import { module as typesDsj } from './modules/types-directory-structure-json';
 import { module as kiraSekira } from './modules/kira-sekira';
 import { module as creablast } from './modules/creablast';
+import { module as flagConnect } from './modules/flag-connect';
 import { module as bot } from './modules/imp-telegram-bot';
 import directories from './structure.json';
+import { ProjectTag } from './types';
 import type {
-  TypeTag,
+  TypeTech,
   TypeFile,
   TypeLink,
   TypeImage,
-  TypeVideo,
   TypeFolder,
   TypeModule,
   TypeAllTag,
@@ -29,12 +31,13 @@ import type {
   TypeImageList,
 } from './types';
 
+export { ProjectTag };
+
 export type {
-  TypeTag,
+  TypeTech,
   TypeFile,
   TypeLink,
   TypeImage,
-  TypeVideo,
   TypeFolder,
   TypeModule,
   TypeAllTag,
@@ -56,12 +59,12 @@ function parseProject(project: TypeModule, imagesList: TypeImageList[] = []): Ty
     code,
     name,
     tags,
+    tech,
     description,
     detail = '',
     repos = [],
     links = [],
     imageNames = {},
-    videos = [],
   } = project;
 
   const images = imagesList.map((image) => ({
@@ -76,8 +79,8 @@ function parseProject(project: TypeModule, imagesList: TypeImageList[] = []): Ty
     repos,
     links,
     tags,
+    tech,
     images,
-    videos,
   };
 
   return {
@@ -86,22 +89,24 @@ function parseProject(project: TypeModule, imagesList: TypeImageList[] = []): Ty
 }
 
 export const projects: TypeProjects = {
-  ...parseProject(vueBitrix24, getImages(vueBitrix24.code)),
+  ...parseProject(uiBitrix24, getImages(uiBitrix24.code)),
   ...parseProject(bitrix24Library, getImages(bitrix24Library.code)),
   ...parseProject(bitrix24CreateApp, getImages(bitrix24CreateApp.code)),
   ...parseProject(bitrix24StickersApp, getImages(bitrix24StickersApp.code)),
-  ...parseProject(reactBitrix24, getImages(reactBitrix24.code)),
-  ...parseProject(toWebpJson, getImages(toWebpJson.code)),
+  ...parseProject(toStaticImages, getImages(toStaticImages.code)),
   ...parseProject(kiraSekira, getImages(kiraSekira.code)),
   ...parseProject(creablast, getImages(creablast.code)),
-  ...parseProject(typesDsj),
   ...parseProject(bot, getImages(bot.code)),
-  ...parseProject(smartStop, getImages(smartStop.code)),
-  ...parseProject(isMobile, getImages(isMobile.code)),
-  ...parseProject(ios, getImages(ios.code)),
-  ...parseProject(birthdaysCrm, getImages(birthdaysCrm.code)),
+  ...parseProject(transportInfoterminal, getImages(transportInfoterminal.code)),
+  ...parseProject(doctorAppointment, getImages(doctorAppointment.code)),
+  ...parseProject(opticalNetworkUi, getImages(opticalNetworkUi.code)),
+  ...parseProject(birthdays, getImages(birthdays.code)),
   ...parseProject(masterCrm, getImages(masterCrm.code)),
   ...parseProject(arbPro, getImages(arbPro.code)),
+  ...parseProject(elmirabai),
+  ...parseProject(nebuloud),
+  ...parseProject(flagConnect),
+  ...parseProject(bitrix24PricingApp),
 };
 
 export const projectsArray = Object.entries(projects).sort(() => Math.random() - 0.5);
@@ -114,7 +119,5 @@ export const tagsMap = projectsArray.reduce(
     });
     return acc;
   },
-  {
-    all: projectsArray.map(([id]) => id),
-  } as Record<TypeAllTag, string[]>,
+  {} as Record<TypeAllTag, string[]>,
 );

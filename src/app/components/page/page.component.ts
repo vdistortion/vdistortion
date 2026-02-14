@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { PageTitleComponent } from '../page-title/page-title.component';
 import { TagsCloudComponent } from '../tags-cloud/tags-cloud.component';
 import { FooterContentComponent } from '../footer-content/footer-content.component';
-import type { TypeLink, TypeTag } from '../../../projects';
+import { TypeLink, TypeAllTag, TypeTech } from '../../../projects';
 
 @Component({
   selector: 'app-page',
@@ -11,9 +11,10 @@ import type { TypeLink, TypeTag } from '../../../projects';
   styleUrl: './page.component.scss',
 })
 export class PageComponent {
-  @Input({ required: true }) public name!: string;
-  @Input({ required: true }) public tags!: (TypeTag | 'all')[];
-  @Input() public activeTag: TypeTag | 'all' = 'all';
+  @Input() public name = '';
+  @Input() public tags: TypeAllTag[] = [];
+  @Input() public tech: TypeTech[] = [];
+  @Input() public activeTag: TypeAllTag = 'all';
   @Input() public repos: TypeLink[] = [];
   @Input() public links: TypeLink[] = [];
   @Input() public isHomePage: boolean = false;

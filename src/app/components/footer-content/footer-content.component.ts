@@ -14,6 +14,7 @@ type Item = {
   styleUrl: './footer-content.component.scss',
 })
 export class FooterContentComponent {
+  private DOCUMENT_ID = '1NY0j4b9eIiQj1jkc6DWsZHeM6wvtKfgtguyZQU-Iob8';
   public list: Item[] = [
     {
       name: 'GitHub',
@@ -30,6 +31,14 @@ export class FooterContentComponent {
     {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/valentin-zolotov/',
+    },
+    {
+      name: 'CV.pdf',
+      link: `https://docs.google.com/document/d/${this.DOCUMENT_ID}/export?format=pdf`,
+    },
+    {
+      name: 'CV',
+      link: `https://docs.google.com/document/d/${this.DOCUMENT_ID}/`,
     },
   ];
   analytics = inject(Analytics);

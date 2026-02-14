@@ -1,24 +1,23 @@
-export type TypeTag =
+export enum ProjectTag {
+  all = 'Все проекты',
+  angular = 'Angular',
+}
+
+export type TypeTech =
   | 'angular'
-  | 'api'
   | 'bitrix24'
-  | 'github'
   | 'google-maps'
   | 'gulp'
   | 'jquery'
   | 'leaflet'
-  | 'legacy'
-  | 'marketplace'
   | 'nodejs'
   | 'npm'
-  | 'open-source'
   | 'pug'
-  | 'react'
   | 'scss'
   | 'storybook'
   | 'stylus'
   | 'svg'
-  | 'telegram-bot'
+  | 'telegram'
   | 'typescript'
   | 'vite'
   | 'vitepress'
@@ -26,7 +25,7 @@ export type TypeTag =
   | 'vuetify'
   | 'webpack';
 
-export type TypeAllTag = TypeTag | 'all';
+export type TypeAllTag = keyof typeof ProjectTag;
 
 export type TypeFile = {
   type: string;
@@ -44,11 +43,6 @@ export type TypeLink = {
   name: string;
 };
 
-export type TypeVideo = {
-  src: string;
-  title?: string;
-};
-
 export type TypeImageList = {
   file: string;
   path: string;
@@ -62,23 +56,23 @@ export type TypeImage = {
 export type TypeModule = {
   code: string;
   name: string;
-  tags: TypeTag[];
+  tags: TypeAllTag[];
+  tech: TypeTech[];
   description: string;
   detail?: string;
   repos?: TypeLink[];
   links?: TypeLink[];
-  videos?: TypeVideo[];
   imageNames?: Record<string, string>;
 };
 
 export type TypeProject = {
   name: string;
-  tags: TypeTag[];
+  tags: TypeAllTag[];
+  tech: TypeTech[];
   description: string;
   detail: string;
   repos: TypeLink[];
   links: TypeLink[];
-  videos: TypeVideo[];
   images: TypeImage[];
 };
 
