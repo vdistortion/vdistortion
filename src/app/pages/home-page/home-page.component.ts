@@ -3,7 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project-list/project-list.component';
-import { tagsMap, projects, projectsArray, type TypeAllTag, TypeProject } from '../../../projects';
+import { projects, type TypeAllTag, TypeProject } from '../../../projects';
 
 @Component({
   selector: 'app-home-page',
@@ -14,7 +14,22 @@ export class HomePageComponent {
   private route = inject(ActivatedRoute);
   private fragment = toSignal(this.route.fragment);
 
-  public cloudTags = Object.keys(tagsMap) as TypeAllTag[];
+  private projectsArray = computed(() => Object.entries(projects).sort(() => Math.random() - 0.5));
+
+  private tagsMap = computed(() =>
+    this.projectsArray().reduce(
+      (acc, [id, project]) => {
+        project.tags.forEach((tag) => {
+          if (!acc[tag]) acc[tag] = [];
+          acc[tag].push(id);
+        });
+        return acc;
+      },
+      {} as Record<TypeAllTag, string[]>,
+    ),
+  );
+
+  public cloudTags = Object.keys(this.tagsMap()) as TypeAllTag[];
 
   public activeTag = computed<TypeAllTag>(() => {
     const f = this.fragment();
@@ -23,7 +38,7 @@ export class HomePageComponent {
 
   public filteredProjects = computed<[string, TypeProject][]>(() => {
     const tag = this.activeTag();
-    if (tag === 'all') return projectsArray;
-    return tagsMap[tag].map((link: string) => [link, projects[link]]);
+    if (tag === 'all') return this.projectsArray();
+    return this.tagsMap()[tag].map((link: string) => [link, projects[link]]);
   });
 }

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectDetailComponent } from '../../components/project-detail/project-detail.component';
 import { projects, type TypeProjects, type TypeProject } from '../../../projects';
@@ -10,6 +11,7 @@ import { projects, type TypeProjects, type TypeProject } from '../../../projects
   templateUrl: './project-page.component.html',
 })
 export class ProjectPageComponent implements OnInit {
+  private titleService = inject(Title);
   public projects: TypeProjects = projects;
   public project!: TypeProject;
   public pageId: string | null;
@@ -27,6 +29,6 @@ export class ProjectPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    document.title = this.project ? `${this.project.name} | ${this.route.snapshot.title}` : '';
+    if (this.project) this.titleService.setTitle(`${this.project.name} | ${this.route.snapshot.title}`);
   }
 }

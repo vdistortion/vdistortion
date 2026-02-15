@@ -8,7 +8,7 @@
       <div class="project-card__name">{{ project().name }}</div>
       <div class="project-card__description" [innerHTML]="project().description"></div>
       <div class="project-card__tags">
-        @for (tag of tags; track tag) {
+        @for (tag of tags(); track tag) {
           <div class="project-card__tag">
             {{ tag }}
           </div>
