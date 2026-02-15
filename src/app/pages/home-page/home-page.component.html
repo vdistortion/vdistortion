@@ -1,3 +1,3 @@
-<app-page name="Проекты" [tags]="cloudTags" [activeTag]="activeTag" [isHomePage]="true">
-  <app-project-list [projects]="projects"></app-project-list>
+<app-page name="Проекты" [tags]="cloudTags" [activeTag]="activeTag()" [isHomePage]="true">
+  <app-project-list [projects]="filteredProjects()"></app-project-list>
 </app-page>

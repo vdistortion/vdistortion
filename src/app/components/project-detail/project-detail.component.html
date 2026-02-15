@@ -1,12 +1,12 @@
 <div class="project-detail">
-  @if (description) {
+  @if (description()) {
     <div class="project-detail__item">
-      <div class="project-detail__description" [innerHTML]="description"></div>
+      <div class="project-detail__description" [innerHTML]="description()"></div>
     </div>
   }
-  @if (images.length) {
+  @if (images().length) {
     <div class="project-detail__item">
-      <app-picture-list [images]="images"></app-picture-list>
+      <app-picture-list [images]="images()"></app-picture-list>
     </div>
   }
 </div>

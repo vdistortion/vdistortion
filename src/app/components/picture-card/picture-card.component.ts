@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-picture-card',
@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './picture-card.component.scss',
 })
 export class PictureCardComponent {
-  @Input({ required: true }) public image!: string;
-  @Input({ required: true }) public description!: string;
+  public image = input.required<string>();
+  public description = input.required<string>();
 }

@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { UiCardComponent } from '../ui-card/ui-card.component';
 import { Analytics } from '../../services/analytics.service';
@@ -11,8 +11,8 @@ import type { TypeProject } from '../../../projects';
   styleUrl: './project-card.component.scss',
 })
 export class ProjectCardComponent {
-  @Input({ required: true }) public project!: TypeProject;
-  @Input({ required: true }) public link!: string;
+  public project = input.required<TypeProject>();
+  public link = input.required<string>();
   analytics = inject(Analytics);
 
   onClick(event: string) {
@@ -20,8 +20,8 @@ export class ProjectCardComponent {
   }
 
   get tags() {
-    return this.project.tech
-      .map((tag) => `#${tag}`)
+    return this.project()
+      .tech.map((tag) => `#${tag}`)
       .sort((a, b) => {
         if (a < b) return -1;
         if (a > b) return 1;

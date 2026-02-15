@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { PictureListComponent } from '../picture-list/picture-list.component';
 import type { TypeImage } from '../../../projects';
 
@@ -9,6 +9,6 @@ import type { TypeImage } from '../../../projects';
   styleUrl: './project-detail.component.scss',
 })
 export class ProjectDetailComponent {
-  @Input({ required: true }) public description!: string;
-  @Input({ required: true }) public images!: TypeImage[];
+  public description = input.required<string>();
+  public images = input.required<TypeImage[]>();
 }

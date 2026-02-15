@@ -1,12 +1,12 @@
 <a
   class="project-card"
-  [routerLink]="'project/' + link"
-  (click)="onClick(`project_card_${link}_click`)"
+  [routerLink]="'project/' + link()"
+  (click)="onClick(`project_card_${link()}_click`)"
 >
   <app-ui-card [isProject]="true">
     <div class="project-card__wrapper">
-      <div class="project-card__name">{{ project.name }}</div>
-      <div class="project-card__description" [innerHTML]="project.description"></div>
+      <div class="project-card__name">{{ project().name }}</div>
+      <div class="project-card__description" [innerHTML]="project().description"></div>
       <div class="project-card__tags">
         @for (tag of tags; track tag) {
           <div class="project-card__tag">

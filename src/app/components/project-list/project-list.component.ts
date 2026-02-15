@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import type { TypeProject } from '../../../projects';
 
@@ -9,5 +9,5 @@ import type { TypeProject } from '../../../projects';
   styleUrl: './project-list.component.scss',
 })
 export class ProjectListComponent {
-  @Input({ required: true }) public projects!: [string, TypeProject][];
+  public projects = input.required<[string, TypeProject][]>();
 }

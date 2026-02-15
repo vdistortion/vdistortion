@@ -1,12 +1,12 @@
 <div class="page-title">
-  @if (!isHomePage) {
+  @if (!isHomePage()) {
     <a routerLink="">
       <app-ui-icon icon="mdiArrowLeft" title="На главную"></app-ui-icon>
     </a>
   }
-  <h1 class="page-title__name">{{ title }}</h1>
+  <h1 class="page-title__name">{{ title() }}</h1>
   <div class="page-title__repos">
-    @for (link of repos; track link.name) {
+    @for (link of repos(); track link.name) {
       @if (link.name === 'GitHub') {
         <a
           class="page-title__repo"
@@ -29,9 +29,9 @@
     }
   </div>
 </div>
-@if (links.length) {
+@if (links().length) {
   <div class="page-title__links">
-    @for (link of links; track link.name) {
+    @for (link of links(); track link.name) {
       <a
         class="page-title__link"
         [href]="link.url"

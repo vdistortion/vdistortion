@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
 import { PictureCardComponent } from '../picture-card/picture-card.component';
 import type { TypeImage } from '../../../projects';
@@ -10,5 +10,5 @@ import type { TypeImage } from '../../../projects';
   styleUrl: './picture-list.component.scss',
 })
 export class PictureListComponent {
-  @Input({ required: true }) public images!: TypeImage[];
+  public images = input.required<TypeImage[]>();
 }

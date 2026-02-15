@@ -1,6 +1,6 @@
 <div id="app">
   <div class="page">
-    @if (isHomePage) {
+    @if (isHomePage()) {
       <header class="page__header">
         <div class="l-wrapper">
           <img
@@ -16,18 +16,18 @@
       <div class="l-wrapper">
         <div class="page__title">
           <app-page-title
-            [title]="name"
-            [repos]="repos"
-            [links]="links"
-            [isHomePage]="isHomePage"
+            [title]="name()"
+            [repos]="repos()"
+            [links]="links()"
+            [isHomePage]="isHomePage()"
           ></app-page-title>
         </div>
         <div class="page__tags">
           <app-tags-cloud
-            [tags]="isHomePage ? tags : []"
-            [tech]="!isHomePage ? tech : []"
-            [activeTag]="activeTag"
-            [isHomePage]="isHomePage"
+            [tags]="tags()"
+            [tech]="tech()"
+            [activeTag]="activeTag()"
+            [isHomePage]="isHomePage()"
           ></app-tags-cloud>
         </div>
         <ng-content></ng-content>

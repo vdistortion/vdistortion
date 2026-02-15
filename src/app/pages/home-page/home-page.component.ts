@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { PageComponent } from '../../components/page/page.component';
 import { ProjectListComponent } from '../../components/project-list/project-list.component';
-import { tagsMap, projects, projectsArray, type TypeAllTag } from '../../../projects';
+import { tagsMap, projects, projectsArray, type TypeAllTag, TypeProject } from '../../../projects';
 
 @Component({
   selector: 'app-home-page',
@@ -10,17 +11,19 @@ import { tagsMap, projects, projectsArray, type TypeAllTag } from '../../../proj
   templateUrl: './home-page.component.html',
 })
 export class HomePageComponent {
-  public projects = projectsArray;
-  public activeTag: TypeAllTag = 'all';
+  private route = inject(ActivatedRoute);
+  private fragment = toSignal(this.route.fragment);
+
   public cloudTags = Object.keys(tagsMap) as TypeAllTag[];
 
-  constructor(private route: ActivatedRoute) {
-    // ToDo
-    this.route.fragment.subscribe((hash: any) => {
-      if (this.cloudTags.includes(hash)) {
-        this.activeTag = hash;
-        this.projects = tagsMap[this.activeTag].map((link: string) => [link, projects[link]]);
-      }
-    });
-  }
+  public activeTag = computed<TypeAllTag>(() => {
+    const f = this.fragment();
+    return f && this.cloudTags.includes(f as TypeAllTag) ? (f as TypeAllTag) : 'all';
+  });
+
+  public filteredProjects = computed<[string, TypeProject][]>(() => {
+    const tag = this.activeTag();
+    if (tag === 'all') return projectsArray;
+    return tagsMap[tag].map((link: string) => [link, projects[link]]);
+  });
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { mdiArrowLeft, mdiLinkVariant, mdiNpm, mdiGithub } from '@mdi/js';
 
 @Component({
@@ -8,9 +8,9 @@ import { mdiArrowLeft, mdiLinkVariant, mdiNpm, mdiGithub } from '@mdi/js';
   styleUrl: './ui-icon.component.scss',
 })
 export class UiIconComponent {
-  @Input({ required: true }) public icon!: string;
-  @Input() public size: number = 24;
-  @Input() public color: string = '';
+  public icon = input.required<string>();
+  public size = input(24);
+  public color = input('');
 
   public icons: Record<string, string> = {
     mdiArrowLeft,

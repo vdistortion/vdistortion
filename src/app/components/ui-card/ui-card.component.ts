@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-ui-card',
@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './ui-card.component.scss',
 })
 export class UiCardComponent {
-  @Input() public isProject: boolean = false;
+  public isProject = input(false);
 }
