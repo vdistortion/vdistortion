@@ -1,7 +1,4 @@
-export enum ProjectTag {
-  all = 'Все проекты',
-  angular = 'Angular',
-}
+import { environment } from '../environments/environment';
 
 export type TypeTech =
   | 'angular'
@@ -25,7 +22,7 @@ export type TypeTech =
   | 'vuetify'
   | 'webpack';
 
-export type TypeAllTag = keyof typeof ProjectTag;
+export type TypeAllTag = keyof typeof environment.ProjectTags;
 
 export type TypeFile = {
   type: string;

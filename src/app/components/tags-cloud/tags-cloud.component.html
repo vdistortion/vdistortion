@@ -1,13 +1,13 @@
 <div class="tags-cloud">
-  @if (isHomePage) {
+  @if (isHomePage()) {
     <app-ui-card>
       <h2 class="tags-cloud__title">Фильтр</h2>
       <div class="tags-cloud__list">
-        @for (tag of tags; track tag) {
+        @for (tag of tags(); track tag) {
           <a
             [href]="'#' + tag"
             class="tags-cloud__tag"
-            [class.active]="activeTag === tag"
+            [class.active]="activeTag() === tag"
             (click)="onClick($event, tag)"
           >
             <span>{{ getNameTag(tag) }}</span>
@@ -19,7 +19,7 @@
     <app-ui-card>
       <h2 class="tags-cloud__title">Теги</h2>
       <div class="tags-cloud__list">
-        @for (tag of tech; track tag) {
+        @for (tag of tech(); track tag) {
           <div class="tags-cloud__tag">
             <span>#{{ tag }}</span>
           </div>

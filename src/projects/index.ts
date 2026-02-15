@@ -17,7 +17,6 @@ import { module as creablast } from './modules/creablast';
 import { module as flagConnect } from './modules/flag-connect';
 import { module as bot } from './modules/imp-telegram-bot';
 import directories from './structure.json';
-import { ProjectTag } from './types';
 import type {
   TypeTech,
   TypeFile,
@@ -30,8 +29,6 @@ import type {
   TypeProjects,
   TypeImageList,
 } from './types';
-
-export { ProjectTag };
 
 export type {
   TypeTech,
