@@ -1,6 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { UiCardComponent } from '../ui-card/ui-card.component';
-import { Analytics } from '../../services/analytics.service';
+import { TrackClickDirective } from '../../track-click.directive';
 
 type Item = {
   name: string;
@@ -9,7 +9,7 @@ type Item = {
 
 @Component({
   selector: 'app-footer-content',
-  imports: [UiCardComponent],
+  imports: [UiCardComponent, TrackClickDirective],
   templateUrl: './footer-content.component.html',
   styleUrl: './footer-content.component.scss',
 })
@@ -41,9 +41,4 @@ export class FooterContentComponent {
       link: `https://docs.google.com/document/d/${this.DOCUMENT_ID}/`,
     },
   ];
-  analytics = inject(Analytics);
-
-  onClick(event: string) {
-    this.analytics.sendEvent(event, { category: 'UI' });
-  }
 }

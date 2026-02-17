@@ -1,5 +1,4 @@
-import { DOCUMENT, inject, Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { DOCUMENT, inject, Injectable, InjectionToken } from '@angular/core';
 
 declare global {
   interface Window {
@@ -7,20 +6,22 @@ declare global {
   }
 }
 
+export const ANALYTICS_CONFIG = new InjectionToken<{ ymId: number }>('AnalyticsConfig');
+
 @Injectable({
   providedIn: 'root',
 })
 export class Analytics {
+  private readonly config = inject(ANALYTICS_CONFIG, { optional: true });
   private readonly _document = inject(DOCUMENT);
   private readonly _window = this._document.defaultView as any;
 
-  sendYMEvent(eventName: string, params?: { [key: string]: any }) {
-    if (this._window && typeof this._window.ym === 'function') {
-      this._window.ym(environment.YandexMetrikaId, 'reachGoal', eventName, params);
-    }
-  }
+  sendEvent(eventName: string, params: Record<string, any> = { category: 'UI' }) {
+    const ymId = this.config?.ymId;
 
-  sendEvent(eventName: string, params?: { [key: string]: any }) {
-    this.sendYMEvent(eventName, params);
+    if (typeof this._window !== 'undefined' && typeof this._window.ym === 'function') {
+      this._window.ym(ymId, 'reachGoal', eventName, params);
+      console.log(`[Analytics] Event sent: ${eventName}`, params);
+    }
   }
 }

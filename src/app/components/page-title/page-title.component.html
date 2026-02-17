@@ -12,7 +12,7 @@
           class="page-title__repo"
           [href]="'https://github.com/vdistortion/' + link.url"
           target="_blank"
-          (click)="onClick(`github_${link.url}_click`)"
+          [appTrackClick]="`github_${link.url}_click`"
         >
           <app-ui-icon icon="mdiGithub" [size]="30" color="#0D74E7"></app-ui-icon>
         </a>
@@ -21,7 +21,7 @@
           class="page-title__repo"
           [href]="'https://www.npmjs.com/package/' + link.url"
           target="_blank"
-          (click)="onClick(`npmjs_${link.url}_click`)"
+          [appTrackClick]="`npmjs_${link.url}_click`"
         >
           <app-ui-icon icon="mdiNpm" [size]="50" color="#cb3837"></app-ui-icon>
         </a>
@@ -36,7 +36,7 @@
         class="page-title__link"
         [href]="link.url"
         target="_blank"
-        (click)="onClick(`link_${link.url}_click`)"
+        [appTrackClick]="`link_${link.url}_click`"
       >
         <app-ui-icon icon="mdiLinkVariant" [size]="16"></app-ui-icon>
         {{ link.name }}

@@ -1,13 +1,13 @@
 import { Component, inject, input } from '@angular/core';
 import { Router } from '@angular/router';
 import { UiCardComponent } from '../ui-card/ui-card.component';
-import { Analytics } from '../../services/analytics.service';
+import { TrackClickDirective } from '../../track-click.directive';
 import { environment } from '../../../environments/environment';
 import type { TypeAllTag, TypeTech } from '../../../projects';
 
 @Component({
   selector: 'app-tags-cloud',
-  imports: [UiCardComponent],
+  imports: [UiCardComponent, TrackClickDirective],
   templateUrl: './tags-cloud.component.html',
   styleUrl: './tags-cloud.component.scss',
 })
@@ -18,7 +18,6 @@ export class TagsCloudComponent {
   isHomePage = input.required<boolean>();
 
   private router = inject(Router);
-  private analytics = inject(Analytics);
 
   getNameTag(tag: TypeAllTag): string {
     return environment.ProjectTags[tag];
@@ -33,7 +32,5 @@ export class TagsCloudComponent {
       fragment: newTag,
       replaceUrl: true,
     });
-
-    this.analytics.sendEvent(`tags_cloud_${tag}_click`, { category: 'UI' });
   }
 }

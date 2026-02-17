@@ -8,6 +8,7 @@
             [href]="'#' + tag"
             class="tags-cloud__tag"
             [class.active]="activeTag() === tag"
+            [appTrackClick]="`tags_cloud_${tag}_click`"
             (click)="onClick($event, tag)"
           >
             <span>{{ getNameTag(tag) }}</span>

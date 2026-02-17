@@ -1,7 +1,7 @@
 <a
   class="project-card"
   [routerLink]="'project/' + link()"
-  (click)="onClick(`project_card_${link()}_click`)"
+  [appTrackClick]="`project_card_${link()}_click`"
 >
   <app-ui-card [isProject]="true">
     <div class="project-card__wrapper">
