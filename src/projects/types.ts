@@ -27,6 +27,8 @@ export type TypeAllTag = keyof typeof environment.ProjectTags;
 export type TypeFile = {
   type: string;
   name: string;
+  width: number;
+  height: number;
 };
 
 export type TypeFolder = {
@@ -43,11 +45,15 @@ export type TypeLink = {
 export type TypeImageList = {
   file: string;
   path: string;
+  width: number;
+  height: number;
 };
 
 export type TypeImage = {
   src: string;
   title: string;
+  width: number;
+  height: number;
 };
 
 export type TypeModule = {

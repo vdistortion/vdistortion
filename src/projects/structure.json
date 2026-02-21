@@ -5,27 +5,39 @@
     "children": [
       {
         "type": "file",
-        "name": "flag_connect.webp"
+        "name": "flag_connect.webp",
+        "width": 439,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "flag_connect_settings.webp"
+        "name": "flag_connect_settings.webp",
+        "width": 439,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "miniapp_1.webp"
+        "name": "miniapp_1.webp",
+        "width": 439,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "miniapp_settings.webp"
+        "name": "miniapp_settings.webp",
+        "width": 439,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "miniapp_2.webp"
+        "name": "miniapp_2.webp",
+        "width": 439,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "cat.webp"
+        "name": "cat.webp",
+        "width": 439,
+        "height": 1000
       }
     ]
   },
@@ -35,59 +47,87 @@
     "children": [
       {
         "type": "file",
-        "name": "ДРсотрудников-01.webp"
+        "name": "ДРсотрудников-01.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-02.webp"
+        "name": "ДРсотрудников-02.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-03.webp"
+        "name": "ДРсотрудников-03.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-04.webp"
+        "name": "ДРсотрудников-04.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-05.webp"
+        "name": "ДРсотрудников-05.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-06.webp"
+        "name": "ДРсотрудников-06.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-07.webp"
+        "name": "ДРсотрудников-07.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-08.webp"
+        "name": "ДРсотрудников-08.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРсотрудников-10.webp"
+        "name": "ДРсотрудников-10.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРклиентов-01.webp"
+        "name": "ДРклиентов-01.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРклиентов-02.webp"
+        "name": "ДРклиентов-02.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРклиентов-03.webp"
+        "name": "ДРклиентов-03.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРклиентов-04.webp"
+        "name": "ДРклиентов-04.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "ДРклиентов-05.webp"
+        "name": "ДРклиентов-05.webp",
+        "width": 1000,
+        "height": 562
       }
     ]
   },
@@ -97,15 +137,21 @@
     "children": [
       {
         "type": "file",
-        "name": "README.webp"
+        "name": "README.webp",
+        "width": 652,
+        "height": 600
       },
       {
         "type": "file",
-        "name": "1.webp"
+        "name": "1.webp",
+        "width": 1000,
+        "height": 803
       },
       {
         "type": "file",
-        "name": "2.webp"
+        "name": "2.webp",
+        "width": 1000,
+        "height": 797
       }
     ]
   },
@@ -115,7 +161,9 @@
     "children": [
       {
         "type": "file",
-        "name": "README.webp"
+        "name": "README.webp",
+        "width": 566,
+        "height": 1000
       }
     ]
   },
@@ -125,75 +173,111 @@
     "children": [
       {
         "type": "file",
-        "name": "Вход-min.webp"
+        "name": "Вход-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Главная-1-min.webp"
+        "name": "Главная-1-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Главная-2-min.webp"
+        "name": "Главная-2-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Главная-3-min.webp"
+        "name": "Главная-3-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Главная-4-min.webp"
+        "name": "Главная-4-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Диагностика-1-min.webp"
+        "name": "Диагностика-1-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Диагностика-2-min.webp"
+        "name": "Диагностика-2-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Интернет-1-min.webp"
+        "name": "Интернет-1-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Интернет-2-min.webp"
+        "name": "Интернет-2-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Интернет-3-min.webp"
+        "name": "Интернет-3-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Интернет-4-min.webp"
+        "name": "Интернет-4-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Интернет-5-min.webp"
+        "name": "Интернет-5-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Исследование-1-min.webp"
+        "name": "Исследование-1-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Исследование-2-min.webp"
+        "name": "Исследование-2-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Исследование-3-min.webp"
+        "name": "Исследование-3-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Исследование-4-min.webp"
+        "name": "Исследование-4-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Исследования-2-min.webp"
+        "name": "Исследования-2-min.webp",
+        "width": 800,
+        "height": 800
       },
       {
         "type": "file",
-        "name": "Исследования-3-min.webp"
+        "name": "Исследования-3-min.webp",
+        "width": 800,
+        "height": 800
       }
     ]
   },
@@ -203,27 +287,39 @@
     "children": [
       {
         "type": "file",
-        "name": "1.webp"
+        "name": "1.webp",
+        "width": 1000,
+        "height": 818
       },
       {
         "type": "file",
-        "name": "2.webp"
+        "name": "2.webp",
+        "width": 1000,
+        "height": 744
       },
       {
         "type": "file",
-        "name": "3.webp"
+        "name": "3.webp",
+        "width": 1000,
+        "height": 754
       },
       {
         "type": "file",
-        "name": "4.webp"
+        "name": "4.webp",
+        "width": 1000,
+        "height": 753
       },
       {
         "type": "file",
-        "name": "5.webp"
+        "name": "5.webp",
+        "width": 1000,
+        "height": 730
       },
       {
         "type": "file",
-        "name": "6.webp"
+        "name": "6.webp",
+        "width": 1000,
+        "height": 726
       }
     ]
   },
@@ -233,15 +329,21 @@
     "children": [
       {
         "type": "file",
-        "name": "1.webp"
+        "name": "1.webp",
+        "width": 1000,
+        "height": 956
       },
       {
         "type": "file",
-        "name": "2.webp"
+        "name": "2.webp",
+        "width": 1000,
+        "height": 920
       },
       {
         "type": "file",
-        "name": "3.webp"
+        "name": "3.webp",
+        "width": 1000,
+        "height": 784
       }
     ]
   },
@@ -251,15 +353,21 @@
     "children": [
       {
         "type": "file",
-        "name": "index.webp"
+        "name": "index.webp",
+        "width": 825,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "project.webp"
+        "name": "project.webp",
+        "width": 601,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "animals.webp"
+        "name": "animals.webp",
+        "width": 384,
+        "height": 1000
       }
     ]
   },
@@ -269,7 +377,9 @@
     "children": [
       {
         "type": "file",
-        "name": "README.webp"
+        "name": "README.webp",
+        "width": 675,
+        "height": 1000
       }
     ]
   },
@@ -279,55 +389,81 @@
     "children": [
       {
         "type": "file",
-        "name": "МастерCRM-01.webp"
+        "name": "МастерCRM-01.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-02.webp"
+        "name": "МастерCRM-02.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-03.webp"
+        "name": "МастерCRM-03.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-04.webp"
+        "name": "МастерCRM-04.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-05.webp"
+        "name": "МастерCRM-05.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-06.webp"
+        "name": "МастерCRM-06.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-07.webp"
+        "name": "МастерCRM-07.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-08.webp"
+        "name": "МастерCRM-08.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-09.webp"
+        "name": "МастерCRM-09.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-10.webp"
+        "name": "МастерCRM-10.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-11.webp"
+        "name": "МастерCRM-11.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-12.webp"
+        "name": "МастерCRM-12.webp",
+        "width": 1000,
+        "height": 562
       },
       {
         "type": "file",
-        "name": "МастерCRM-13.webp"
+        "name": "МастерCRM-13.webp",
+        "width": 1000,
+        "height": 562
       }
     ]
   },
@@ -337,35 +473,51 @@
     "children": [
       {
         "type": "file",
-        "name": "Screenshot_1-min.webp"
+        "name": "Screenshot_1-min.webp",
+        "width": 365,
+        "height": 658
       },
       {
         "type": "file",
-        "name": "Screenshot_2-min.webp"
+        "name": "Screenshot_2-min.webp",
+        "width": 393,
+        "height": 659
       },
       {
         "type": "file",
-        "name": "Screenshot_3-min.webp"
+        "name": "Screenshot_3-min.webp",
+        "width": 503,
+        "height": 655
       },
       {
         "type": "file",
-        "name": "Screenshot_4-min.webp"
+        "name": "Screenshot_4-min.webp",
+        "width": 798,
+        "height": 656
       },
       {
         "type": "file",
-        "name": "1.webp"
+        "name": "1.webp",
+        "width": 506,
+        "height": 900
       },
       {
         "type": "file",
-        "name": "2.webp"
+        "name": "2.webp",
+        "width": 675,
+        "height": 900
       },
       {
         "type": "file",
-        "name": "4.webp"
+        "name": "3.webp",
+        "width": 506,
+        "height": 900
       },
       {
         "type": "file",
-        "name": "3.webp"
+        "name": "4.webp",
+        "width": 900,
+        "height": 675
       }
     ]
   },
@@ -375,51 +527,75 @@
     "children": [
       {
         "type": "file",
-        "name": "pasted image 0 (1)-min.webp"
+        "name": "pasted image 0 (1)-min.webp",
+        "width": 1000,
+        "height": 483
       },
       {
         "type": "file",
-        "name": "pasted image 0 (10)-min.webp"
+        "name": "pasted image 0 (10)-min.webp",
+        "width": 901,
+        "height": 510
       },
       {
         "type": "file",
-        "name": "pasted image 0 (11)-min.webp"
+        "name": "pasted image 0 (11)-min.webp",
+        "width": 833,
+        "height": 634
       },
       {
         "type": "file",
-        "name": "pasted image 0 (12)-min.webp"
+        "name": "pasted image 0 (12)-min.webp",
+        "width": 838,
+        "height": 399
       },
       {
         "type": "file",
-        "name": "pasted image 0 (2)-min.webp"
+        "name": "pasted image 0 (2)-min.webp",
+        "width": 1000,
+        "height": 473
       },
       {
         "type": "file",
-        "name": "pasted image 0 (3)-min.webp"
+        "name": "pasted image 0 (3)-min.webp",
+        "width": 1000,
+        "height": 485
       },
       {
         "type": "file",
-        "name": "pasted image 0 (4)-min.webp"
+        "name": "pasted image 0 (4)-min.webp",
+        "width": 1000,
+        "height": 483
       },
       {
         "type": "file",
-        "name": "pasted image 0 (5)-min.webp"
+        "name": "pasted image 0 (5)-min.webp",
+        "width": 1000,
+        "height": 366
       },
       {
         "type": "file",
-        "name": "pasted image 0 (6)-min.webp"
+        "name": "pasted image 0 (6)-min.webp",
+        "width": 1000,
+        "height": 367
       },
       {
         "type": "file",
-        "name": "pasted image 0 (7)-min.webp"
+        "name": "pasted image 0 (7)-min.webp",
+        "width": 1000,
+        "height": 475
       },
       {
         "type": "file",
-        "name": "pasted image 0 (8)-min.webp"
+        "name": "pasted image 0 (8)-min.webp",
+        "width": 540,
+        "height": 388
       },
       {
         "type": "file",
-        "name": "pasted image 0-min.webp"
+        "name": "pasted image 0-min.webp",
+        "width": 1000,
+        "height": 484
       }
     ]
   },
@@ -429,87 +605,129 @@
     "children": [
       {
         "type": "file",
-        "name": "30mPH41T0Yo-min.webp"
+        "name": "30mPH41T0Yo-min.webp",
+        "width": 562,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "AjU5zbPhbEE-min.webp"
+        "name": "AjU5zbPhbEE-min.webp",
+        "width": 562,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "FDGctBTVN70-min.webp"
+        "name": "FDGctBTVN70-min.webp",
+        "width": 562,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0670-min.webp"
+        "name": "IMG_0670-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0671-min.webp"
+        "name": "IMG_0671-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0672-min.webp"
+        "name": "IMG_0672-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0673-min.webp"
+        "name": "IMG_0673-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0674-min.webp"
+        "name": "IMG_0674-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0675-min.webp"
+        "name": "IMG_0675-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0676-min.webp"
+        "name": "IMG_0676-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0677-min.webp"
+        "name": "IMG_0677-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0678-min.webp"
+        "name": "IMG_0678-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0679-min.webp"
+        "name": "IMG_0679-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0680-min.webp"
+        "name": "IMG_0680-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0681-min.webp"
+        "name": "IMG_0681-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0682-min.webp"
+        "name": "IMG_0682-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0683-min.webp"
+        "name": "IMG_0683-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0684-min.webp"
+        "name": "IMG_0684-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0685-min.webp"
+        "name": "IMG_0685-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "IMG_0686-min.webp"
+        "name": "IMG_0686-min.webp",
+        "width": 563,
+        "height": 1000
       },
       {
         "type": "file",
-        "name": "KlTX4Ya5Aq4-min.webp"
+        "name": "KlTX4Ya5Aq4-min.webp",
+        "width": 562,
+        "height": 1000
       }
     ]
   },
@@ -519,43 +737,63 @@
     "children": [
       {
         "type": "file",
-        "name": "bx-button.webp"
+        "name": "bx-button.webp",
+        "width": 845,
+        "height": 702
       },
       {
         "type": "file",
-        "name": "bx-input.webp"
+        "name": "bx-input.webp",
+        "width": 845,
+        "height": 773
       },
       {
         "type": "file",
-        "name": "bx-input-file.webp"
+        "name": "bx-input-file.webp",
+        "width": 899,
+        "height": 590
       },
       {
         "type": "file",
-        "name": "bx-textarea.webp"
+        "name": "bx-textarea.webp",
+        "width": 918,
+        "height": 369
       },
       {
         "type": "file",
-        "name": "bx-progressbar.webp"
+        "name": "bx-progressbar.webp",
+        "width": 918,
+        "height": 369
       },
       {
         "type": "file",
-        "name": "bx-alert.webp"
+        "name": "bx-alert.webp",
+        "width": 918,
+        "height": 369
       },
       {
         "type": "file",
-        "name": "bx-icon.webp"
+        "name": "bx-icon.webp",
+        "width": 918,
+        "height": 338
       },
       {
         "type": "file",
-        "name": "bx-entity-selector.webp"
+        "name": "bx-entity-selector.webp",
+        "width": 899,
+        "height": 339
       },
       {
         "type": "file",
-        "name": "bx-radio.webp"
+        "name": "bx-radio.webp",
+        "width": 918,
+        "height": 339
       },
       {
         "type": "file",
-        "name": "bx-checkbox.webp"
+        "name": "bx-checkbox.webp",
+        "width": 918,
+        "height": 369
       }
     ]
   }

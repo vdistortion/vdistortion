@@ -15,6 +15,6 @@
 - 📚 **Legacy Expertise:** 5+ years of commercial experience with **Vue.js and Bitrix24 ecosystem**.
 
 [![GitHub User's stars](https://img.shields.io/github/stars/vdistortion?style=flat&logo=github)](https://github.com/vdistortion?tab=repositories&sort=stargazers)
-[![NPM Downloads by package author](https://img.shields.io/npm-stat/dw/vdistortion?style=flat&logo=npm&color=cb3837)](https://www.npmjs.com/~vdistortion)
+[![NPM Downloads by package author](https://img.shields.io/npm-stat/dy/vdistortion?style=flat&logo=npm&color=cb3837)](https://www.npmjs.com/~vdistortion)
 
 [![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vdistortion&layout=compact&theme=onedark&hide=html,css)](https://github.com/anuraghazra/github-readme-stats)

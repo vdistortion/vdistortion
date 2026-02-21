@@ -23,7 +23,7 @@ export class TagsCloudComponent {
     return environment.ProjectTags[tag];
   }
 
-  onClick(e: MouseEvent, tag: TypeAllTag) {
+  onFilter(e: MouseEvent, tag: TypeAllTag) {
     e.preventDefault();
 
     const newTag = this.activeTag() === tag ? 'all' : tag;

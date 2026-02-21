@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { PageTitleComponent } from '../page-title/page-title.component';
 import { TagsCloudComponent } from '../tags-cloud/tags-cloud.component';
 import { FooterContentComponent } from '../footer-content/footer-content.component';
@@ -6,7 +7,7 @@ import { TypeLink, TypeAllTag, TypeTech } from '../../../projects';
 
 @Component({
   selector: 'app-page',
-  imports: [PageTitleComponent, TagsCloudComponent, FooterContentComponent],
+  imports: [NgOptimizedImage, PageTitleComponent, TagsCloudComponent, FooterContentComponent],
   templateUrl: './page.component.html',
   styleUrl: './page.component.scss',
 })

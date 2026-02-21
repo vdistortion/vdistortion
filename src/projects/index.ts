@@ -48,6 +48,8 @@ function getImages(folderName: string) {
   return folder.children.map((file: TypeFile) => ({
     file: file.name,
     path: `images/projects/${folderName}/${file.name}`,
+    width: file.width,
+    height: file.height,
   }));
 }
 
@@ -67,6 +69,8 @@ function parseProject(project: TypeModule, imagesList: TypeImageList[] = []): Ty
   const images = imagesList.map((image) => ({
     title: imageNames[image.file] ?? '',
     src: image.path,
+    width: image.width,
+    height: image.height,
   }));
 
   const result: TypeProject = {

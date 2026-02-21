@@ -1,4 +1,10 @@
 <div class="picture-card">
-  <img class="picture-card__image" [src]="image()" [alt]="description()" />
-  <h2 class="picture-card__description">{{ description() }}</h2>
+  <img
+    class="picture-card__image"
+    [ngSrc]="image().src"
+    [width]="image().width"
+    [height]="image().height"
+    [alt]="image().title"
+  />
+  <h2 class="picture-card__description">{{ image().title }}</h2>
 </div>

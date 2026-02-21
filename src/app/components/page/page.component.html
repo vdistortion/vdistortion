@@ -5,7 +5,10 @@
         <div class="l-wrapper">
           <img
             class="page__logo"
-            [src]="'logo.svg?hash=' + cacheBust"
+            [ngSrc]="'logo.svg?hash=' + cacheBust"
+            width="1100"
+            height="195"
+            priority
             alt="logo"
             title="Валентин"
           />

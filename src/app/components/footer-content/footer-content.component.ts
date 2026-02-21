@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { UiCardComponent } from '../ui-card/ui-card.component';
 import { TrackClickDirective } from '../../track-click.directive';
 
@@ -9,7 +10,7 @@ type Item = {
 
 @Component({
   selector: 'app-footer-content',
-  imports: [UiCardComponent, TrackClickDirective],
+  imports: [NgOptimizedImage, UiCardComponent, TrackClickDirective],
   templateUrl: './footer-content.component.html',
   styleUrl: './footer-content.component.scss',
 })

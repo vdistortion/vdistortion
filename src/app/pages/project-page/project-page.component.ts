@@ -29,6 +29,7 @@ export class ProjectPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.project) this.titleService.setTitle(`${this.project.name} | ${this.route.snapshot.title}`);
+    if (this.project)
+      this.titleService.setTitle(`${this.project.name} | ${this.route.snapshot.title}`);
   }
 }
