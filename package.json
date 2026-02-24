@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier . --write",
-    "public": "ng build --base-href /vdistortion/ && cd dist/vdistortion/browser && cp index.html 404.html && gh-pages -d . -t --nojekyll",
+    "public": "ng build && cd dist/vdistortion/browser && cp index.html 404.html && gh-pages -d . -t --nojekyll --cname portfolio.zvalentin.ru",
     "to-webp": "npx to-static-images@latest json=source width=1000 height=1000"
   },
   "packageManager": "npm@11.7.0",
