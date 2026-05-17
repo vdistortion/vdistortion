@@ -3,11 +3,12 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "vdistortion": {
+    "projects": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
+          "changeDetection": "OnPush",
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -78,10 +79,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "vdistortion:build:production"
+              "buildTarget": "projects:build:production"
             },
             "development": {
-              "buildTarget": "vdistortion:build:development"
+              "buildTarget": "projects:build:development"
             }
           },
           "defaultConfiguration": "development"

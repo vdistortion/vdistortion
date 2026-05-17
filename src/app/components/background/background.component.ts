@@ -1,43 +1,28 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { NgxParticlesModule, NgParticlesService, type IParticlesProps } from '@tsparticles/angular';
-import { loadLinksPreset } from '@tsparticles/preset-links';
+import { Component } from '@angular/core';
+import { NgxParticlesModule } from '@tsparticles/angular';
 
 @Component({
   selector: 'app-background',
   imports: [NgxParticlesModule],
-  templateUrl: './background.component.html',
+  template: '<ngx-particles [options]="options"></ngx-particles>',
 })
-export class BackgroundComponent implements OnInit {
-  private readonly ngParticlesService = inject(NgParticlesService);
+export class BackgroundComponent {
   private color = '#99a1b3';
 
-  public options: IParticlesProps = {
-    preset: 'links',
-    background: {
-      color: 'transparent',
-    },
+  public options = {
+    background: { color: 'transparent' },
     particles: {
-      size: {
-        value: 1,
-      },
-      number: {
-        value: 50,
-      },
-      move: {
-        speed: 2,
-      },
-      shape: {
-        type: 'circle',
-      },
+      color: { value: this.color },
+      size: { value: 1 },
+      number: { value: 50 },
+      move: { speed: 2, enable: true },
+      shape: { type: 'circle' },
       links: {
         distance: 200,
         opacity: 0.2,
+        enable: true,
         color: this.color,
       },
     },
   };
-
-  ngOnInit(): void {
-    this.ngParticlesService.init(loadLinksPreset).catch(console.error);
-  }
 }

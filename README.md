@@ -9,7 +9,7 @@
 
 - ✨ **Current Focus:** Building scalable web applications with **[Angular](https://github.com/search?type=repositories&s=stars&q=owner%3Avdistortion%20topic%3Aangular) and TypeScript**.
 - 🌱 **My Open-Source Tools:** All npm packages are available at [npmjs](https://www.npmjs.com/~vdistortion).
-- 🎸 **Side Project:** Developing a modern music platform with **Angular and Node.js** ([nebuloud](https://github.com/vdistortion/nebuloud)).
+- 🎸 **Side Project:** Developing a modern music platform with **Angular and Node.js** ([nebuloud](https://github.com/vdistortion/vdistortion.github.io)).
 - 📄 **Professional Experience:** Detailed resume and portfolio are available on my [website](https://vdistortion.github.io/vdistortion/).
 - 🔭 **Experience** with maps, SVG, dashboards, complex UI.
 - 📚 **Legacy Expertise:** 5+ years of commercial experience with **Vue.js and Bitrix24 ecosystem**.
