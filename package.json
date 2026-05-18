@@ -21,6 +21,7 @@
     "@tsparticles/angular": "^4.0.2",
     "@tsparticles/slim": "^4.0.2",
     "@twogate/ngx-photo-gallery": "^1.8.1",
+    "fs-extra": "^11.3.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
