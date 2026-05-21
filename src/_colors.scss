@@ -1,16 +1,16 @@
 :root {
   --color1: #152347;
-  --color2: rgba(29, 44, 78, 0.7);
-  --color3: #6d1485;
+  --color2: rgba(29, 44, 78, 0.85);
+  --color3: #7b1fa2;
   --color4: #a11ec6;
   --color5: #c44ee4;
   --color6: #92eaff;
   --color7: #99a1b3;
   --default-color: var(--color7); // цвет сетки
   --bg-color: var(--color1); // цвет фона
-  --tag-color: var(--color6); // заголовок тегов и теги в карточке
-  --active-tag-color: var(--color5); // активный тег
+  --tag-color: var(--color5); // заголовок тегов и теги в карточке
+  --active-tag-color: #ffffff; // активный тег
   --title-color: var(--color4); // цвет лого и заголовки
-  --hover-card: var(--color3); // активный проект
+  --hover-card: rgba(161, 30, 198, 0.35); // активный проект
   --project-card: var(--color2); // проект
 }
