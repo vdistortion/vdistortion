@@ -109,3 +109,5 @@ export const projects: TypeProjects = {
   ...parseProject(flagConnect),
   ...parseProject(bitrix24PricingApp),
 };
+
+export const urls = Object.keys(projects);
