@@ -1,0 +1,20 @@
+<a
+  class="card"
+  [routerLink]="['/project', project().id]"
+  [appTrackClick]="'project_card_' + project().id + '_click'"
+>
+  <div class="card__header">
+    <span class="card__title">{{ project().title }}</span>
+    @if (project().tags.includes('angular')) {
+      <span class="card__angular-tag">Angular</span>
+    }
+  </div>
+
+  <p class="card__desc">{{ project().shortDescription }}</p>
+
+  <ul class="card__tags">
+    @for (t of project().tech; track t) {
+      <li class="tag">{{ t }}</li>
+    }
+  </ul>
+</a>

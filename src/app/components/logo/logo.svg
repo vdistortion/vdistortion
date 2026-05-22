@@ -1,0 +1,17 @@
+<!-- Анимированная SVG: https://maxwellito.github.io/vivus-instant/ -->
+<svg viewBox="-1 -1 255 45">
+  <path
+    class="draw"
+    [style.stroke]="color()"
+    style="stroke-dasharray: 760; stroke-dashoffset: 760"
+    d="
+      M0,10L10,0L30,10L20,20L30,30L10,40L0,30
+      M60,0L70,10L70,30L50,40L40,30L40,10Z
+      M70,40L80,30L80,10L100,0L100,30
+      M130,0L140,10L140,30L120,40L110,30L110,10Z
+      M150,10L140,0L180,0 M160,0L160,40L165,35
+      M200,0L210,10L210,30L190,40L180,30L180,10Z
+      M240,10L230,0L220,10L230,20L220,30L230,40L240,40L250,30L250,0
+    "
+  />
+</svg>

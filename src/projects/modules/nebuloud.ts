@@ -1,13 +1,12 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
 
-export const module: TypeModule = {
-  code: 'nebuloud',
-  name: 'Nebuloud',
-  description: 'Платформа музыкального каталога с планами на fullstack',
-  detail: `
-Angular SPA для каталогизации музыки. Текущий этап — разработка архитектуры фронтенда, в планах — полноценный Backend на
-Fastify и Postgres (PFAN stack).
-`,
+export const module: Project = {
+  id: 'nebuloud',
+  title: 'Nebuloud',
+  shortDescription: 'Платформа музыкального каталога с планами на fullstack',
+  description: `Angular SPA для каталогизации музыки. В планах — полноценный Backend на Fastify
+и Postgres (PFAN stack).`,
   tags: ['angular', 'all'],
   tech: ['angular', 'typescript', 'scss'],
+  externalLinks: [],
 };

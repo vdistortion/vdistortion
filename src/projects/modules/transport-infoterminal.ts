@@ -1,25 +1,18 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'transport-infoterminal',
-  name: 'Транспортный терминал',
-  description:
-    'Информационный терминал для общественного транспорта с отображением маршрутов и времени прибытия в реальном времени',
-  detail: `
-Интерфейс информационного терминала в рамках концепции "Умный город". Реализовал сложную логику для плавной анимации
-движения общественного транспорта в реальном времени на картах (Leaflet/Yandex) и табло прогноза прибытия. Синхронизировал несколько API для расчета ETA
-(времени прибытия) и построения оптимальных маршрутов от остановки до точки назначения. Ключевая задача — эффективное управление
-множественными асинхронными потоками данных о транспорте. Проект эволюционировал от legacy (jQuery, Gulp) к Angular/RxJS.
-`,
-  repos: [
-    {
-      name: 'GitHub',
-      url: 'smart-stop/tree/master',
-    },
-  ],
+export const module: Project = {
+  id: 'transport-infoterminal',
+  title: 'Транспортный терминал',
+  shortDescription:
+    'Информационный терминал для общественного транспорта с отображением маршрутов в реальном времени',
+  description: `Интерфейс терминала в рамках "Умный город". Плавная анимация транспорта на картах
+(Leaflet/Yandex), синхронизация нескольких API для расчёта ETA и построения маршрутов.
+Эволюция от legacy (jQuery, Gulp) к Angular/RxJS.`,
   tags: ['all'],
   tech: ['gulp', 'webpack', 'leaflet', 'stylus', 'pug', 'jquery'],
-  imageNames: {
+  externalLinks: [{ name: 'GitHub', url: 'https://github.com/vdistortion/smart-stop/tree/master' }],
+  screenshots: getImages('transport-infoterminal', {
     'Screenshot_1-min.webp': 'Расписание',
     'Screenshot_2-min.webp': 'Транспорт на карте',
     'Screenshot_3-min.webp': 'Схема проезда',
@@ -28,5 +21,5 @@ export const module: TypeModule = {
     '2.webp': 'Инфомат на остановке',
     '3.webp': 'Инфомат на остановке',
     '4.webp': 'Инфомат на остановке',
-  },
+  }),
 };

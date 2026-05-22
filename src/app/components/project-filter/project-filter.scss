@@ -1,0 +1,40 @@
+.filter {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
+}
+
+.filter__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: var(--text);
+    color: var(--text);
+  }
+
+  &.active {
+    background: var(--surface);
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

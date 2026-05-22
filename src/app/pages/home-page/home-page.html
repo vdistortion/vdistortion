@@ -1,0 +1,15 @@
+<div class="l-wrapper">
+  <section class="hero">
+    <app-logo></app-logo>
+    <p class="hero__tagline">Frontend Developer · Angular · TypeScript</p>
+  </section>
+
+  <main class="main">
+    <app-project-filter
+      [tags]="tags"
+      [activeTag]="activeTag()"
+      (filterChange)="onFilterChange($event)"
+    />
+    <app-project-list [projects]="filtered()" />
+  </main>
+</div>

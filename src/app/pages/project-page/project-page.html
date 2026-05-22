@@ -1,0 +1,7 @@
+<div class="l-wrapper">
+  <a class="back" routerLink="/">← Назад</a>
+
+  @if (project(); as p) {
+    <app-project-detail [project]="p" />
+  }
+</div>

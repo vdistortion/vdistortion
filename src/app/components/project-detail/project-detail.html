@@ -1,0 +1,55 @@
+<article class="detail">
+  <header class="detail__header">
+    <h1 class="detail__title">{{ project().title }}</h1>
+    @if (project().tags.includes('angular')) {
+      <span class="detail__angular">Angular</span>
+    }
+  </header>
+
+  <p class="detail__desc">{{ project().description }}</p>
+
+  <section class="detail__section">
+    <h2 class="detail__section-title">Стек</h2>
+    <ul class="detail__tech">
+      @for (t of project().tech; track t) {
+        <li class="detail__tech-item">{{ t }}</li>
+      }
+    </ul>
+  </section>
+
+  @if (project().externalLinks.length) {
+    <section class="detail__section">
+      <h2 class="detail__section-title">Ссылки</h2>
+      <div class="detail__links">
+        @for (link of project().externalLinks; track link.url) {
+          <a
+            class="detail__link"
+            [href]="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            [appTrackClick]="'project_link_' + link.name + '_click'"
+            >{{ link.name }}</a
+          >
+        }
+      </div>
+    </section>
+  }
+
+  @if (project().screenshots?.length) {
+    <section class="detail__section">
+      <h2 class="detail__section-title">Скриншоты</h2>
+      <div class="detail__screenshots" [photoGalleryGroup]="{ history: true }">
+        @for (s of project().screenshots!; track s.src) {
+          <figure class="detail__screenshot">
+            <a [photoGallery]="s.src" [appTrackClick]="'project_screenshot_' + s.title + '_click'">
+              <img [src]="s.src" [alt]="s.title" loading="lazy" />
+            </a>
+            @if (s.title) {
+              <figcaption>{{ s.title }}</figcaption>
+            }
+          </figure>
+        }
+      </div>
+    </section>
+  }
+</article>

@@ -1,17 +1,17 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'arb-pro',
-  name: 'Фронтенд для сайта АРБ Про',
-  description: 'Полная реализация фронтенда для корпоративного сайта',
-  detail: `
-Один из ранних коммерческих проектов. Классный дизайн сайта, очень много интересных интерфейсных решений. Полная верстка
-сложного адаптивного дизайна и реализация интерактивных элементов
-на нативном Javascript. Пример работы с legacy-стеком и ручной оптимизации ассетов. Сейчас сайт немного изменился.
-`,
+export const module: Project = {
+  id: 'arb-pro',
+  title: 'Фронтенд для сайта АРБ Про',
+  shortDescription: 'Полная реализация фронтенда для корпоративного сайта',
+  description: `Один из ранних коммерческих проектов. Полная верстка сложного адаптивного дизайна
+и интерактивных элементов на нативном Javascript.
+Пример работы с legacy-стеком и ручной оптимизации ассетов.`,
   tags: ['all'],
   tech: ['svg', 'gulp', 'jquery', 'pug', 'stylus'],
-  imageNames: {
+  externalLinks: [],
+  screenshots: getImages('arb-pro', {
     'Вход-min.webp': 'Вход',
     'Главная-1-min.webp': 'Главная',
     'Главная-2-min.webp': 'Главная',
@@ -30,5 +30,5 @@ export const module: TypeModule = {
     'Исследование-2-min.webp': 'Исследование',
     'Исследование-3-min.webp': 'Исследование',
     'Исследование-4-min.webp': 'Исследование',
-  },
+  }),
 };

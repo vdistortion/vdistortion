@@ -1,33 +1,23 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'birthdays',
-  name: 'Дни рождения сотрудников и клиентов',
-  description: 'Коммерческое приложение для напоминаний и синхронизации с календарём',
-  detail: `
-Коммерческие приложения на Vue для напоминаний о днях рождения сотрудников и клиентов с синхронизацией с календарём
-Bitrix24. Встраиваются в профиль пользователя, поддерживают фильтрацию и группировку по своим клиентам, актуально для корпоративных
-порталов и CRM-интеграций (маркетплейс).
-<br>
-`,
-  links: [
+export const module: Project = {
+  id: 'birthdays',
+  title: 'Дни рождения сотрудников и клиентов',
+  shortDescription: 'Коммерческое приложение для напоминаний и синхронизации с календарём',
+  description: `Коммерческие приложения на Vue для напоминаний о днях рождения с синхронизацией
+с календарём Bitrix24. Фильтрация и группировка по клиентам. Опубликованы в маркетплейсе.`,
+  tags: ['all'],
+  tech: ['vue', 'bitrix24', 'stylus'],
+  externalLinks: [
     {
-      name: 'Маркетплейс',
+      name: 'Маркетплейс (сотрудники)',
       url: 'https://www.bitrix24.ru/apps/app/sozdavatel.birthday',
     },
     {
-      name: 'Дни рождения сотрудников',
-      url: 'https://apps.sozdavatel.ru/birthdays/',
-    },
-    {
-      name: 'Маркетплейс',
+      name: 'Маркетплейс (клиенты)',
       url: 'https://www.bitrix24.ru/apps/app/sozdavatel.birthdaycrm',
     },
-    {
-      name: 'Дни рождения клиентов',
-      url: 'https://apps.sozdavatel.ru/birthdaycrm/',
-    },
   ],
-  tags: ['all'],
-  tech: ['vue', 'bitrix24', 'stylus'],
+  screenshots: getImages('birthdays'),
 };

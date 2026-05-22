@@ -1,25 +1,18 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'kira-sekira',
-  name: 'Сайт фотографа',
-  description: 'Портфолио для фотографа на Angular',
-  detail: `
-Адаптированное портфолио с галереей. Проект мигрирован с Vue на Angular, реализован адаптивный фотогрид и оптимизация
-изображений для быстрой загрузки. Для обработки и оптимизации большого количества фотографий был создан и интегрирован
-инструмент to-static-images, который автоматически генерирует изображения подходящего размера в нужном формате.
-`,
-  links: [
-    {
-      name: 'Сайт',
-      url: '/kira-sekira/',
-    },
-  ],
+export const module: Project = {
+  id: 'kira-sekira',
+  title: 'Сайт фотографа',
+  shortDescription: 'Портфолио для фотографа на Angular',
+  description: `Адаптивное портфолио с галереей. Мигрировано с Vue на Angular, реализован адаптивный
+фотогрид и оптимизация изображений через to-static-images.`,
   tags: ['angular', 'all'],
   tech: ['angular', 'scss', 'typescript'],
-  imageNames: {
+  externalLinks: [{ name: 'Сайт', url: '/kira-sekira/' }],
+  screenshots: getImages('kira-sekira', {
     'index.webp': 'Главная страница',
     'project.webp': 'Персонажи',
     'animals.webp': 'Животные',
-  },
+  }),
 };

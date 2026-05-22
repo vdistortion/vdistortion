@@ -1,35 +1,19 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'bitrix24-create-app',
-  name: 'CLI',
-  description: 'Удобный инструмент для автоматизации развертывания Angular/Vue приложений',
-  detail: `
-Инструмент командной строки, автоматизирующий создание и настройку приложений первого и второго типа для Bitrix24.
-Решает проблему сложной настройки окружения, предоставляя готовые, оптимизированные шаблоны на Angular и Vue с
-предустановленными TypeScript, Vite, а также интеграцией с bitrix24-library (Promise API) и ui-bitrix24 (компоненты).
-Позволяет вести локальную разработку с hot-reload и автоматически генерирует архив для загрузки в маркетплейс Bitrix24,
-экономя часы ручной конфигурации. Используется как отправная точка при разработке коммерческих приложений для портала.
-`,
-  repos: [
-    {
-      name: 'GitHub',
-      url: 'bitrix24-create-app',
-    },
-    {
-      name: 'npmjs',
-      url: 'bitrix24-create-app',
-    },
-  ],
-  links: [
-    {
-      name: 'Docs',
-      url: '/bitrix24-create-app/',
-    },
-  ],
+export const module: Project = {
+  id: 'bitrix24-create-app',
+  title: 'CLI',
+  shortDescription: 'Удобный инструмент для автоматизации развертывания Angular/Vue приложений',
+  description: `CLI-инструмент, автоматизирующий создание приложений для Bitrix24. Предоставляет готовые
+шаблоны на Angular и Vue с TypeScript, Vite, интеграцией с bitrix24-library и ui-bitrix24.
+Поддерживает hot-reload и автоматически генерирует архив для маркетплейса.`,
   tags: ['angular', 'all'],
   tech: ['angular', 'typescript', 'scss', 'vue', 'bitrix24', 'npm', 'vitepress'],
-  imageNames: {
-    'README.webp': 'Документация',
-  },
+  externalLinks: [
+    { name: 'GitHub', url: 'https://github.com/vdistortion/bitrix24-create-app' },
+    { name: 'npmjs', url: 'https://www.npmjs.com/package/bitrix24-create-app' },
+    { name: 'Docs', url: '/bitrix24-create-app/' },
+  ],
+  screenshots: getImages('bitrix24-create-app', { 'README.webp': 'Документация' }),
 };

@@ -1,31 +1,19 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'optical-network-ui',
-  name: 'ISP Network Manager',
-  description:
-    'Комплексный интерфейс для проектирования и управления оптической сетью регионального интернет-провайдера',
-  detail: `
-Технически сложный интерактивный интерфейс для работы с топологией сети. В основе — отображение кабелей, ящиков и узлов,
-управление слоями (GPON, КТВ) и визуализация кабельных трасс на картах с возможностью drag-and-drop редактирования и
-добавлением/удалением точек изгиба. Приложение позволяет инженерам визуализировать и редактировать сетевую
-инфраструктуру, управлять узлами связи и коммутацией. Основные компоненты: интерактивная карта (Google Maps), панель
-инструментов для рисования/редактирования элементов и система слоев. Проект мигрирован с VanillaJS на Vue, что
-значительно улучшило структуру кода и поддерживаемость. Был разработан переиспользуемый компонент house-scheme-svg для
-отрисовки поэтажных SVG-планов домов и впоследствии переписан на Angular.
-`,
-  repos: [
-    {
-      name: 'GitHub',
-      url: 'house-scheme-svg',
-    },
-  ],
-  links: [
-    {
-      name: 'Структурная схема дома на SVG',
-      url: '/house-scheme-svg/',
-    },
-  ],
+export const module: Project = {
+  id: 'optical-network-ui',
+  title: 'ISP Network Manager',
+  shortDescription:
+    'Интерфейс для проектирования и управления оптической сетью интернет-провайдера',
+  description: `Интерактивный интерфейс для работы с топологией сети: кабели, ящики, узлы,
+управление слоями (GPON, КТВ), drag-and-drop редактирование на Google Maps.
+Мигрирован с VanillaJS на Vue. Выделен переиспользуемый компонент house-scheme-svg.`,
   tags: ['all'],
   tech: ['svg', 'vue', 'google-maps', 'jquery', 'stylus'],
+  externalLinks: [
+    { name: 'GitHub (house-scheme-svg)', url: 'https://github.com/vdistortion/house-scheme-svg' },
+    { name: 'Структурная схема дома', url: '/house-scheme-svg/' },
+  ],
+  screenshots: getImages('optical-network-ui'),
 };

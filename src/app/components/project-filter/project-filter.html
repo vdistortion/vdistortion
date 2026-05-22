@@ -1,0 +1,16 @@
+<div class="filter">
+  @for (tag of tags(); track tag) {
+    <button
+      type="button"
+      class="filter__btn"
+      [class.active]="activeTag() === tag"
+      (click)="onFilter(tag)"
+      [appTrackClick]="'filter_tag_' + tag + '_click'"
+    >
+      @if (tag === 'angular') {
+        <img src="/angular_gradient.webp" alt="angular" />
+      }
+      {{ tag === 'all' ? 'Все проекты' : tag }}
+    </button>
+  }
+</div>

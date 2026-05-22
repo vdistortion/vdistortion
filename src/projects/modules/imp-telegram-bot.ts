@@ -1,38 +1,26 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'imp-telegram-bot',
-  name: 'Telegram Bot',
-  description: 'Универсальный Telegram-бот с MiniApp',
-  detail: `
-Универсальный Telegram-бот на Node.js/TypeScript (grammY). Playground для экспериментов с Bot API. Работает на
-Serverless-архитектуре (Vercel). Включает интеграцию погодных сервисов и генерацию контента. Также есть MiniApp
-(Flag Connect), который может подхватывать темы телеграма, а также использоваться отдельно от бота.
-`,
-  repos: [
-    {
-      name: 'GitHub',
-      url: 'imp-telegram-bot',
-    },
-  ],
-  links: [
-    {
-      name: 'Bot',
-      url: 'https://t.me/ImpTelegramBot',
-    },
-    {
-      name: 'MiniApp',
-      url: '/flag-connect/',
-    },
-  ],
+export const module: Project = {
+  id: 'imp-telegram-bot',
+  title: 'Telegram Bot',
+  shortDescription: 'Универсальный Telegram-бот с MiniApp',
+  description: `Универсальный бот на Node.js/TypeScript (grammY) на Serverless-архитектуре (Vercel).
+Включает интеграцию погодных сервисов и MiniApp (Flag Connect),
+который поддерживает темы Telegram и работает отдельно от бота.`,
   tags: ['all'],
   tech: ['telegram', 'nodejs', 'typescript'],
-  imageNames: {
+  externalLinks: [
+    { name: 'GitHub', url: 'https://github.com/vdistortion/imp-telegram-bot' },
+    { name: 'Bot', url: 'https://t.me/ImpTelegramBot' },
+    { name: 'MiniApp', url: '/flag-connect/' },
+  ],
+  screenshots: getImages('imp-telegram-bot', {
     'cat.webp': '/cat',
     'flag_connect.webp': '/flag_connect',
     'flag_connect_settings.webp': 'Settings',
     'miniapp_1.webp': 'MiniApp',
     'miniapp_2.webp': 'MiniApp',
     'miniapp_settings.webp': 'MiniApp Settings',
-  },
+  }),
 };

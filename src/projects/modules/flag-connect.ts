@@ -1,14 +1,13 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
 
-export const module: TypeModule = {
-  code: 'flag-connect',
-  name: 'Flag Connect',
-  description: 'Обучающая мини-игра на знание флагов и стран с адаптацией под Telegram Mini Apps',
-  detail: `
-SPA-приложение с игровой механикой на Angular/TypeScript. Реализована логика викторины с выбираемой сложностью.
-Игроку предлагается угадать страну по флагу и наоборот, с настраиваемым количеством вариантов ответов.
-Архитектура позволяет использовать приложение как standalone веб-сайт, так и в качестве Telegram Mini App.
-`,
+export const module: Project = {
+  id: 'flag-connect',
+  title: 'Flag Connect',
+  shortDescription:
+    'Обучающая мини-игра на знание флагов и стран с адаптацией под Telegram Mini Apps',
+  description: `SPA с игровой механикой на Angular. Викторина с выбираемой сложностью и настраиваемым
+количеством вариантов ответов. Работает как standalone и как Telegram Mini App.`,
   tags: ['angular', 'all'],
   tech: ['angular', 'typescript', 'scss'],
+  externalLinks: [],
 };

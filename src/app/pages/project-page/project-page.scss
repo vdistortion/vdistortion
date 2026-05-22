@@ -1,0 +1,12 @@
+.back {
+  display: inline-block;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--text);
+  }
+}

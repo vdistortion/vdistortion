@@ -1,23 +1,19 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ProjectPageComponent } from './pages/project-page/project-page.component';
-import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 export const routes: Routes = [
   {
     path: '',
+    loadComponent: () => import('./pages/home-page/home-page').then((m) => m.HomePage),
     title: 'Проекты | Портфолио фронтенд-разработчика',
-    component: HomePageComponent,
   },
   {
     path: 'project/:id',
-    title: 'Портфолио фронтенд-разработчика',
-    component: ProjectPageComponent,
+    loadComponent: () => import('./pages/project-page/project-page').then((m) => m.ProjectPage),
   },
   {
     path: '404',
+    loadComponent: () => import('./pages/error-page/error-page').then((m) => m.ErrorPage),
     title: 'Страница не найдена | Портфолио фронтенд-разработчика',
-    component: ErrorPageComponent,
   },
   {
     path: '**',

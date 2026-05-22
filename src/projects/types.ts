@@ -37,46 +37,27 @@ export type TypeFolder = {
   children: TypeFile[];
 };
 
-export type TypeLink = {
-  url: string;
+export interface ProjectLink {
   name: string;
-};
+  url: string;
+}
 
-export type TypeImageList = {
-  file: string;
-  path: string;
-  width: number;
-  height: number;
-};
-
-export type TypeImage = {
+export interface ProjectImage {
   src: string;
   title: string;
   width: number;
   height: number;
-};
+}
 
-export type TypeModule = {
-  code: string;
-  name: string;
+export interface Project {
+  id: string;
+  title: string;
+  shortDescription: string;
+  description: string;
   tags: TypeAllTag[];
   tech: TypeTech[];
-  description: string;
-  detail?: string;
-  repos?: TypeLink[];
-  links?: TypeLink[];
-  imageNames?: Record<string, string>;
-};
+  externalLinks: ProjectLink[];
+  screenshots?: ProjectImage[];
+}
 
-export type TypeProject = {
-  name: string;
-  tags: TypeAllTag[];
-  tech: TypeTech[];
-  description: string;
-  detail: string;
-  repos: TypeLink[];
-  links: TypeLink[];
-  images: TypeImage[];
-};
-
-export type TypeProjects = Record<string, TypeProject>;
+export type Projects = Record<string, Project>;

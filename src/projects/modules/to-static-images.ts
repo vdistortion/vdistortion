@@ -1,39 +1,23 @@
-import type { TypeModule } from '../types';
+import type { Project } from '../types';
+import { getImages } from '../index';
 
-export const module: TypeModule = {
-  code: 'to-static-images',
-  name: 'Static Image Optimizer',
-  description: 'Инструмент оптимизации изображений для статических сайтов на Node.js',
-  detail: `
-CLI-утилита решает проблему ручной обработки большого количества изображений для статических сайтов. Она рекурсивно
-обходит папки, конвертирует изображения в современные форматы (WebP, AVIF, PNG, JPG) с настраиваемым сжатием и ресайзом.
-Поддерживает интерактивный режим и управление параллельной обработкой. Результатом является оптимизированный набор
-ассетов и JSON-манифест с метаданными для удобной интеграции. Используется в 3+ production-проектах. На основе
-потребностей этого пакета были разработаны и опубликованы типы для directory-structure-json в репозиторий DefinitelyTyped.
-`,
-  repos: [
-    {
-      name: 'GitHub',
-      url: 'to-static-images',
-    },
-    {
-      name: 'npmjs',
-      url: 'to-static-images',
-    },
-    {
-      name: 'npmjs',
-      url: '@types/directory-structure-json',
-    },
-  ],
-  links: [
-    {
-      name: 'Docs',
-      url: '/to-static-images/',
-    },
-  ],
+export const module: Project = {
+  id: 'to-static-images',
+  title: 'Static Image Optimizer',
+  shortDescription: 'Инструмент оптимизации изображений для статических сайтов на Node.js',
+  description: `CLI-утилита рекурсивно обходит папки, конвертирует изображения в WebP/AVIF/PNG/JPG
+с настраиваемым сжатием и ресайзом. Генерирует JSON-манифест с метаданными.
+Используется в 3+ production-проектах. На её основе опубликованы типы в DefinitelyTyped.`,
   tags: ['all'],
   tech: ['typescript', 'nodejs', 'npm', 'vitepress'],
-  imageNames: {
-    'README.webp': 'Документация',
-  },
+  externalLinks: [
+    { name: 'GitHub', url: 'https://github.com/vdistortion/to-static-images' },
+    { name: 'npmjs', url: 'https://www.npmjs.com/package/to-static-images' },
+    {
+      name: 'npmjs (@types)',
+      url: 'https://www.npmjs.com/package/@types/directory-structure-json',
+    },
+    { name: 'Docs', url: '/to-static-images/' },
+  ],
+  screenshots: getImages('to-static-images', { 'README.webp': 'Документация' }),
 };

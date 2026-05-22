@@ -1,0 +1,92 @@
+<header class="header" [class.header--mobile-menu-open]="isMobileMenuOpen()">
+  <a routerLink="/" class="header__name" appTrackClick="header_name_click">Золотов</a>
+
+  <!-- Кнопка для мобильного меню -->
+  <button
+    type="button"
+    class="header__menu-toggle"
+    (click)="toggleMobileMenu()"
+    appTrackClick="header_menu_toggle_click"
+  >
+    <app-ui-icon icon="mdiMenu" [size]="24"></app-ui-icon>
+  </button>
+
+  <div
+    class="header__overlay"
+    [class.header__overlay--open]="isMobileMenuOpen()"
+    (click)="toggleMobileMenu()"
+  ></div>
+
+  <nav class="header__nav" [class.header__nav--open]="isMobileMenuOpen()">
+    <div class="header__social-links">
+      <!-- GitHub -->
+      <a
+        href="https://github.com/vdistortion"
+        target="_blank"
+        title="GitHub"
+        appTrackClick="header_github_click"
+      >
+        <app-ui-icon icon="mdiGithub"></app-ui-icon>
+        <span class="header__contact-label">GitHub</span>
+      </a>
+
+      <!-- npmjs -->
+      <a
+        href="https://www.npmjs.com/~vdistortion"
+        target="_blank"
+        title="npmjs"
+        appTrackClick="header_npmjs_click"
+      >
+        <app-ui-icon icon="mdiNpm"></app-ui-icon>
+        <span class="header__contact-label">npmjs</span>
+      </a>
+
+      <!-- Telegram -->
+      <a
+        href="https://t.me/ng_valentin"
+        target="_blank"
+        title="Telegram"
+        appTrackClick="header_telegram_click"
+      >
+        <app-ui-icon icon="mdiTelegram"></app-ui-icon>
+        <span class="header__contact-label">Telegram</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/valentin-zolotov/"
+        target="_blank"
+        title="LinkedIn"
+        appTrackClick="header_linkedin_click"
+      >
+        <app-ui-icon icon="mdiLinkedin"></app-ui-icon>
+        <span class="header__contact-label">LinkedIn</span>
+      </a>
+    </div>
+
+    <!-- Переключатель тем -->
+    <div class="theme-switcher">
+      @for (t of themes; track t.value) {
+        <button
+          type="button"
+          class="theme-switcher__btn"
+          [class.theme-switcher__btn--active]="themeService.theme() === t.value"
+          [title]="t.value"
+          (click)="themeService.setTheme(t.value)"
+          [appTrackClick]="'theme_switcher_' + t.value + '_click'"
+        >
+          {{ t.label }}
+        </button>
+      }
+    </div>
+
+    <!-- CV -->
+    <a
+      href="https://docs.google.com/document/d/1NY0j4b9eIiQj1jkc6DWsZHeM6wvtKfgtguyZQU-Iob8/export?format=pdf"
+      target="_blank"
+      class="btn-cv"
+      appTrackClick="header_cv_click"
+      >CV</a
+    >
+  </nav>
+</header>
