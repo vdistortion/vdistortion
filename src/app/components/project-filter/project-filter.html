@@ -8,9 +8,11 @@
       [appTrackClick]="'filter_tag_' + tag + '_click'"
     >
       @if (tag === 'angular') {
-        <img src="/angular_gradient.webp" alt="angular" />
+        <app-ui-icon icon="logos:angular"></app-ui-icon>
       }
-      {{ tag === 'all' ? 'Все проекты' : tag }}
+      @if (tag === 'all') {
+        Все проекты
+      }
     </button>
   }
 </div>

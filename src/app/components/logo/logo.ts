@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
+// Анимированная SVG: https://maxwellito.github.io/vivus-instant/
 @Component({
   selector: 'app-logo',
   imports: [],
@@ -9,5 +10,4 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 })
 export class Logo {
   color = input<string>('var(--accent)');
-  restart = input<number>(0);
 }

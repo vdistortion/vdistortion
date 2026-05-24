@@ -1,9 +1,6 @@
 <article class="detail">
   <header class="detail__header">
     <h1 class="detail__title">{{ project().title }}</h1>
-    @if (project().tags.includes('angular')) {
-      <span class="detail__angular">Angular</span>
-    }
   </header>
 
   <p class="detail__desc">{{ project().description }}</p>

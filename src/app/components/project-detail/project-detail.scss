@@ -18,19 +18,6 @@
   color: var(--text);
 }
 
-.detail__angular {
-  flex-shrink: 0;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-  background: rgba(221, 0, 49, 0.12);
-  color: var(--angular);
-  border: 1px solid rgba(221, 0, 49, 0.3);
-}
-
 .detail__desc {
   margin: 0;
   font-size: 1rem;

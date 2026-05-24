@@ -1,23 +1,27 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { mdiGithub, mdiLinkedin, mdiNpm, mdiMenu, mdiAngular } from '@mdi/js';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  CUSTOM_ELEMENTS_SCHEMA,
+  input,
+} from '@angular/core';
+import 'iconify-icon';
 
+// https://icon-sets.iconify.design/
 @Component({
   selector: 'app-ui-icon',
   imports: [],
   templateUrl: './ui-icon.html',
   styleUrl: './ui-icon.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UiIcon {
-  public icon = input.required<string>();
-  public size = input(20);
-  public color = input<string | undefined>(undefined);
+  icon = input.required<string>();
+  size = input<number>();
+  width = input<number>();
+  height = input<number>();
 
-  public icons: Record<string, string> = {
-    mdiGithub,
-    mdiLinkedin,
-    mdiNpm,
-    mdiMenu,
-    mdiAngular,
-  };
+  effectiveWidth = computed(() => this.width() ?? this.size() ?? null);
+  effectiveHeight = computed(() => this.height() ?? this.size() ?? null);
 }
