@@ -6,8 +6,7 @@
 
   <main class="main">
     <app-project-filter
-      [tags]="tags"
-      [activeTag]="activeTag()"
+      [angularOnly]="angularOnly()"
       (filterChange)="onFilterChange($event)"
     />
     <app-project-list [projects]="filtered()" />

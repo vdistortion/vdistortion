@@ -9,7 +9,6 @@ export const module: Project = {
   description: `Коллекция переиспользуемых UI-компонентов для Vue и React (кнопки, формы и др.), бесшовно
 интегрирующихся в интерфейс Bitrix24. Полностью переписана на TypeScript. Storybook служит
 демонстрацией и документацией для команды и внешних интеграторов.`,
-  tags: ['all'],
   tech: ['vue', 'storybook', 'bitrix24', 'npm', 'typescript', 'vite', 'vitepress'],
   externalLinks: [
     { name: 'GitHub', url: 'https://github.com/vdistortion/ui-bitrix24' },

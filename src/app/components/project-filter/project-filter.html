@@ -1,18 +1,21 @@
 <div class="filter">
-  @for (tag of tags(); track tag) {
-    <button
-      type="button"
-      class="filter__btn"
-      [class.active]="activeTag() === tag"
-      (click)="onFilter(tag)"
-      [appTrackClick]="'filter_tag_' + tag + '_click'"
-    >
-      @if (tag === 'angular') {
-        <app-ui-icon icon="logos:angular"></app-ui-icon>
-      }
-      @if (tag === 'all') {
-        Все проекты
-      }
-    </button>
-  }
+  <button
+    type="button"
+    class="filter__btn"
+    [class.active]="angularOnly()"
+    (click)="filterChange.emit(true)"
+    appTrackClick="filter_tag_angular_click"
+  >
+    <app-ui-icon icon="logos:angular"></app-ui-icon>
+  </button>
+
+  <button
+    type="button"
+    class="filter__btn"
+    [class.active]="!angularOnly()"
+    (click)="filterChange.emit(false)"
+    appTrackClick="filter_tag_all_click"
+  >
+    Все проекты
+  </button>
 </div>

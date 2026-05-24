@@ -3,14 +3,13 @@ import type {
   TypeTech,
   TypeFile,
   TypeFolder,
-  TypeAllTag,
   ProjectLink,
   ProjectImage,
   Project,
   Projects,
 } from './types';
 
-export type { TypeTech, TypeAllTag, ProjectLink, ProjectImage, Project, Projects };
+export type { TypeTech, ProjectLink, ProjectImage, Project, Projects };
 
 export function getImages(
   folderName: string,

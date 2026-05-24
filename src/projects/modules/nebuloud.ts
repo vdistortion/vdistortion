@@ -6,7 +6,6 @@ export const module: Project = {
   shortDescription: 'Платформа музыкального каталога с планами на fullstack',
   description: `Angular SPA для каталогизации музыки. В планах — полноценный Backend на Fastify
 и Postgres (PFAN stack).`,
-  tags: ['angular', 'all'],
   tech: ['angular', 'typescript', 'scss'],
   externalLinks: [],
 };

@@ -8,7 +8,6 @@ export const module: Project = {
   description: `Один из ранних коммерческих проектов. Полная верстка сложного адаптивного дизайна
 и интерактивных элементов на нативном Javascript.
 Пример работы с legacy-стеком и ручной оптимизации ассетов.`,
-  tags: ['all'],
   tech: ['svg', 'gulp', 'jquery', 'pug', 'stylus'],
   externalLinks: [],
   screenshots: getImages('arb-pro', {

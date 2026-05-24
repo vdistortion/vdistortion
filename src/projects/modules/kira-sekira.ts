@@ -7,7 +7,6 @@ export const module: Project = {
   shortDescription: 'Портфолио для фотографа на Angular',
   description: `Адаптивное портфолио с галереей. Мигрировано с Vue на Angular, реализован адаптивный
 фотогрид и оптимизация изображений через to-static-images.`,
-  tags: ['angular', 'all'],
   tech: ['angular', 'scss', 'typescript'],
   externalLinks: [{ name: 'Сайт', url: '/kira-sekira/' }],
   screenshots: getImages('kira-sekira', {

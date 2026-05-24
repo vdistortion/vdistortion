@@ -8,7 +8,6 @@ export const module: Project = {
   description: `CLI-утилита рекурсивно обходит папки, конвертирует изображения в WebP/AVIF/PNG/JPG
 с настраиваемым сжатием и ресайзом. Генерирует JSON-манифест с метаданными.
 Используется в 3+ production-проектах. На её основе опубликованы типы в DefinitelyTyped.`,
-  tags: ['all'],
   tech: ['typescript', 'nodejs', 'npm', 'vitepress'],
   externalLinks: [
     { name: 'GitHub', url: 'https://github.com/vdistortion/to-static-images' },

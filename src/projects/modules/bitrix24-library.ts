@@ -8,7 +8,6 @@ export const module: Project = {
   description: `Переработал callback-ориентированный API в современный promise-based интерфейс с типами.
 Реализована продвинутая обработка пакетных запросов, критичная для production enterprise-приложений.
 Используется как зависимость в шаблонах bitrix24-create-app.`,
-  tags: ['all'],
   tech: ['bitrix24', 'npm', 'vite', 'vitepress', 'typescript'],
   externalLinks: [
     { name: 'GitHub', url: 'https://github.com/vdistortion/bitrix24-library' },

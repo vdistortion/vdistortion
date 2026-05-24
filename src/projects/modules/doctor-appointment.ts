@@ -8,7 +8,6 @@ export const module: Project = {
   description: `Мобильный фронтенд для приложения «Интерсвязь. Умный город». Сложная интеграция
 с региональными МИС. Проверка страховых полисов, управление профилями пациентов,
 фильтрация слотов записи. Разработан на jQuery/Pug.`,
-  tags: ['all'],
   tech: ['gulp', 'webpack', 'stylus', 'pug', 'jquery'],
   externalLinks: [],
   screenshots: getImages('doctor-appointment'),

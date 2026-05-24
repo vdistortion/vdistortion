@@ -1,5 +1,3 @@
-import { environment } from '../environments/environment';
-
 export type TypeTech =
   | 'angular'
   | 'bitrix24'
@@ -21,8 +19,6 @@ export type TypeTech =
   | 'vue'
   | 'vuetify'
   | 'webpack';
-
-export type TypeAllTag = keyof typeof environment.ProjectTags;
 
 export type TypeFile = {
   type: string;
@@ -54,7 +50,6 @@ export interface Project {
   title: string;
   shortDescription: string;
   description: string;
-  tags: TypeAllTag[];
   tech: TypeTech[];
   externalLinks: ProjectLink[];
   screenshots?: ProjectImage[];

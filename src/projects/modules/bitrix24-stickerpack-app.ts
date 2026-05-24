@@ -9,7 +9,6 @@ export const module: Project = {
   description: `Сложное приложение, встраиваемое в интерфейс чатов. Синхронизация состояния между вкладками
 в реальном времени. Поддерживает горячие клавиши, кастомные стикеры и сохранение настроек.
 Изначально Vue, полностью переписано на Angular. Angular-версия на GitHub, коммерческая (Vue) — в маркетплейсе.`,
-  tags: ['angular', 'all'],
   tech: ['angular', 'typescript', 'scss', 'bitrix24'],
   externalLinks: [
     { name: 'GitHub', url: 'https://github.com/vdistortion/bitrix24-stickerpack-app' },

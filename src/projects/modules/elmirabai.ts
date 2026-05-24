@@ -6,7 +6,6 @@ export const module: Project = {
   shortDescription: 'Лендинг для профессиональной танцовщицы и педагога Belly Dance',
   description: `Conversion-focused лендинг для профессиональной танцовщицы, разработанный с нуля
 на Angular вместо конструктора. Оптимизирован для мобильных, интегрирован с Яндекс.Метрикой.`,
-  tags: ['angular', 'all'],
   tech: ['angular', 'typescript', 'scss'],
   externalLinks: [],
 };

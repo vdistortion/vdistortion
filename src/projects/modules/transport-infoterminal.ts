@@ -9,7 +9,6 @@ export const module: Project = {
   description: `Интерфейс терминала в рамках "Умный город". Плавная анимация транспорта на картах
 (Leaflet/Yandex), синхронизация нескольких API для расчёта ETA и построения маршрутов.
 Эволюция от legacy (jQuery, Gulp) к Angular/RxJS.`,
-  tags: ['all'],
   tech: ['gulp', 'webpack', 'leaflet', 'stylus', 'pug', 'jquery'],
   externalLinks: [{ name: 'GitHub', url: 'https://github.com/vdistortion/smart-stop/tree/master' }],
   screenshots: getImages('transport-infoterminal', {
