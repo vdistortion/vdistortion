@@ -8,7 +8,7 @@ export const module: Project = {
   description: `Универсальный бот на Node.js/TypeScript (grammY) на Serverless-архитектуре (Vercel).
 Включает интеграцию погодных сервисов и MiniApp (Flag Connect),
 который поддерживает темы Telegram и работает отдельно от бота.`,
-  tech: ['telegram', 'nodejs', 'typescript'],
+  tech: ['Telegram', 'Node.js', 'TypeScript'],
   externalLinks: [
     { name: 'GitHub', url: 'https://github.com/vdistortion/imp-telegram-bot' },
     { name: 'Bot', url: 'https://t.me/ImpTelegramBot' },

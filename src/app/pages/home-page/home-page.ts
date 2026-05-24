@@ -26,7 +26,7 @@ export class HomePage {
 
   public readonly filtered = computed(() =>
     this.angularOnly()
-      ? this.allProjects.filter((p) => p.tech.includes('angular'))
+      ? this.allProjects.filter((p) => p.tech.includes('Angular'))
       : this.allProjects,
   );
 

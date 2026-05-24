@@ -7,6 +7,6 @@ export const module: Project = {
   description: `Модуль для расчёта стоимости проектов в Bitrix24. Формирование смет,
 применение коэффициентов, экспорт в CRM.
 Мигрирован с legacy (PHP/JS) на Vue+TypeScript.`,
-  tech: ['bitrix24', 'vue', 'vite', 'scss', 'typescript'],
+  tech: ['Bitrix24', 'Vue', 'Vite', 'SCSS', 'TypeScript'],
   externalLinks: [{ name: 'GitHub', url: 'https://github.com/vdistortion/bitrix24-pricing-app' }],
 };

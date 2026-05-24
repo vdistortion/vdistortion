@@ -7,7 +7,7 @@ export const module: Project = {
   shortDescription: 'Лендинг для копирайтера и автора на Angular',
   description: `Проект изначально сделан на Vue, потом переписан на Angular и TypeScript
 для улучшения производительности и контроля.`,
-  tech: ['angular', 'scss', 'typescript'],
+  tech: ['Angular', 'SCSS', 'TypeScript'],
   externalLinks: [{ name: 'Сайт', url: '/creablast/' }],
   screenshots: getImages('creablast', {
     '1.webp': 'Main Page',

@@ -8,7 +8,7 @@ export const module: Project = {
   description: `Визуализация данных продаж по CRM-сущностям Bitrix24. Кастомные выборки,
 группировка, фильтрация и сводные таблицы. Экспорт в ленту событий компании.
 Vue/Vuetify, целевое использование — enterprise-аналитика.`,
-  tech: ['vue', 'bitrix24', 'vuetify', 'stylus'],
+  tech: ['Vue', 'Bitrix24', 'Vuetify', 'Stylus'],
   externalLinks: [
     {
       name: 'Маркетплейс',
