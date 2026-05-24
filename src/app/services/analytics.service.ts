@@ -21,7 +21,7 @@ export class Analytics {
 
     if (typeof this._window !== 'undefined' && typeof this._window.ym === 'function') {
       this._window.ym(ymId, 'reachGoal', eventName, params);
-      console.log(`[Analytics] Event sent: ${eventName}`, params);
+      console.info(`[Analytics] Event sent: ${eventName}`, params);
     }
   }
 }

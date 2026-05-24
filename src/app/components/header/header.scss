@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  height: 56px;
+  height: var(--header-h);
   background: rgba(15, 18, 25, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);

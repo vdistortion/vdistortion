@@ -11,12 +11,8 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/project-page/project-page').then((m) => m.ProjectPage),
   },
   {
-    path: '404',
+    path: '**',
     loadComponent: () => import('./pages/error-page/error-page').then((m) => m.ErrorPage),
     title: 'Страница не найдена | Портфолио фронтенд-разработчика',
-  },
-  {
-    path: '**',
-    redirectTo: '404',
   },
 ];

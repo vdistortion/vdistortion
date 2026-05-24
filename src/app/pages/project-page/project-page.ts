@@ -18,20 +18,22 @@ export class ProjectPage implements OnInit {
   private readonly router = inject(Router);
   private readonly titleService = inject(Title);
 
-  private readonly id = toSignal(this.route.paramMap.pipe(map((p) => p.get('id') ?? '')));
+  private readonly idSignal = toSignal(this.route.paramMap.pipe(map((p) => p.get('id') ?? '')));
 
   public readonly project = computed(() => {
-    const p = projects[this.id() ?? ''];
-    if (!p) {
-      this.router.navigateByUrl('/404');
-      return null;
-    }
-    return p;
+    const id = this.idSignal();
+    return id ? (projects[id] ?? null) : null;
   });
 
   ngOnInit(): void {
-    if (this.project()) {
-      this.titleService.setTitle(`${this.project()!.title} | Портфолио`);
-    }
+    const subscription = this.route.paramMap.subscribe((params) => {
+      const id = params.get('id') ?? '';
+      if (!id || !projects[id]) {
+        this.router.navigateByUrl('/404');
+      } else {
+        this.titleService.setTitle(`${projects[id].title} | Портфолио фронтенд-разработчика`);
+      }
+      subscription.unsubscribe();
+    });
   }
 }

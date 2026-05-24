@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { map } from 'rxjs';
 import { Logo } from '../../components/logo/logo';
 import { ProjectFilter } from '../../components/project-filter/project-filter';
 import { ProjectList } from '../../components/project-list/project-list';
@@ -22,7 +21,7 @@ export class HomePage {
   private readonly allProjects: Project[] = Object.values(projects).sort(() => Math.random() - 0.5);
 
   private readonly fragment = toSignal(this.route.fragment);
-  public readonly angularOnly = computed(() => this.fragment() === 'angular');
+  public readonly angularOnly = computed(() => this.fragment() !== 'all');
 
   public readonly filtered = computed(() =>
     this.angularOnly()
@@ -32,7 +31,7 @@ export class HomePage {
 
   onFilterChange(angularOnly: boolean): void {
     this.router.navigate([], {
-      fragment: angularOnly ? 'angular' : undefined,
+      fragment: angularOnly ? undefined : 'all',
       replaceUrl: true,
     });
   }

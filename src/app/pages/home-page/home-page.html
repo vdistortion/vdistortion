@@ -1,14 +1,9 @@
-<div class="l-wrapper">
-  <section class="hero">
-    <app-logo></app-logo>
-    <p class="hero__tagline">Frontend Developer · Angular · TypeScript</p>
-  </section>
+<section class="hero">
+  <app-logo></app-logo>
+  <p class="hero__tagline">Frontend Developer · Angular · TypeScript</p>
+</section>
 
-  <main class="main">
-    <app-project-filter
-      [angularOnly]="angularOnly()"
-      (filterChange)="onFilterChange($event)"
-    />
-    <app-project-list [projects]="filtered()" />
-  </main>
+<div class="projects">
+  <app-project-filter [angularOnly]="angularOnly()" (filterChange)="onFilterChange($event)" />
+  <app-project-list [projects]="filtered()" />
 </div>
