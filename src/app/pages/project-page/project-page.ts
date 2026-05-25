@@ -33,7 +33,7 @@ export class ProjectPage implements OnInit {
       } else {
         this.titleService.setTitle(`${projects[id].title} | Портфолио фронтенд-разработчика`);
       }
-      subscription.unsubscribe();
     });
+    subscription.unsubscribe();
   }
 }

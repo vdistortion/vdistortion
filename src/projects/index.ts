@@ -8,6 +8,7 @@ import type {
   Project,
   Projects,
 } from './types';
+import { environment } from '../environments/environment';
 
 export type { TypeTech, ProjectLink, ProjectImage, Project, Projects };
 
@@ -21,7 +22,7 @@ export function getImages(
   if (!folder) return [];
   return folder.children.map((file: TypeFile) => ({
     title: imageNames[file.name] ?? '',
-    src: `images/projects/${folderName}/${file.name}`,
+    src: `${environment.SUPABASE_URL}/storage/v1/object/public/project-screenshots/${folderName}/${file.name}`,
     width: file.width,
     height: file.height,
   }));
