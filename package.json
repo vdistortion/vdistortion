@@ -20,8 +20,6 @@
     "@angular/platform-server": "^21.2.0",
     "@angular/router": "^21.2.0",
     "@angular/ssr": "^21.2.12",
-    "@iconify-json/logos": "^1.2.11",
-    "@iconify-json/lucide": "^1.2.109",
     "@tsparticles/angular": "^4.0.5",
     "@tsparticles/slim": "^4.0.5",
     "@twogate/ngx-photo-gallery": "^1.8.1",
