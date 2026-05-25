@@ -1,0 +1,1 @@
+import"./chunk-C6Q5SG76.js";var e=class{_container;_engine;constructor(i,n){this._engine=i,this._container=n}destroy(){this._engine.images?.delete(this._container)}};export{e as ImagePreloaderInstance};
