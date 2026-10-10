@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "projects": {
+    "app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -36,35 +36,34 @@
           "skipTests": true
         }
       },
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/app",
+      "sourceRoot": "projects/app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "src/main.ts",
-            "tsConfig": "tsconfig.app.json",
+            "browser": "projects/app/src/main.ts",
+            "tsConfig": "projects/app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/app/public"
               }
             ],
-            "styles": ["src/styles.scss"],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
+            "styles": ["projects/app/src/styles.scss"],
+            "server": "projects/app/src/main.server.ts",
+            "outputMode": "static",
             "security": {
               "allowedHosts": []
             },
             "ssr": {
-              "entry": "src/server.ts"
+              "entry": "projects/app/src/server.ts"
             }
           },
           "configurations": {
             "production": {
-              "outputMode": "static",
               "budgets": [
                 {
                   "type": "initial",
@@ -85,8 +84,8 @@
               "sourceMap": true,
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
+                  "replace": "projects/app/src/environments/environment.ts",
+                  "with": "projects/app/src/environments/environment.development.ts"
                 }
               ]
             }
@@ -95,12 +94,15 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": ["localhost", "0.0.0.0"]
+          },
           "configurations": {
             "production": {
-              "buildTarget": "projects:build:production"
+              "buildTarget": "app:build:production"
             },
             "development": {
-              "buildTarget": "projects:build:development"
+              "buildTarget": "app:build:development"
             }
           },
           "defaultConfiguration": "development"

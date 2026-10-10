@@ -1,5 +1,5 @@
 import {
-  type ApplicationConfig,
+  ApplicationConfig,
   inject,
   provideAppInitializer,
   provideBrowserGlobalErrorListeners,
